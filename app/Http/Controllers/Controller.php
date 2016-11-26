@@ -10,6 +10,10 @@ trait IsDayValid{
     }
   }
   
+trait CheckDepartmentCount($departments){
+  return $count == 11;
+}
+
 class Controller extends BaseController
 {
     //
