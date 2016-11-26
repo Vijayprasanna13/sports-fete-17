@@ -24,3 +24,4 @@ $app->get('/api/scores','DepartmentsController@GetScores'); //get the scores of 
 $app->patch('/api/scores','DepartmentsController@UpdateScores'); //update the scores for department
 $app->post('/api/scores','DepartmentsController@CreateDepartment'); //post a new score record for a department
 $app->post('/api/log','ScoresController@LogScores'); //log the updation of score for event and department
+$app->get('/api/photos/{id}', 'PhotosController@GetPhotos');
