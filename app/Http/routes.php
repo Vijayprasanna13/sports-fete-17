@@ -20,7 +20,7 @@ $app->get('/key',function(){
 
 //API routes
 $app->get('/api/events','EventsController@GetEvents');// get the events list
-$app->get('/api/scores','DepartmentsController@GetScores'); //get the scores of a department
+$app->get('/api/scores','DepartmentsController@GetScores'); //get the scores of all departments
 $app->patch('/api/scores','DepartmentsController@UpdateScores'); //update the scores for department
 $app->post('/api/scores','DepartmentsController@CreateDepartment'); //post a new score record for a department
 $app->post('/api/log','ScoresController@LogScores'); //log the updation of score for event and department

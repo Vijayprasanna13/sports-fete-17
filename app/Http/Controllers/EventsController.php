@@ -1,10 +1,11 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+
 class EventsController extends Controller{
-    public function CheckDay($day){
-      return $day <= 3;
-    }
+    use IsDayValid;
+
+    //Request Parameters : day
     public function GetEvents(Request $request){
       $data = [];
       $data['type'] = 'events';
