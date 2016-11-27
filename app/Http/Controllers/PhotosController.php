@@ -21,7 +21,7 @@ class PhotosController extends Controller
         }
         else {
             $data['status'] = '404 NOT FOUND';
-            $data['message'] = 'image_id not found';
+            $data['message'] = 'image not found';
             $data['data'] = NULL;
         }
 
@@ -52,6 +52,33 @@ class PhotosController extends Controller
     	else {
     		$data['status'] = '400 BAD REQUEST';
     		$data['message'] = 'missing params or invalid day';
+    	}
+    	return json_encode($data);
+    }
+
+    public function DeletePhotos(Request $request) {
+    	$data = [];
+    	if(isset($request['image_id'])) {
+    		if($this->IsImageIdValid($request['image_id'])) {
+    			$result = app('db')
+    					  ->delete('delete from photos where image_id = '.$request['image_id'].'');
+    			if($result) {
+    				$data['status'] = '200 OK';
+    				$data['message'] = 'photo has been deleted';
+    			}
+    			else {
+    				$data['status'] = '500 ERROR';
+    				$data['message'] = 'internal error';
+    			}
+    		}
+    		else {
+    			$data['status'] = '404 NOT FOUND';
+    			$data['message'] = 'photo not found';
+    		}
+    	}
+    	else {
+    		$data['status'] = '400 BAD REQUEST';
+    		$data['message'] = 'missing params';
     	}
     	return json_encode($data);
     }

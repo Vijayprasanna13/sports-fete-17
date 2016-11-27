@@ -27,3 +27,4 @@ $app->post('/api/log','ScoresController@LogScores'); //log the updation of score
 $app->get('/api/log','ScoresController@GetLog'); //get score log for an department
 $app->get('/api/photos/{id}', 'PhotosController@GetPhotos'); //get location of the photo to be displayed
 $app->post('/api/photos/', 'PhotosController@PostPhotos');	//insert the photo location to the db
+$app->delete('/api/photos/', 'PhotosController@DeletePhotos');	//delete unwanted photos
