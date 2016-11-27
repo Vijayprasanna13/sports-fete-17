@@ -19,6 +19,12 @@ trait Validity{
       $result = app('db')->select('select * from events where name = "'.$event.'" and day = '.$day.' limit 1');
       return (int)(count($result) == 1);
     }
+
+    public function IsImageIdValid($id)
+    {
+        $found = app('db')->select('SELECT * FROM photos WHERE image_id = '.$id.'');
+        return (int)(count($found) == 1);
+    }
   }
 
 class Controller extends BaseController
