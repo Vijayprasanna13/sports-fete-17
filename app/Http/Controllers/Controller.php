@@ -25,6 +25,11 @@ trait Validity{
       $found = app('db')->select('select * from photos where image_id = '.$id.'');
       return (int)(count($found) == 1);
     }
+
+    public function DepartmentExists($department) {
+      $found = app('db')->select('select * from departments where department_name = "'.$department.'"');
+      return (int)(count($found) == 1);
+    }
   }
 
 class Controller extends BaseController
