@@ -22,8 +22,8 @@ trait Validity{
 
     public function IsImageIdValid($id)
     {
-        $found = app('db')->select('SELECT * FROM photos WHERE image_id = '.$id.'');
-        return (int)(count($found) == 1);
+      $found = app('db')->select('select * from photos where image_id = '.$id.'');
+      return (int)(count($found) == 1);
     }
   }
 

@@ -22,6 +22,7 @@ class ScoresController extends Controller{
     else{
       $data['status'] = '400 BAD REQUEST';
       $data['message'] = 'missing params';
+      $data['data'] = NULL;
     }
     return json_encode($data);
   }

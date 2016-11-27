@@ -21,7 +21,7 @@ class PhotosController extends Controller
         }
         else {
             $data['status'] = '404 NOT FOUND';
-            $data['message'] = 'image_id not found';
+            $data['message'] = 'image not found';
             $data['data'] = NULL;
         }
 
