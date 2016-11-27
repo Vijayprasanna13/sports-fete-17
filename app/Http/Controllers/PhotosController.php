@@ -30,13 +30,13 @@ class PhotosController extends Controller
 
     public function PostPhotos(Request $request) {
     	$data = [];
-    	if(isset($request['day']) && isset($request['image_location']) && IsDayValid($request['day'])) {
+    	if(isset($request['day']) && isset($request['image_location']) && $this->IsDayValid($request['day'])) {
     		$result = app('db')
     		          ->insert('insert into
     		                    photos (day, image_location, updated_at, created_at)
     		                    values (
     		                      "'.(string)$request['day'].'",
-    		                      "'.(string)$request['image_loaction'].'",
+    		                      "'.(string)$request['image_location'].'",
     		                      "'.(string)date('Y-m-d H:i:s').'",
     		                      "'.(string)date('Y-m-d H:i:s').'")
     		                  ');
