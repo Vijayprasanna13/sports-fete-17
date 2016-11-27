@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Laravel\Lumen\Routing\Controller as BaseController;
 
-trait Vaildity{
+trait Validity{
     public function IsDayValid($day){
       return $day <= 3;
     }

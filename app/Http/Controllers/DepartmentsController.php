@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class DepartmentsController extends Controller{
-  use Vaildity;
+  use Validity;
   public function GetScores(Request $request){
     $data = [];
     $data['type'] = 'scores';
@@ -22,43 +22,73 @@ class DepartmentsController extends Controller{
   public function UpdateScores(Request $request){
     $department = $request['department'];
     $data = [];
-    if($this->IsDepartmentValid($request['department'])){
-      $event = $request['event'];
-      $day = $request['day'];
-      if($this->IsEventValid($event,$day)){
-        $score = $request['score'];
-        $event_id = (app('db')->select('select event_id from events where name = "'.(string)$event.'"'))[0]->event_id;
-        $department_id = (app('db')->select('select id from departments where department_name = "'.(string)$department.'"'))[0]->id;
-        $result = app('db')
-        ->insert('insert into
-                  scores (deptartment_id,event_id,score,created_at,updated_at)
-                  values ('
-                  .$department_id.','
-                  .$event_id.','
-                  .$score.',"'
-                  .(string)date('Y-m-d H:i:s').'","'
-                  .(string)date('Y-m-d H:i:s').'")'
-                );
-        $result = app('db')
-                  ->update('update departments set
-                            score = score + '.$score.',
-                            updated_at = "'.(string)date('Y-m-d H:i:s').'"
-                            where department_name = "'.$department.'"');
-        $data['status'] = '200 OK';
-        $data['message'] = 'requested department has been updated';
+    if(isset($request['department']) && isset($request['day']) && isset($request['event'])){
+      if($this->IsDepartmentValid($request['department'])){
+        $event = $request['event'];
+        $day = $request['day'];
+        if($this->IsEventValid($event,$day)){
+          $score = $request['score'];
+          $event_id = (app('db')->select('select event_id from events where name = "'.(string)$event.'"'))[0]->event_id;
+          $department_id = (app('db')->select('select id from departments where department_name = "'.(string)$department.'"'))[0]->id;
+          $result = app('db')
+          ->insert('insert into
+                    scores (department_id,event_id,score,created_at,updated_at)
+                    values ('
+                    .$department_id.','
+                    .$event_id.','
+                    .$score.',"'
+                    .(string)date('Y-m-d H:i:s').'","'
+                    .(string)date('Y-m-d H:i:s').'")'
+                  );
+          $result = app('db')
+                    ->update('update departments set
+                              score = score + '.$score.',
+                              updated_at = "'.(string)date('Y-m-d H:i:s').'"
+                              where department_name = "'.$department.'"');
+          $data['status'] = '200 OK';
+          $data['message'] = 'requested department has been updated';
+        }
+        else{
+          $data['status'] = '409 CONFLICT';
+          $data['message'] = 'event not found on given day';
+        }
       }
       else{
-        $data['status'] = '409 CONFLICT';
-        $data['message'] = 'event not found on given day';
+        $data['status'] = '404 NOT FOUND';
+        $data['message'] = 'requested department not found';
       }
     }
     else{
-      $data['status'] = '404 NOT FOUND';
-      $data['message'] = 'requested department not found';
+        $data['status'] = '400 BAD REQUEST';
+        $data['message'] = 'missing params';
     }
     return json_encode($data);
   }
   public function CreateDepartment(Request $request){
-    return $request;
+    $data = [];
+    if(isset($request['department']) && isset($request['score'])){
+      $result = app('db')
+                ->insert('insert into
+                          departments (department_name,score,updated_at,created_at)
+                          values (
+                            "'.(string)$request['department'].'",
+                            '.$request['score'].',
+                            "'.(string)date('Y-m-d H:i:s').'",
+                            "'.(string)date('Y-m-d H:i:s').'")
+                        ');
+      if($result){
+        $data['status'] = '200 OK';
+        $data['message'] = 'department has been added';
+      }
+      else{
+        $data['status'] = '500 ERROR';
+        $data['message'] = 'internal error';
+      }
+    }
+    else{
+      $data['status'] = '400 BAD REQUEST';
+      $data['message'] = 'missing params';
+    }
+    return json_encode($data);
   }
 }
