@@ -16,13 +16,18 @@ trait Validity{
       return (int)(in_array($department,$departments));
     }
     public function IsEventValid($event,$day){
-      $result = app('db')->select('select * from events where name = "'.$event.'" and day = '.$day.' limit 1');
       return (int)(count($result) == 1);
+      $result = app('db')->select('select * from events where name = "'.$event.'" and day = '.$day.' limit 1');
     }
 
     public function IsImageIdValid($id)
     {
       $found = app('db')->select('select * from photos where image_id = '.$id.'');
+      return (int)(count($found) == 1);
+    }
+
+    public function DepartmentExists($department) {
+      $found = app('db')->select('select * from departments where department_name = "'.$department.'"');
       return (int)(count($found) == 1);
     }
   }
