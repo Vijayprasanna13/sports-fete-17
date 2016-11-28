@@ -67,22 +67,28 @@ class DepartmentsController extends Controller{
   public function CreateDepartment(Request $request){
     $data = [];
     if(isset($request['department']) && isset($request['score'])){
-      $result = app('db')
-                ->insert('insert into
-                          departments (department_name,score,updated_at,created_at)
-                          values (
-                            "'.(string)$request['department'].'",
-                            '.$request['score'].',
-                            "'.(string)date('Y-m-d H:i:s').'",
-                            "'.(string)date('Y-m-d H:i:s').'")
-                        ');
-      if($result){
-        $data['status'] = '200 OK';
-        $data['message'] = 'department has been added';
+      if(!$this->DepartmentExists($request['department']) && $this->IsDepartmentValid($request['department'])) {
+        $result = app('db')
+                  ->insert('insert into
+                            departments (department_name,score,updated_at,created_at)
+                            values (
+                              "'.(string)$request['department'].'",
+                              '.$request['score'].',
+                              "'.(string)date('Y-m-d H:i:s').'",
+                              "'.(string)date('Y-m-d H:i:s').'")
+                          ');
+        if($result){
+          $data['status'] = '200 OK';
+          $data['message'] = 'department has been added';
+        }
+        else{
+          $data['status'] = '500 ERROR';
+          $data['message'] = 'internal error';
+        }
       }
-      else{
-        $data['status'] = '500 ERROR';
-        $data['message'] = 'internal error';
+      else {
+        $data['status'] = '409 CONFLICT';
+        $data['message'] = 'department already exists or invalid department name';
       }
     }
     else{
