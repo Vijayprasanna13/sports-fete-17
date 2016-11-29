@@ -16,7 +16,7 @@ class PhotosController extends Controller
         if($this->IsImageIdValid($id)) {
             $data['status'] = '200 OK';
             $data['message'] = 'photo found';
-            $image = app('db')->select('SELECT image_location FROM photos WHERE image_id = '.$id.'');
+            $image = app('db')->select('select image_location from photos where image_id = '.$id.'');
             $data['data'] = $image;
         }
         else {
