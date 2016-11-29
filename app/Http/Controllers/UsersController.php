@@ -38,6 +38,6 @@ class UsersController extends Controller
         session_unset();
         session_destroy();
         //return json_encode(['message'=>'Logged out succesfully']);
-        $redirect = redirect()->route('afterLogout');
+        return redirect('/auth/login');
     }
 }
