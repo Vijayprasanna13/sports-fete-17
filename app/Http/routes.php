@@ -18,7 +18,11 @@ $app->get('/key',function(){
   return str_random(32);
 });
 
-$app->post('/', 'UsersController@Login');
+//view routes
+$app->get('/auth/login','PagesController@GetLoginView');
+$app->post('/auth/login', 'UsersController@Login');
+$app->get('/auth/dashboard','PagesController@GetAdminView');
+
 //API routes
 $app->group(['middleware'=>'auth'], function($app) {
 	$app->get('/api/events','EventsController@GetEvents');// get the events list

@@ -4,4 +4,7 @@ class PagesController extends Controller{
   public function GetLoginView(){
     return view('auth.login');
   }
+  public function GetAdminView(){
+    return 'dashboard';
+  }
 }
