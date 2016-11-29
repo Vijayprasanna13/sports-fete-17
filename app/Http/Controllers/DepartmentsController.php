@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+session_start();
 class DepartmentsController extends Controller{
   use Validity;
   public function GetScores(Request $request){
