@@ -18,6 +18,8 @@ $app->get('/key',function(){
   return str_random(32);
 });
 
+//view routes
+$app->get('/auth/login','PagesController@GetLoginView');
 //API routes
 $app->get('/api/events','EventsController@GetEvents');// get the events list
 $app->get('/api/scores','DepartmentsController@GetScores'); //get the scores of all departments
