@@ -14,6 +14,7 @@
 $app->get('/', ['as'=>'afterLogout', function () use ($app) {
     return $app->version();
 }]);
+
 $app->get('/key',function(){
   return str_random(32);
 });
@@ -21,6 +22,7 @@ $app->get('/key',function(){
 //view routes
 $app->get('/auth/login','PagesController@GetLoginView');
 $app->post('/auth/login', 'UsersController@Login');
+
 //API routes
 $app->group(['middleware'=>'auth'], function($app) {
   $app->get('/auth/dashboard','PagesController@GetAdminView');

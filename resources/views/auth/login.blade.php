@@ -15,6 +15,7 @@
     <style>
       #header{
         font-family: Bungee;
+        text-align: center;
       }
     </style>
   </head>
@@ -27,7 +28,7 @@
       </div>
     </div>
     <div class="row">
-      <div id="login-form" class="col-lg-4 col-lg-offset-4">
+      <div id="login-form" class="col-sm-4 col-sm-offset-4">
       </div>
     </div>
   </body>
