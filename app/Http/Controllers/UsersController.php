@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-session_start();
-
 class UsersController extends Controller
 {
     public function Login(Request $request) {
@@ -33,5 +31,10 @@ class UsersController extends Controller
             $data['message'] = 'missing params';
             return json_encode($data);
         }
+    }
+
+    public function Logout() {
+        unset($_SESSION['username']);
+        $redirect = redirect()->route('afterLogout');
     }
 }

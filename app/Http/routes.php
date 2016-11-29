@@ -11,9 +11,9 @@
 |
 */
 
-$app->get('/', function () use ($app) {
+$app->get('/', ['as'=>'afterLogout', function () use ($app) {
     return $app->version();
-});
+}]);
 $app->get('/key',function(){
   return str_random(32);
 });
@@ -28,4 +28,5 @@ $app->group(['middleware'=>'auth'], function($app) {
 	$app->post('/api/scores','DepartmentsController@CreateDepartment'); //post a new score record for a department
 	$app->post('/api/log','ScoresController@LogScores'); //log the updation of score for event and department
 	$app->get('/api/log','ScoresController@GetLog'); //get score log for an department
+	$app->post('/logout', 'UsersController@Logout');
 });
