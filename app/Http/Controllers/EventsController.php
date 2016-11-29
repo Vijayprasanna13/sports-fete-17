@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller{
-    use Vaildity;
+    use Validity;
     //Request Parameters : day
     public function GetEvents(Request $request){
       $data = [];
