@@ -38,9 +38,8 @@ class Authenticate
     public function handle($request, Closure $next, $guard = null)
     {
         if (!isset($_SESSION['username'])) {
-            return response('Unauthorized.', 401);
+            return redirect('/auth/login');
         }
-
         return $next($request);
     }
 }

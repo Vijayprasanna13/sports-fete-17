@@ -58,7 +58,7 @@ $app->singleton(
 | route or middleware that'll be assigned to some specific routes.
 |
 */
-
+$app->register(Vluzrmos\Tinker\TinkerServiceProvider::class);
 $app->middleware([
    App\Http\Middleware\ExampleMiddleware::class
 ]);
