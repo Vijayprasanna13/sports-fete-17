@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-session_start();
-
 class UsersController extends Controller
 {
     public function Login(Request $request) {
@@ -16,6 +14,7 @@ class UsersController extends Controller
             $result = app('db')
                       ->select('select * from users where username = "'.$username.'"');
             if((int)count($result) === 1 && $password == $result[0]->password) {
+                session_start();
                 $_SESSION['username'] = $username;
                 $data['status'] = '200 Authorized';
                 $data['message'] = 'Valid credentials';
@@ -36,8 +35,9 @@ class UsersController extends Controller
     }
 
     public function Logout() {
-        unset($_SESSION['username']);
-        return json_encode(['message'=>'Logged out succesfully']);
+        session_unset();
+        session_destroy();
+        //return json_encode(['message'=>'Logged out succesfully']);
         $redirect = redirect()->route('afterLogout');
     }
 }
