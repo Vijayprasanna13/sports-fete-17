@@ -21,7 +21,6 @@ $app->get('/key',function(){
 //view routes
 $app->get('/auth/login','PagesController@GetLoginView');
 $app->post('/auth/login', 'UsersController@Login');
-
 //API routes
 $app->group(['middleware'=>'auth'], function($app) {
   $app->get('/auth/dashboard','PagesController@GetAdminView');

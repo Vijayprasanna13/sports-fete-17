@@ -24,7 +24,7 @@ var Login = React.createClass({
           <label htmlfor="password">Password:</label>
           <input type="password" name="password" className="form-control" id="password" />
         </div><br/>
-          <button onClick={this.submit} className="btn btn-success">Submit</button>
+          <button onClick={this.submit} className="btn btn-success">Login</button>
       </div>
         );
   }

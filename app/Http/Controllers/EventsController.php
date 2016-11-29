@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
+session_start();
 class EventsController extends Controller{
     use Validity;
     //Request Parameters : day
