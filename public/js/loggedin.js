@@ -17,11 +17,11 @@ var Login = React.createClass({
     return (
       <div>
         <div className="form-group">
-          <label htmlfor="username">Username:</label>
+          <label htmlfor="username">Department:</label>
           <input type="text" name="username" className="form-control" id="username" />
         </div>
         <div class="form-group">
-          <label htmlfor="password">Password:</label>
+          <label htmlfor="password">Score:</label>
           <input type="number" name="password" className="form-control" id="password" />
         </div><br/>
           <button onClick={this.submit} className="btn btn-success">Login</button>
