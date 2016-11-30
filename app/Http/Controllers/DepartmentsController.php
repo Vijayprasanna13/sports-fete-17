@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-session_start();
 class DepartmentsController extends Controller{
   use Validity;
   public function GetScores(Request $request){
@@ -33,7 +32,7 @@ class DepartmentsController extends Controller{
           $department_id = (app('db')->select('select id from departments where department_name = "'.(string)$department.'"'))[0]->id;
           $result = app('db')
           ->insert('insert into
-                    scores (department_id,event_id,score,created_at,updated_at)
+                    scores (deptartment_id,event_id,score,created_at,updated_at)
                     values ('
                     .$department_id.','
                     .$event_id.','
