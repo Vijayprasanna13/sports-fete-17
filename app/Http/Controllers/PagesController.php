@@ -5,6 +5,6 @@ class PagesController extends Controller{
     return view('auth.login');
   }
   public function GetAdminView(){
-    return view('auth.departmentCreate');
+    return view('auth.dashboard');
   }
 }
