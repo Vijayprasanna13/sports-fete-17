@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-session_start();
 class ScoresController extends Controller{
   use Validity;
   public function GetLog(Request $request){

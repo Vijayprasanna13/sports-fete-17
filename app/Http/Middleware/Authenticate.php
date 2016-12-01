@@ -37,9 +37,6 @@ class Authenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (!isset($_SESSION['username'])) {
-            return redirect('/auth/login');
-        }
         return $next($request);
     }
 }
