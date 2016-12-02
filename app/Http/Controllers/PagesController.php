@@ -7,4 +7,7 @@ class PagesController extends Controller{
   public function GetAdminView(){
     return view('auth.dashboard');
   }
+  public function GetEventView(){
+    return view('auth.event');
+  }
 }

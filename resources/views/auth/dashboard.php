@@ -47,7 +47,7 @@
       </div>
       <div class="row" id="list">
         <div class="list-group" id="list-content">
-            <a href="#cd" class="list-group-item">
+            <a href="#" class="list-group-item">
               <h4><b>Add Department</b></h4>
               <p>Add a new department to Sportsfete'17 contestant list</p>
             </a>
