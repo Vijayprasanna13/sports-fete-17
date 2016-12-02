@@ -5,7 +5,7 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="viewport" content="width=device-width, initial-scale=0.3">
   </head>
   <style>
     #logo {
@@ -35,6 +35,7 @@
   </style>
   <body>
     <div class="container-fluid">
+      <div class="containter">
       <div class="row" id="header-wrapper">
         <div class="col-sm-2">
           <img src="../images/sports_fete.jpg" id="logo" width="100" height="100"/>
@@ -46,7 +47,7 @@
       </div>
       <div class="row" id="list">
         <div class="list-group" id="list-content">
-            <a href="#" class="list-group-item">
+            <a href="#cd" class="list-group-item">
               <h4><b>Add Department</b></h4>
               <p>Add a new department to Sportsfete'17 contestant list</p>
             </a>
@@ -56,6 +57,7 @@
             </a>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
