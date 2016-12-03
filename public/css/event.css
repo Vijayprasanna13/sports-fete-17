@@ -1,0 +1,17 @@
+#header-wrapper {
+  background-color: #E74C3C;
+  opacity: 1;
+  border-bottom: 3px solid #C0392B;
+}
+#header {
+  padding: 1%;
+  text-align: center;
+  font-size: 150%;
+  font-family: Bungee;
+}
+#form-wrapper {
+  margin-top: 2%;
+}
+#event-form {
+  display: none;
+}

@@ -48,8 +48,8 @@ class DepartmentsController extends Controller
                     .$department_id.','
                     .$event_id.','
                     .$score.',"'
-                    .(string) date('Y-m-d H:i:s').'","'
                     .(string) date('Y-m-d H:i:s').'")'
+                    .(string) date('Y-m-d H:i:s').'","'
                   );
                     $result = app('db')
                     ->update('update departments set
@@ -73,6 +73,7 @@ class DepartmentsController extends Controller
 
         return json_encode($data);
     }
+    //not actually needed
     public function CreateDepartment(Request $request)
     {
         $data = [];
