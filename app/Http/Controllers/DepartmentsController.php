@@ -97,7 +97,7 @@ class DepartmentsController extends Controller
                 }
             } else {
                 $data['status'] = '409 CONFLICT';
-                $data['message'] = 'department already exists or invalid department name';
+                $data['message'] = 'department already exists';
             }
         } else {
             $data['status'] = '400 BAD REQUEST';

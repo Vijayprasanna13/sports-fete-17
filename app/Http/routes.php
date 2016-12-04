@@ -23,6 +23,7 @@ $app->get('/key',function(){
 $app->get('/auth/login','PagesController@GetLoginView');
 $app->post('/auth/login', 'UsersController@Login');
 $app->get('/test','DepartmentsController@GetScoreByPosition');
+$app->get('/auth/departmentCreate', 'PagesController@GetDepartmentCreateView');
 //API routes
 $app->group(['middleware'=>'auth'], function($app) {
   $app->get('/auth/event','PagesController@GetEventView');

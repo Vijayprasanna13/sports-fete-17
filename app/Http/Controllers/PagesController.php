@@ -10,4 +10,7 @@ class PagesController extends Controller{
   public function GetEventView(){
     return view('auth.event');
   }
+  public function GetDepartmentCreateView() {
+    return view('auth.departmentCreate');
+  }
 }
