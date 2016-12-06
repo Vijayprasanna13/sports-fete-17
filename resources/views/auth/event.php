@@ -14,7 +14,7 @@
           </div>
       </div>
       <div class="row" id="form-wrapper">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-sm-6 col-sm-offset-3">
             <div class="form-group">
               <div id="day-form" class="well">
                 <b>Day: </b>
@@ -24,12 +24,22 @@
               <div id="event-form" class="well">
                 <b>Event: </b>
                 <select class="form-control" id="event"></select><br/>
-                <b>First : </b>
-                <select class="form-control" id="first-place"></select>
-                <b>Second : </b>
-                <select class="form-control" id="second-place"></select>
-                <b>Third : </b>
-                <select class="form-control" id="third-place"></select><br/>
+                <div id="department-wrapper">
+                  <div class="row">
+                    <div class="col-sm-2 well box">CSE : <input id="CSE" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">ECE : <input id="ECE" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">EEE : <input id="EEE" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">MECH : <input id="MECH" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">ICE : <input id="ICE"  value=0 type="integer" class="form-control" placeholder="0"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 well box">CHEM : <input id="CHEM" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">META : <input id="META" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">CIVIL : <input id="CIVIL" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">PROD : <input id="PROD" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">ARCH : <input id="ARCH" value=0 type="integer" class="form-control" placeholder="0"></div>
+                  </div>
+                </div>
                 <button class="btn btn-success" id="submit">Submit</button>
               </div>
             </div>

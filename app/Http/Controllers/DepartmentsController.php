@@ -28,7 +28,7 @@ class DepartmentsController extends Controller
 
         return json_encode($data);
     }
-    //Request params: department, day, event, position
+    //Request params: department, day, event, score
     public function UpdateScores(Request $request)
     {
         $department = $request['department'];
@@ -43,7 +43,8 @@ class DepartmentsController extends Controller
                 $event = $request['event'];
                 $day = $request['day'];
                 if ($this->IsEventValid($event, $day)) {
-                    $score = $this->GetScoreByPosition($request['event'],$request['position'])[0]->score;
+                    //$score = $this->GetScoreByPosition($request['event'],$request['position'])[0]->score;
+                    $score = $request['score'];
                     $event_id = (app('db')->select('select event_id from events where name = "'.(string) $event.'"'))[0]->event_id;
                     $department_id = (app('db')->select('select id from departments where department_name = "'.(string) $department.'"'))[0]->id;
                     $result = app('db')

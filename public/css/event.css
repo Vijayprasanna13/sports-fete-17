@@ -15,3 +15,17 @@
 #event-form {
   display: none;
 }
+#department-wrapper {
+  margin-left: 6%;
+}
+#submit {
+  margin-top: 5%;
+  margin-left: 43%;
+}
+.box  {
+  background-color: #EE8E84;
+  margin: 5px;
+}
+.box:hover {
+  background-color: #DD4A3A;
+}
