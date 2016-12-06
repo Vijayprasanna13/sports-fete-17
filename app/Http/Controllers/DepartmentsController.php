@@ -34,9 +34,18 @@ class DepartmentsController extends Controller
         $department = $request['department'];
         $data = [];
         if (isset($request['department']) && isset($request['day']) && isset($request['event'])) {
-            if($this->eventAlreadyExists((string)$request['event'])) {
-              $data['status'] = '409 CONFLICT';
-              $data['message'] = 'Event already added.';
+            if($request['requestCount'] == 0 || $request['isSuccess'] == 'failure') {
+              if($this->eventAlreadyExists((string)$request['event']) || $request['isSuccess'] == 'failure') {
+                $data['status'] = '409 CONFLICT';
+                $data['message'] = 'Event already added.';
+                $data['isSuccess'] = 'failure';
+                return json_encode($data);
+              }
+            }
+            if($request['score'] == 0) {
+              $data['status'] = '200 OK';
+              $data['message'] = 'requested department has been updated';
+              $data['isSuccess'] = 'success';
               return json_encode($data);
             }
             if ($this->IsDepartmentValid($request['department'])) {
@@ -64,17 +73,21 @@ class DepartmentsController extends Controller
                               where department_name = "'.$department.'"');
                     $data['status'] = '200 OK';
                     $data['message'] = 'requested department has been updated';
+                    $data['isSuccess'] = 'success';
                 } else {
                     $data['status'] = '409 CONFLICT';
                     $data['message'] = 'event not found on given day';
+                    $data['isSuccess'] = 'success';
                 }
             } else {
                 $data['status'] = '404 NOT FOUND';
                 $data['message'] = 'requested department not found';
+                $data['isSuccess'] = 'success';
             }
         } else {
             $data['status'] = '400 BAD REQUEST';
             $data['message'] = 'missing params';
+            $data['isSuccess'] = 'success';
         }
 
         return json_encode($data);

@@ -21,14 +21,18 @@ $(document).ready(function(){
     var day = $('#day').val();
     var event = $('#event').val();
     var depts = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH'];
-    $.map(depts,function(department,i){
+    var isSuccess = 'success';
+    var i=0;
+    $.each(depts,function(i,department){
       var score = $("#"+department).val();
       $.ajax({
         url: '/api/scores',
         type: 'POST',
-        data: {"day":day,"department":department,"score":score,"event":event},
+        async: false,
+        data: {"day":day,"department":department,"score":score,"event":event, "isSuccess":isSuccess, "requestCount":i},
         success: function(data) {
           data = JSON.parse(data);
+          isSuccess = data['isSuccess'];
           if(i == 9)
             var n = noty({text: '<h2><b>'+data['message']+'</b></h2><br/>click to dismiss',type:'success'});
           },

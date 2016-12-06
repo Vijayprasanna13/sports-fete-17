@@ -34,7 +34,7 @@ trait Validity{
     public function eventAlreadyExists($event) {
       $event_id = app('db')->select('select * from events where name = "'.$event.'"')[0]->event_id;
       $found = app('db')->select('select * from scores where event_id = '.$event_id.'');
-      return (int)(count($found) >= 3);
+      return (int)(count($found) >= 1);
     }
   }
 
