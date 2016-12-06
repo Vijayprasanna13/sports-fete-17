@@ -34,6 +34,11 @@ class DepartmentsController extends Controller
         $department = $request['department'];
         $data = [];
         if (isset($request['department']) && isset($request['day']) && isset($request['event'])) {
+            if($this->eventAlreadyExists((string)$request['event'])) {
+              $data['status'] = '409 CONFLICT';
+              $data['message'] = 'Event already added.';
+              return json_encode($data);
+            }
             if ($this->IsDepartmentValid($request['department'])) {
                 $event = $request['event'];
                 $day = $request['day'];
@@ -42,14 +47,14 @@ class DepartmentsController extends Controller
                     $event_id = (app('db')->select('select event_id from events where name = "'.(string) $event.'"'))[0]->event_id;
                     $department_id = (app('db')->select('select id from departments where department_name = "'.(string) $department.'"'))[0]->id;
                     $result = app('db')
-          ->insert('insert into
+                    ->insert('insert into
                     scores (department_id,event_id,score,created_at,updated_at)
                     values ('
                     .$department_id.','
                     .$event_id.','
                     .$score.',"'
-                    .(string) date('Y-m-d H:i:s').'")'
                     .(string) date('Y-m-d H:i:s').'","'
+                    .(string) date('Y-m-d H:i:s').'")'
                   );
                     $result = app('db')
                     ->update('update departments set

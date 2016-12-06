@@ -34,7 +34,11 @@ $(document).ready(function(){
         url: '/api/scores',
         type: 'POST',
         data: {"day":day,"department":department,"position":i+1,"event":event},
-        success: function(data){if(i == 2)var n = noty({text: '<h2><b>successfully updated</b></h2><br/>click to dismiss',type:'success'});},
+        success: function(data) {
+          data = JSON.parse(data);
+          if(i == 2)
+            var n = noty({text: '<h2><b>'+data['message']+'</b></h2><br/>click to dismiss',type:'success'});
+          },
         error: function(data){console.log(data);}
       });
     });
