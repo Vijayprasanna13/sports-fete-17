@@ -34,7 +34,7 @@ $(document).ready(function(){
           data = JSON.parse(data);
           isSuccess = data['isSuccess'];
           if(i == 9)
-            var n = noty({text: '<h2><b>'+data['message']+'</b></h2><br/>click to dismiss',type:'success'});
+            var n = noty({text: '<h2><b>Updated the scores!!</b></h2><br/>click to dismiss',type:'success'});
           },
         error: function(data){console.log(data);}
       });
