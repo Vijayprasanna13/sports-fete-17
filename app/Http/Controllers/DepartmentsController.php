@@ -7,10 +7,7 @@ use Illuminate\Http\Request;
 class DepartmentsController extends Controller
 {
     use Validity;
-    public function GetScoreByPosition($event,$position){
-      $score = app('db')->select('select score_'.(string)$position.' as score from events where name = "'.(string)$event.'"');
-      return $score;
-    }
+    
     public function GetScores(Request $request)
     {
         $data = [];
