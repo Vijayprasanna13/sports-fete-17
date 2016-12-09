@@ -11,9 +11,7 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
+$app->get('/', 'PagesController@GetHomepage');
 
 $app->get('/key',function(){
   return str_random(32);
