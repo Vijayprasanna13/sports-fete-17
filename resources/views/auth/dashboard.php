@@ -51,7 +51,7 @@
               <h4><b>Add Department</b></h4>
               <p>Add a new department to Sportsfete'17 contestant list</p>
             </a>
-            <a href="#" class="list-group-item">
+            <a href="event" class="list-group-item">
               <h4><b>Update Event Scores</b></h4>
               <p>Add scores to an event</p>
             </a>
