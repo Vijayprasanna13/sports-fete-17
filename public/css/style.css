@@ -1,6 +1,72 @@
-body{
-    background-color: #ffebee;
+.container-fluid {
+  margin: 0;
 }
+
+.navbar {
+  background-color: #E74C3C;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: 0;
+  margin-right: 0px;
+}
+
+.navbar .navbar-brand, .navbar li a {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navbar-nav li.active a, .navbar-nav li a:hover{
+  color: #E74C3C !important;
+  background-color: #ffffff !important;
+}
+
+.navbar-toggle {
+  background-color: #E74C3C !important;
+}
+
+.navbar-toggle:hover {
+  background-color: #ffffff !important;
+}
+
+.jumbotron {
+  background-color: #E74C3C !important;
+  color: #ffffff !important;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+#leaderboard {
+  background-color: #ffffff;
+  padding: 10% 0;
+}
+
+td {
+  padding: 20px 0px !important;
+}
+
+th {
+  padding: 20px 20px !important;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Bungee;
+  text-align: center;
+  background-color: #DD4A3A;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 480px) {
+  th {
+    font-size: 15px;
+  }
+}
+
+#events {
+  background-color: #ffecc9;
+  padding: 10% 0;
+}
+
+/*
 .cb-slideshow,
 .cb-slideshow:after {
     position: fixed;
@@ -108,7 +174,7 @@ body{
     .cb-slideshow li div h3 { font-size: 80px }
 }
 
-/*.container{
+.container{
   margin-left:12%;
   margin-right:1%;
 }
@@ -116,22 +182,6 @@ body{
   height:warp-content;
   margin-top:5%;
   padding:1.5rem;
-}*/
-
-#navbar {
-  background-color: #E74C3C;
-}
-
-#myNavBar {
-  color: #000000;
-}
-
-#leaderBoard{
-  text-align:center;
-  color: #ffffff;
-  margin-bottom:15%;
-  padding:3%;
-  background-color: #E74C3C;
 }
 
 .dept{
@@ -144,18 +194,16 @@ body{
   margin-right:0.5rem;
   margin-top:-0.5rem;
 }
+
 a.dept {
   color:#000000;
   margin-left:1rem;
 }
+
 .nav {
   z-index: 20;
 }
-.card .col .s8{
-  margin-left:8%;
-  margin-top:5%;
-  padding:1.5rem;
-}
+
 .eventHeader{
   padding:0.5rem;
   font-size:1.5rem;
@@ -163,22 +211,24 @@ a.dept {
   height:3rem;
   background-color: #DD4A3A;
 }
- a.date{
+
+a.date{
   color:#000000;
   margin-left:1rem;
 }
- a.eventName{
+a.eventName{
   color:#000000;
   margin-left:4rem;
 }
- a.startTime{
+a.startTime{
   color:#000000;
   margin-left:10rem;
 }
- a.endTime{
+a.endTime{
   color:#000000;
   margin-left:2rem;
 }
+
 .events{
   font-size:1rem;
   width:match-parent;
@@ -188,6 +238,4 @@ a.dept {
 a .href{
   color: #000000;
 }
-.well {
-  padding: 3rem;
-}
+*/

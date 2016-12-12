@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
       <link type="text/css" rel="stylesheet" href="css/style.css">
 
@@ -17,7 +18,7 @@
     </head>
 
     <body>
-      <nav class="navbar navbar-default" id="navbar">
+      <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
@@ -28,25 +29,28 @@
             <a href="#" class="navbar-brand">Logo</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavBar">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Page1</a></li>
               <li><a href="#">Page2</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
+              <li><a href="/auth/login"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="jumbotron text-center row">
+        <div class="col-xs-12">
+          <h3><span style="font-family: Bungee">SPORTSFETE'17</span></h3>
+        </div>
+      </div>
 
-      <div class="container">
+      <div class="container-fluid" id="leaderboard">
         <div class="row">
-          <div class="col-sm-3 table-responsive">
-            <table class="table table-striped">
+          <div class="col-sm-6 table-responsive col-sm-offset-3">
+            <table class="table table-striped text-center">
               <thead>
                 <tr>
-                  <th colspan="3" style="text-align: center; background-color: #DD4A3A">Leaderboard</th>
+                  <th colspan="3">Leaderboard</th>
                 </tr>
               </thead>
               <tbody>
@@ -99,15 +103,19 @@
               <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col-sm-8 col-lg-7 col-lg-offset-1 table-responsive">
-            <table class="table table-striped">
+      <div class="container-fluid" id="events">
+        <div class="row">
+          <div class="col-sm-8 col-lg-offset-2 table-responsive">
+            <table class="table table-striped text-center">
               <thead style="background-color: #DD4A3A">
                 <tr>
-                  <th>Date</th>
-                  <th>Event</th>
-                  <th>Start</th>
-                  <th>End</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Event</th>
+                  <th class="text-center">Start</th>
+                  <th class="text-center">End</th>
                 </tr>
               </thead>
 
