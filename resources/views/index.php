@@ -55,6 +55,7 @@
                 </tr>
               </thead>
               <tbody id="leaderboardBody">
+                <!-- The leaderboard will be updated dynamically from the database -->
               </tbody>
             </table>
           </div>
