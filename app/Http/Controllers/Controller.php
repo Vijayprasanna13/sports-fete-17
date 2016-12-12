@@ -12,7 +12,7 @@ trait Validity{
         return count($scores) == 11;
     }
     public function IsDepartmentValid($department){
-      $departments = array('CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','MCA','ARCH');
+      $departments = array('CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS');
       return (int)(in_array($department,$departments));
     }
     public function IsEventValid($event,$day){

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#day-submit').click(function(){
     var day = $('#day').val();
-    var depts = ['---','CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH'];
+    var depts = ['---','CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
     $.ajax({
       url: "/api/events",
       data: {"day":day},
@@ -20,7 +20,7 @@ $(document).ready(function(){
   $('#submit').click(function(){
     var day = $('#day').val();
     var event = $('#event').val();
-    var depts = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH'];
+    var depts = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
     var isSuccess = 'success';
     var i=0;
     $.each(depts,function(i,department){
