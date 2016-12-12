@@ -54,42 +54,7 @@
                   <th colspan="3">Leaderboard</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
-                <tr>
-                  <td>#</td>
-                  <td>CSE</td>
-                  <td>00</td>
-                </tr>
+              <tbody id="leaderboardBody">
               </tbody>
             </table>
           </div>
