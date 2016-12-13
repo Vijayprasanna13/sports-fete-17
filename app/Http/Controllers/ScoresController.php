@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class ScoresController extends Controller{
   use Validity;
+  //request params: department
   public function GetLog(Request $request){
     $data = [];
     if(isset($request['department'])){

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DepartmentsController extends Controller
 {
     use Validity;
-
+    //request params: none
     public function GetScores(Request $request)
     {
         $data = [];
@@ -90,7 +90,7 @@ class DepartmentsController extends Controller
         return json_encode($data);
     }
 
-    //not actually needed
+    //not actually needed, remove after completion
     public function CreateDepartment(Request $request)
     {
         $data = [];
