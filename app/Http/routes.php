@@ -12,11 +12,6 @@
 */
 
 $app->get('/', 'PagesController@GetHomepage');
-
-$app->get('/key',function(){
-  return str_random(32);
-});
-
 //view routes
 $app->get('/auth/login','PagesController@GetLoginView');
 $app->post('/auth/login', 'UsersController@Login');
