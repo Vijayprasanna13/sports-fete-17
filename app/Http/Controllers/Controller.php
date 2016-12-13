@@ -40,5 +40,8 @@ trait Validity{
 
 class Controller extends BaseController
 {
-    //
+    public function GetDay(){
+      $day = app('db')->select("select * from days where id = 1")[0]->day;
+      return $day;
+    }
 }

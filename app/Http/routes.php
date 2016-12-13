@@ -26,7 +26,7 @@ $app->get('/auth/departmentCreate', 'PagesController@GetDepartmentCreateView');
 $app->get('/api/events','EventsController@GetEvents');// get the events list
 $app->get('/api/log','ScoresController@GetLog'); //get score log for an department
 $app->get('/api/scores','DepartmentsController@GetScores'); //get the scores of all departments
-
+$app->get('/api/day','Controller@GetDay'); //get current day
 //API routes
 $app->group(['middleware'=>'auth'], function($app) {
   $app->get('/auth/event','PagesController@GetEventView');
