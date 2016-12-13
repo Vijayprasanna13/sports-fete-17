@@ -3,11 +3,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class EventsController extends Controller{
     use Validity;
+    //Request Parameters : day
     public function GetEvents(Request $request){
       $data = [];
       $data['type'] = 'events';
       $data['day'] = $request['day'];
-      $day = app('db')->select('select * from days where id = 1')[0]->day;
+      $day = $request['day'];
       if($this->IsDayValid($day)){
         $data['status'] = '200 OK';
         $data['message'] = 'day found';

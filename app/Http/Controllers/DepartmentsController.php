@@ -89,6 +89,7 @@ class DepartmentsController extends Controller
 
         return json_encode($data);
     }
+
     //not actually needed
     public function CreateDepartment(Request $request)
     {

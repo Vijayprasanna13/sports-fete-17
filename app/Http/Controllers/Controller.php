@@ -36,7 +36,7 @@ trait Validity{
       $found = app('db')->select('select * from scores where event_id = '.$event_id.'');
       return (int)(count($found) >= 1);
     }
-    
+
   }
 
 class Controller extends BaseController
