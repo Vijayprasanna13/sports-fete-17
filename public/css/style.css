@@ -45,7 +45,7 @@ body, html {
 }
 
 #leaderboard {
-  background-color: #ffffff;
+  background-color: #ffecc9;
   padding: 10% 0;
 }
 
@@ -70,10 +70,14 @@ th {
 }
 
 #events {
-  background-color: #ffecc9;
+  background-color: #ffffff;
   padding: 10% 0;
 }
 
+#events_score {
+  background-color: #ffecc9;
+  padding: 10% 0;
+}
 /*
 .cb-slideshow,
 .cb-slideshow:after {

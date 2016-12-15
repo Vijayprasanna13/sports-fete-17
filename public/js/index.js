@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-  $.ajax({  //AJAX request to obtain departments and their scores from database
+  //Updating the leaderboard in homepage with detai;s from database
+  $.ajax({
     url: "api/scores",
     type: 'GET',
 
@@ -47,8 +48,9 @@ $(document).ready(function() {
     });
   }
 
+  //Update the events table with the events happening on the current day.
   $.when(currentDay()).done(function(a) { //Wait for the currentDay function to process first
-    $.ajax({  //Updating the events table with the events happening on the current day.
+    $.ajax({
       url: 'api/events',
       type: 'GET',
       data: {'day': day},
@@ -72,4 +74,41 @@ $(document).ready(function() {
       }
     })
   });
+
+  //To display scores scored in each events
+  $.ajax({
+    url: 'api/eventscores',
+    type: 'GET',
+
+    success: function(data) {
+      data = JSON.parse(data)['data'];
+      $('#events_score').html(" ");
+      var eventId = data[0].event_id;
+      var html = '';
+      for(var item=0; item < data.length; item++) {
+        html +=
+          '<div class="col-sm-4">'+
+            '<div class="panel panel-default">'+
+              '<div class="panel-heading">'+
+                '<strong>Event Id: '+data[item].event_id+'</strong>'+
+              '</div>'+
+              '<div class="panel-body">';
+        html += '<div class="col-sm-6">Department Id</div><div class="col-sm-6">Score</div>';
+        for(; item < data.length && data[item].event_id === eventId; item++) {
+          html += '<div class="col-sm-6">'+data[item].department_id+'</div><div class="col-sm-6">'+data[item].score+'</div>';
+        }
+        html += '</div></div></div>';
+        item--;
+        if(item+1 < data.length) {
+          eventId = data[item+1].event_id;
+        }
+      }
+      $('#events_score').append(html);
+      console.log(data);
+    },
+    error: function(data) {
+      console.log(data);
+    }
+  })
+
 });

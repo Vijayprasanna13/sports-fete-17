@@ -94,6 +94,10 @@
         </div>
       </div>
 
+      <div class="container-fluid text-center" id="events_score">
+        <!-- Event-wise score panels will be added by JavaScript -->
+      </div>
+
       <script>
         $(document).ready(function(){
           $('.carousel').carousel();
