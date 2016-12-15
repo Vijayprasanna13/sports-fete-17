@@ -24,4 +24,17 @@ $(document).ready(function() {
       console.log(data);
     }
   });
+
+  var day;
+  $.ajax({
+    url: "api/day",
+    type: 'GET',
+
+    success: function(data) {
+      day = data;
+    }
+    error: function(data) {
+      console.log(data);
+    }
+  });
 });
