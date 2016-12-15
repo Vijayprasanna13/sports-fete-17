@@ -75,60 +75,18 @@
 
       <div class="container-fluid" id="events">
         <div class="row">
-          <div class="col-sm-8 col-lg-offset-2 table-responsive">
+          <div class="col-sm-6 col-sm-offset-3 table-responsive">
             <table class="table table-striped text-center">
               <thead style="background-color: #DD4A3A">
                 <tr>
                   <th class="text-center">Date</th>
                   <th class="text-center">Event</th>
                   <th class="text-center">Start</th>
-                  <th class="text-center">End</th>
                 </tr>
               </thead>
 
-              <tbody>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
-                <tr>
-                  <td>1/1/2017</td>
-                  <td>Event Name</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                </tr>
+              <tbody id="events_body">
+                <!-- The events table will be updated dynamically from the database -->
               </tbody>
             </table>
           </div>
