@@ -12,10 +12,6 @@
       <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
       <link type="text/css" rel="stylesheet" href="css/style.css">
-
-      <!--
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-      -->
     </head>
 
     <body>
@@ -27,7 +23,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Logo</a>
+            <a href="#" class="navbar-brand" id="logo">SPORTSFETE'17</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavBar">
             <ul class="nav navbar-nav navbar-right">
@@ -39,10 +35,45 @@
           </div>
         </div>
       </nav>
-      <div class="jumbotron text-center row">
-        <div class="col-xs-12">
-          <h3><span style="font-family: Bungee">SPORTSFETE'17</span></h3>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="images/image4.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/image5.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/image6.jpg" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/image7.jpg" alt="">
+          </div>
+
         </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hiden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hiden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
       </div>
 
       <div class="container-fluid" id="leaderboard">

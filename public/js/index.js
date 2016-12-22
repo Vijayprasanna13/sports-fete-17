@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  //To change the bg-color of navbar once scrolled
+  var scroll_start = 0;
+  $(document).scroll(function() {
+    scroll_start = $(this).scrollTop();
+    if(scroll_start > 50) {
+      $('.navbar-default').css('background-color', '#E74C3C');
+    }
+    else {
+      $('.navbar-default').css('background-color', 'transparent');
+    }
+  });
+
   //Updating the leaderboard in homepage with detai;s from database
   $.ajax({
     url: "api/scores",
