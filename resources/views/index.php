@@ -14,7 +14,7 @@
       <link type="text/css" rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
       <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -27,9 +27,9 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavBar">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Page1</a></li>
-              <li><a href="#">Page2</a></li>
+              <li class="active"><a href="#myCarousel">Home</a></li>
+              <li><a href="#leaderboard">Leaderboard</a></li>
+              <li><a href="#events">Events</a></li>
               <li><a href="/auth/login"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
             </ul>
           </div>
