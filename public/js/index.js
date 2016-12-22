@@ -5,7 +5,7 @@ $(document).ready(function() {
   $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
     if(scroll_start > 50) {
-      $('.navbar-default').css('background-color', '#E74C3C');
+      $('.navbar-default').css('background-color', '#7777ff');
     }
     else {
       $('.navbar-default').css('background-color', 'transparent');
@@ -20,11 +20,7 @@ $(document).ready(function() {
 
       var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        window.location.hash = hash;
+      $('html, body').animate({scrollTop: $(hash).offset().top}, 900, function(){
       });
     }
   });
@@ -87,15 +83,22 @@ $(document).ready(function() {
       success: function(data) {
         data = JSON.parse(data)['data'];
         $('#events_body').html(" ");
+        var numberOfEvents = 0;
         for(var event in data) {
           var dt = data[event].start_time.split(/[- :]/);
-          $('#events_body').append(
-            "<tr>"+
-              "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-              "<td>"+data[event].name+"</td>"+
-              "<td>"+dt[3]+":"+dt[4]+"</td>"+
-            "</tr>"
-          );
+          var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
+          var curDate = new Date();
+          console.log(Date()+" "+eventDate);
+          if(eventDate > curDate && numberOfEvents < 7) {
+            $('#events_body').append(
+              "<tr>"+
+                "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
+                "<td>"+data[event].name+"</td>"+
+                "<td>"+dt[3]+":"+dt[4]+"</td>"+
+              "</tr>"
+            );
+            numberOfEvents++;
+          }
         }
       },
       error: function(data) {
@@ -133,7 +136,6 @@ $(document).ready(function() {
         }
       }
       $('#events_score').append(html);
-      console.log(data);
     },
     error: function(data) {
       console.log(data);
