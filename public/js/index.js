@@ -95,6 +95,7 @@ $(document).ready(function() {
                 "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
                 "<td>"+data[event].name+"</td>"+
                 "<td>"+dt[3]+":"+dt[4]+"</td>"+
+                "<td>"+data[event].venue+"</td>"+
               "</tr>"
             );
             numberOfEvents++;

@@ -85,9 +85,6 @@
 
       <div class="container-fluid" id="leaderboard">
         <div class="row">
-          <div class="col-sm-3 col-sm-offset-1">
-            <img src="images/leaderboard.png" class="img-responsive" alt="">
-          </div>
           <div class="col-sm-6 col-sm-offset-1 table-responsive">
             <table class="table table-striped text-center">
               <thead>
@@ -99,6 +96,9 @@
                 <!-- The leaderboard will be updated dynamically from the database -->
               </tbody>
             </table>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <img src="images/leaderboard.png" class="img-responsive" alt="">
           </div>
         </div>
       </div>
@@ -115,6 +115,7 @@
                   <th class="text-center">Date</th>
                   <th class="text-center">Event</th>
                   <th class="text-center">Start</th>
+                  <th class="text-center">Venue</th>
                 </tr>
               </thead>
 

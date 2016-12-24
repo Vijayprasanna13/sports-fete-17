@@ -92,7 +92,9 @@ body {
 }
 
 #leaderboard {
-  background-color: #ddddff;
+  background-image: url('../images/leaderboard_bg.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 10% 0;
 }
 
