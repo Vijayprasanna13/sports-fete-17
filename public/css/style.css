@@ -1,4 +1,4 @@
-body {
+body, html {
   overflow-x: hidden;
 }
 
@@ -25,6 +25,16 @@ body {
 @media (max-width: 767px) {
   .carousel-inner img {
     height: auto !important;
+  }
+  #logo {
+    font-size: 0.8em;
+  }
+  #myNavBar {
+    font-size: 0.8em;
+    background-color: #7777ff;
+  }
+  .table-image {
+    display: none !important;
   }
 }
 

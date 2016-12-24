@@ -98,16 +98,16 @@
             </table>
           </div>
           <div class="col-sm-3 col-sm-offset-1">
-            <img src="images/leaderboard.png" class="img-responsive" alt="">
+            <img src="images/leaderboard.png" class="img-responsive table-image" alt="">
           </div>
         </div>
       </div>
 
       <div class="container-fluid" id="events">
-        <div class="col-sm-3 col-sm-offset-1">
-          <img class="img-responsive img-rounded" src="images/upcoming_events.jpg" alt="">
-        </div>
         <div class="row">
+          <div class="col-sm-3 col-sm-offset-1">
+            <img class="img-responsive img-rounded table-image" src="images/upcoming_events.jpg" alt="">
+          </div>
           <div class="col-sm-6 col-sm-offset-1 table-responsive">
             <table class="table table-striped text-center">
               <thead>
