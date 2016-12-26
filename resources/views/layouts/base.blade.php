@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -30,7 +29,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavBar">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#">Photos</a></li>
+          <li><a href="photos">Photos</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Scoreboard</a></li>
           <li><a href="#">Contacts</a></li>
@@ -41,6 +40,5 @@
   </nav>
 
   @yield('content')
-
   </body>
 </html>

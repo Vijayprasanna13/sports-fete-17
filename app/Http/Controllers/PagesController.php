@@ -16,4 +16,7 @@ class PagesController extends Controller{
   public function GetHomepage(){
     return view('index');
   }
+  public function GetPhotosView() {
+    return view('photos');
+  }
 }
