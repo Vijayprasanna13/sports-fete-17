@@ -3,13 +3,13 @@
 @section('title', 'Home')
 
   @section('body')
+    <link rel="stylesheet" href="/css/index.css">
     <script type="text/javascript" src="/js/index.js"></script>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
   @endsection
 
   @section('navbar')
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#myCarousel">Home</a></li>
       <li><a href="#leaderboard">Leaderboard</a></li>
       <li><a href="#events">Upcoming Events</a></li>
       <li><a href="/auth/login"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>

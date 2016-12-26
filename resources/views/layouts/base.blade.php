@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
   </head>
 
   @yield('body')
@@ -25,12 +25,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand" id="logo">SPORTSFETE'17</a>
+        <a href="/" class="navbar-brand" id="logo">SPORTSFETE'17</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavBar">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="photos">Photos</a></li>
-          <li><a href="#">Events</a></li>
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/photos">Photos</a></li>
+          <li><a href="/eventsList">Events</a></li>
           <li><a href="#">Scoreboard</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>

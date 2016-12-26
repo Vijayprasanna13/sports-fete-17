@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  var top = $('html').offset().top;
+  console.log(top);
+  if(top < 50) {
+    $('.navbar-default').css('background-color', 'transparent');
+  }
   //To change the bg-color of navbar once scrolled
   var scroll_start = 0;
   $(document).scroll(function() {
@@ -13,13 +18,9 @@ $(document).ready(function() {
   });
 
   $(".navbar a").on('click', function(event) {
-
      if (this.hash !== "") {
-
       event.preventDefault();
-
       var hash = this.hash;
-
       $('html, body').animate({scrollTop: $(hash).offset().top}, 900, function(){
       });
     }
@@ -88,7 +89,6 @@ $(document).ready(function() {
           var dt = data[event].start_time.split(/[- :]/);
           var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
           var curDate = new Date();
-          console.log(Date()+" "+eventDate);
           if(eventDate > curDate && numberOfEvents < 7) {
             $('#events_body').append(
               "<tr>"+
