@@ -7,15 +7,12 @@ use Illuminate\Http\Request;
 class DepartmentsController extends Controller
 {
     use Validity;
-    public function GetScoreByPosition($event,$position){
-      $score = app('db')->select('select score_'.(string)$position.' as score from events where name = "'.(string)$event.'"');
-      return $score;
-    }
+    //request params: none
     public function GetScores(Request $request)
     {
         $data = [];
         $data['type'] = 'scores';
-        $scores = app('db')->select('select department_name, score from departments');
+        $scores = app('db')->select('select department_name, score from departments order by cast(score as decimal(5,2)) desc');
         if ($this->IsDepartmentCountValid($scores)) {
             $data['status'] = '200 OK';
             $data['message'] = 'department scores found';
@@ -92,7 +89,8 @@ class DepartmentsController extends Controller
 
         return json_encode($data);
     }
-    //not actually needed
+
+    //not actually needed, remove after completion
     public function CreateDepartment(Request $request)
     {
         $data = [];

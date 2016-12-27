@@ -39,6 +39,12 @@
                     <div class="col-sm-2 well box">PROD : <input id="PROD" value=0 type="integer" class="form-control" placeholder="0"></div>
                     <div class="col-sm-2 well box">ARCH : <input id="ARCH" value=0 type="integer" class="form-control" placeholder="0"></div>
                   </div>
+                  <div class="row">
+                    <div class="col-sm-2 well box">MTECH : <input id="MTECH" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">MCA : <input id="MCA" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">MSC : <input id="MSC" value=0 type="integer" class="form-control" placeholder="0"></div>
+                    <div class="col-sm-2 well box">DOMS : <input id="DOMS" value=0 type="integer" class="form-control" placeholder="0"></div>
+                  </div>
                 </div>
                 <button class="btn btn-success" id="submit">Submit</button>
               </div>

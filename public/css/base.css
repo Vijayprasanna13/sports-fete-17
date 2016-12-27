@@ -1,0 +1,52 @@
+body, html {
+  overflow-x: hidden;
+}
+
+#logo {
+  font-family: Bungee;
+}
+
+@media (max-width: 767px) {
+  #logo {
+    font-size: 0.8em;
+  }
+  #myNavBar {
+    font-size: 0.8em;
+    background-color: #7777ff;
+  }
+}
+
+.navbar {
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: 0;
+  margin-right: 0px;
+  opacity: 1;
+}
+
+.navbar-default {
+  background-color: #7777ff;
+}
+
+.navbar .navbar-brand, .navbar li a {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navbar-nav li.active a, .navbar-nav li a:hover{
+  color: #7777ff !important;
+  background-color: #ffffff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+}
+
+.navbar-toggle:hover {
+  background-color: #ffffff !important;
+}

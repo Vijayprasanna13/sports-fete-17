@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class ScoresController extends Controller{
   use Validity;
+  //request params: department
   public function GetLog(Request $request){
     $data = [];
     if(isset($request['department'])){
@@ -24,6 +25,15 @@ class ScoresController extends Controller{
       $data['message'] = 'missing params';
       $data['data'] = NULL;
     }
+    return json_encode($data);
+  }
+
+  public function GetEventsScores(Request $request) {
+    $data = [];
+    $scores = app('db')->select('SELECT * FROM scores GROUP BY event_id, cast(score as decimal(5,2)) DESC, id, department_id, created_at, updated_at');
+    $data['status'] = '200 OK';
+    $data['message'] = 'events scores found';
+    $data['data'] = $scores;
     return json_encode($data);
   }
 }

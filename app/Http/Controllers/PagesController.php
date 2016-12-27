@@ -13,4 +13,13 @@ class PagesController extends Controller{
   public function GetDepartmentCreateView() {
     return view('auth.departmentCreate');
   }
+  public function GetHomepage(){
+    return view('index');
+  }
+  public function GetPhotosView() {
+    return view('photos');
+  }
+  public function GetEventsListView() {
+    return view('eventsList');
+  }
 }
