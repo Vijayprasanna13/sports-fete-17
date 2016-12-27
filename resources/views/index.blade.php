@@ -102,7 +102,7 @@
       </div>
       <br><br>
       <div class="row text-center" style="padding: 20px">
-        <span style="font-family: Kumar One; font-size: 20px;">
+        <span style="font-family: Bungee; font-size: 20px;">
           To see the whole list of event <a href="#">click here</a><!-- Add a events list page and link to it. -->
         </span>
       </div>
