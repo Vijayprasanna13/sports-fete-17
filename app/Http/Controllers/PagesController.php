@@ -25,4 +25,7 @@ class PagesController extends Controller{
   public function GetScoreboardView() {
     return view('scoreboard');
   }
+  public function GetContactsView() {
+    return view('contacts');
+  }
 }

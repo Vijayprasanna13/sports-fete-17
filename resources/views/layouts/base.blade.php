@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sportsfete'17 - @yield('title')</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Kumar+One" rel="stylesheet">
 
@@ -33,7 +34,7 @@
           <li><a href="/photos">Photos</a></li>
           <li><a href="/eventsList">Events</a></li>
           <li><a href="/scoreboard">Scoreboard</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="/contacts">Contacts</a></li>
         </ul>
         @yield('navbar')
       </div>
