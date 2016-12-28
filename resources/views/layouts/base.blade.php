@@ -32,7 +32,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/photos">Photos</a></li>
           <li><a href="/eventsList">Events</a></li>
-          <li><a href="#">Scoreboard</a></li>
+          <li><a href="/scoreboard">Scoreboard</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
         @yield('navbar')

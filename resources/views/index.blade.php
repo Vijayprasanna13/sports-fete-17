@@ -12,7 +12,6 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#leaderboard">Leaderboard</a></li>
       <li><a href="#events">Upcoming Events</a></li>
-      <li><a href="/auth/login"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
     </ul>
   @endsection
 
@@ -103,7 +102,7 @@
       <br><br>
       <div class="row text-center" style="padding: 20px">
         <span style="font-family: Bungee; font-size: 20px;">
-          To see the whole list of event <a href="#">click here</a><!-- Add a events list page and link to it. -->
+          To see the whole list of event <a href="/eventsList">click here</a><!-- Add a events list page and link to it. -->
         </span>
       </div>
     </div>

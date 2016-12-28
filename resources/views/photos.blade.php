@@ -29,12 +29,6 @@
   <body>
 @endsection
 
-@section('navbar')
-<ul class="nav navbar-nav navbar-right">
-  <li><a href="/auth/login"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
-</ul>
-@endsection
-
 @section('content')
 <div class="container" id="photos">
   <div class="row">

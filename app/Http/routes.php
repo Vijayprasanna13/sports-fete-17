@@ -13,6 +13,7 @@
 
 $app->get('/', 'PagesController@GetHomepage');
 //view routes
+$app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/eventsList', 'PagesController@GetEventsListView');
 $app->get('/auth/login','PagesController@GetLoginView');

@@ -22,4 +22,7 @@ class PagesController extends Controller{
   public function GetEventsListView() {
     return view('eventsList');
   }
+  public function GetScoreboardView() {
+    return view('scoreboard');
+  }
 }

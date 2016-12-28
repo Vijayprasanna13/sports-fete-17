@@ -108,39 +108,4 @@ $(document).ready(function() {
     })
   });
 
-  //To display scores scored in each events
-  $.ajax({
-    url: 'api/eventscores',
-    type: 'GET',
-
-    success: function(data) {
-      data = JSON.parse(data)['data'];
-      $('#events_score').html(" ");
-      var eventId = data[0].event_id;
-      var html = '';
-      for(var item=0; item < data.length; item++) {
-        html +=
-          '<div class="col-sm-4">'+
-            '<div class="panel panel-default">'+
-              '<div class="panel-heading">'+
-                '<strong>Event Id: '+data[item].event_id+'</strong>'+
-              '</div>'+
-              '<div class="panel-body">';
-        html += '<div class="col-sm-6">Department Id</div><div class="col-sm-6">Score</div>';
-        for(; item < data.length && data[item].event_id === eventId; item++) {
-          html += '<div class="col-sm-6">'+data[item].department_id+'</div><div class="col-sm-6">'+data[item].score+'</div>';
-        }
-        html += '</div></div></div>';
-        item--;
-        if(item+1 < data.length) {
-          eventId = data[item+1].event_id;
-        }
-      }
-      $('#events_score').append(html);
-    },
-    error: function(data) {
-      console.log(data);
-    }
-  })
-
 });

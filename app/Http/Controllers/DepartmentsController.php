@@ -46,19 +46,18 @@ class DepartmentsController extends Controller
               return json_encode($data);
             }
             if ($this->IsDepartmentValid($request['department'])) {
-                $event = $request['event'];
+                $department = (string)$department;
+                $event = (string)$request['event'];
                 $day = $request['day'];
                 if ($this->IsEventValid($event, $day)) {
                     //$score = $this->GetScoreByPosition($request['event'],$request['position'])[0]->score;
                     $score = $request['score'];
-                    $event = (string) $event;
-                    $department = (string) $department;
                     $result = app('db')
                     ->insert('insert into
                     scores (department,event,score,created_at,updated_at)
-                    values ('
-                    .$department.','
-                    .$event.','
+                    values ("'
+                    .$department.'","'
+                    .$event.'",'
                     .$score.',"'
                     .(string) date('Y-m-d H:i:s').'","'
                     .(string) date('Y-m-d H:i:s').'")'

@@ -33,7 +33,7 @@ $(document).ready(function(){
         success: function(data) {
           data = JSON.parse(data);
           isSuccess = data['isSuccess'];
-          if(i == 9)
+          if(i == 13)
             var n = noty({text: '<h2><b>Updated the scores!!</b></h2><br/>click to dismiss',type:'success'});
           },
         error: function(data){console.log(data);}
