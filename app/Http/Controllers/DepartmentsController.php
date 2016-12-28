@@ -51,14 +51,14 @@ class DepartmentsController extends Controller
                 if ($this->IsEventValid($event, $day)) {
                     //$score = $this->GetScoreByPosition($request['event'],$request['position'])[0]->score;
                     $score = $request['score'];
-                    $event_id = (app('db')->select('select event_id from events where name = "'.(string) $event.'"'))[0]->event_id;
-                    $department_id = (app('db')->select('select id from departments where department_name = "'.(string) $department.'"'))[0]->id;
+                    $event = (string) $event;
+                    $department = (string) $department;
                     $result = app('db')
                     ->insert('insert into
-                    scores (department_id,event_id,score,created_at,updated_at)
+                    scores (department,event,score,created_at,updated_at)
                     values ('
-                    .$department_id.','
-                    .$event_id.','
+                    .$department.','
+                    .$event.','
                     .$score.',"'
                     .(string) date('Y-m-d H:i:s').'","'
                     .(string) date('Y-m-d H:i:s').'")'
