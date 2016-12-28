@@ -50,19 +50,14 @@
   background-position: center;
   padding: 10% 0;
 }
-table {
-  border-radius:10px;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-}
-
 td {
   letter-spacing: 2px;
-  padding: 20px 0px !important;
+  padding: 10px 0px !important;
   text-transform: uppercase;
 }
 tr {
   background-color: #F59065;
+  font-family: Bungee;
 }
 th {
   letter-spacing: 4px;

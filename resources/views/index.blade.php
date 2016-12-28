@@ -25,7 +25,7 @@
         <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
 
-      <div class="carousel-inner" role="listbox" id="listbox">
+      <div class="carousel-inner" role="listbox">
 
         <div class="item active">
           <img src="images/image4.jpg" alt="">
