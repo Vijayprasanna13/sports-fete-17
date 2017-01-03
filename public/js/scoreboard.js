@@ -15,9 +15,9 @@ $(document).ready(function() {
         rowCount++;
         html +=
           '<div class="col-sm-4">'+
-            '<div class="panel panel-default">'+
+            '<div class="panel panel-default scoretable">'+
               '<div class="panel-heading">'+
-                '<strong>Event: '+data[item].event+'</strong>'+
+                '<strong>'+data[item].event+'</strong>'+
               '</div>'+
               '<div class="panel-body">';
         html += '<div class="col-xs-6">Department</div><div class="col-xs-6">Score</div>';
