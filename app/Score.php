@@ -18,7 +18,10 @@ class Score extends Model{
     return $score = Score::where(['department_id' => $department_id,'event_id' => $event_id])->first();
   }
   public static function getEventsScores($event_id) {
-      return Score::where('event_id',$event_id)->get();
-    }
+    return Score::where('event_id',$event_id)->get();
+  }
+  public static function getDepartmentScores($depatment_id) {
+    return Score::where('department_id', $department_id)->get();
+  }
 
 }

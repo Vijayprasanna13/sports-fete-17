@@ -18,8 +18,6 @@ trait Validity{
     public function isDepartmentValid($department_id){
       $department = Department::select('department_name')->where('id',$department_id)->first();
       return $department['department_name'];
-      $departments = array('CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS');
-      return (int)(in_array($department['department_name'],$departments));
     }
     public function findEvent($event_id,$day){
       $event = Event::select('event_id')->where('event_id',$event_id)->where('day',$day)->first();

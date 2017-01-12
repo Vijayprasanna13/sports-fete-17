@@ -9,7 +9,7 @@ class EventsController extends Controller{
       $data['type'] = 'events';
       $data['day'] = $request['day'];
       $day = $request['day'];
-      if($this->IsDayValid($day)){
+      if($this->isDayValid($day)){
         $data['status'] = '200 OK';
         $data['message'] = 'day found';
         $events = app('db')->select('select * from events where day = '.$day.' order by start_time');
