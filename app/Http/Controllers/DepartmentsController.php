@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Department;
+use App\Score;
+
 use Illuminate\Http\Request;
 
 class DepartmentsController extends Controller
@@ -31,10 +34,11 @@ class DepartmentsController extends Controller
     public function UpdateScores(Request $request)
     {
       $data = [];
-      if(isset($request['department_id']) &&
-         isset($request['day']) &&
-         isset($request['event_id']) &&
-         isset($request['score'])){
+      if(!isset($request['department_id']) &&
+         !isset($request['day']) &&
+         !isset($request['event_id']) &&
+         !isset($request['score']))
+         {
            $data['status'] = '400 BAD REQUEST';
            $data['message'] = 'missing params';
            return json_encode($data);
@@ -49,8 +53,18 @@ class DepartmentsController extends Controller
           $data['message'] = 'Event not found on given Day';
           return json_encode($data);
       }
-      if(Department::isEventAdded($request['event_id'])){
-
+      if(Score::isEventAdded($request['event_id'],$request['department_id'])){
+        $data['status'] = '409 CONFLICT';
+        $data['message'] = 'Score already added for the event';
+        return json_encode($data);
       }
+      if(!(Department::updateScore($request) && Score::store($request))){
+        $data['status'] = '500 INTERNAL ERROR';
+        $data['message'] = 'unable to update';
+        return json_encode($data);
+      }
+      $data['status'] = '200 OK';
+      $data['message'] = 'successfully updated';
+      return json_encode($data);
     }
 }
