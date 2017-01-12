@@ -26,15 +26,16 @@ $(document).ready(function() {
     }
   });
 
-  //Updating the leaderboard in homepage with detai;s from database
+  //Updating the leaderboard in homepage with details from database
   $.ajax({
     url: "api/scores",
     type: 'GET',
 
     success: function(data) {
-      $('#leaderboardBody').html(" ");  //clearing the inner parts of table body
-      data = JSON.parse(data);  //parsing the data returned from the api
-      data = data['scores'];  //data is an object in the returned json, which contains array of departments and their scores in descending order.
+      $('#leaderboardBody').html(" ");
+      data = JSON.parse(JSON.stringify(data));
+      data = data['data'];
+      console.log(data);
       var pos=1, prevScore;
 
       for(var x in data) {

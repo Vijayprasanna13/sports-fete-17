@@ -1,5 +1,38 @@
 $(document).ready(function() {
 
+  $.ajax({
+    url: "api/scores",
+    type: 'GET',
+
+    success: function(data) {
+      $('#leaderboardBody').html(" ");
+      data = JSON.parse(JSON.stringify(data));
+      data = data['data'];
+      console.log(data);
+      var pos=1, prevScore;
+
+      for(var x in data) {
+        //condition to calculate the position if multiple teams score same points
+        if(parseInt(x) !== 0 && data[x].score === prevScore) {
+          pos--;
+        }
+        $('#leaderboardBody').append(
+            "<tr>"+
+              "<td>"+pos+"</td>"+
+              "<td>"+data[x].department_name+"</td>"+
+              "<td>"+data[x].score+"</td>"+
+            "</tr>"
+          );
+        pos++;
+        prevScore = data[x].score;
+      }
+    },
+
+    error: function(data) {
+      console.log(data);
+    }
+  });
+
   //To display scores scored in each events
   $.ajax({
     url: 'api/eventscores',
