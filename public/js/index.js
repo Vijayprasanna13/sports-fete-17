@@ -34,7 +34,7 @@ $(document).ready(function() {
     success: function(data) {
       $('#leaderboardBody').html(" ");  //clearing the inner parts of table body
       data = JSON.parse(data);  //parsing the data returned from the api
-      data = data['data'];  //data is an object in the returned json, which contains array of departments and their scores in descending order.
+      data = data['scores'];  //data is an object in the returned json, which contains array of departments and their scores in descending order.
       var pos=1, prevScore;
 
       for(var x in data) {

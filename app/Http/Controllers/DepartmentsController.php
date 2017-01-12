@@ -58,6 +58,7 @@ class DepartmentsController extends Controller
         $data['message'] = 'Score already added for the event';
         return json_encode($data);
       }
+
       if(!(Department::updateScore($request) && Score::store($request))){
         $data['status'] = '500 INTERNAL ERROR';
         $data['message'] = 'unable to update';
