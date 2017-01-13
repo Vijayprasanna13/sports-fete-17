@@ -18,11 +18,11 @@ class DepartmentsController extends Controller
     */
     public function GetScores(Request $request)
     {
-      $data = [];
-      $data['status'] = '200 OK';
-      $data['message'] = 'scores found';
-      $data['scores'] = Department::scores();
-      return json_encode($data);
+      $scores = Department::scores();
+      if(!$scores){
+        return response()->json(['error' => 'unable to get scores'],500);
+      }
+      return response()->json(['data' => $scores],200);
     }
 
     /**
@@ -33,39 +33,25 @@ class DepartmentsController extends Controller
     */
     public function UpdateScores(Request $request)
     {
-      $data = [];
       if(!isset($request['department_id']) &&
          !isset($request['day']) &&
          !isset($request['event_id']) &&
          !isset($request['score']))
          {
-           $data['status'] = '400 BAD REQUEST';
-           $data['message'] = 'missing params';
-           return json_encode($data);
+           return response()->json(['error' => 'missing parameter'],400);
          }
-      if(!$this->isDepartmentValid($request['department_id'])){
-          $data['status'] = '400 BAD REQUEST';
-          $data['message'] = 'Department not found';
-          return json_encode($data);
+      if(!Department::findDepartment($request['department_id'])){
+          return response()->json(['error' => 'department not found'],400);
       }
-      if(!$this->isEventValid($request['event_id'],$request['day'])){
-          $data['status'] = '400 BAD REQEUST';
-          $data['message'] = 'Event not found on given Day';
-          return json_encode($data);
+      if(!$this->findEvent($request['event_id'],$request['day'])){
+          return response()->json(['error'=> 'event not found'],400);
       }
-      if(Score::isEventAdded($request['event_id'],$request['department_id'])){
-        $data['status'] = '409 CONFLICT';
-        $data['message'] = 'Score already added for the event';
-        return json_encode($data);
+      if(Score::findDepartmentScore($request['event_id'],$request['department_id'])){
+        return response()->json(['error' => 'event already added'],409);
       }
-
       if(!(Department::updateScore($request) && Score::store($request))){
-        $data['status'] = '500 INTERNAL ERROR';
-        $data['message'] = 'unable to update';
-        return json_encode($data);
+        return response(['error' => 'unable to update'],500);
       }
-      $data['status'] = '200 OK';
-      $data['message'] = 'successfully updated';
-      return json_encode($data);
+      return response(['status' => 'added successfully'],200);
     }
 }

@@ -14,4 +14,7 @@ class Department extends Model{
     $score = $department['score'] + $request['score'];
     return (int) Department::where('id',$request['department_id'])->update(['score' => $score]);
   }
+  public static function findDepartment($department_id){
+    return Department::where('id',$department_id)->first();
+  }
 }

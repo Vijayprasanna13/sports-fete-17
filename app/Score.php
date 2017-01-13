@@ -14,16 +14,11 @@ class Score extends Model{
     $score->score = $request['score'];
     return $score->save();
   }
-  public static function isEventAdded($event_id,$department_id){
-    return Score::select('id')->where(['event_id' => $event_id, 'department_id' => $department_id])->first();
+  public static function findDepartmentScore($department_id,$event_id){
+    return $score = Score::where(['department_id' => $department_id,'event_id' => $event_id])->first();
   }
-
-  public static function getDepartmentScore($department) {
-      return Score::where('department', $department)->get();
-    }
-
-  public static function getEventsScores() {
-      return Score::orderBy('event')->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')->get();
+  public static function getEventsScores($event_id) {
+      return Score::where('event_id',$event_id)->get();
     }
 
 }

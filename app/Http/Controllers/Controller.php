@@ -21,28 +21,14 @@ trait Validity{
       $departments = array('CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS');
       return (int)(in_array($department['department_name'],$departments));
     }
-    public function isEventValid($event_id,$day){
-      $event = Event::select('name')->where('event_id',$event_id)->first();
-      $result = app('db')->select('select * from events where name = "'.$event['name'].'" and day = '.$day.' limit 1');
-      return (int)(count($result) == 1);
+    public function findEvent($event_id,$day){
+      $event = Event::select('event_id')->where('event_id',$event_id)->where('day',$day)->first();
+      return (bool) $event;
     }
-
-    public function isImageIdValid($id)
-    {
-      $found = app('db')->select('select * from photos where image_id = '.$id.'');
-      return (int)(count($found) == 1);
-    }
-
-    public function departmentExists($department) {
-      $found = app('db')->select('select * from departments where department_name = "'.$department.'"');
-      return (int)(count($found) == 1);
-    }
-
     public function eventAlreadyExists($event) {
       $found = app('db')->select('select * from scores where event = "'.$event.'"');
       return (int)(count($found) >= 1);
     }
-
   }
 
 class Controller extends BaseController
