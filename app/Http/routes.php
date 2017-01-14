@@ -42,7 +42,8 @@ $app->group(['middleware'=>'auth'], function($app) {
   $app->get('/auth/dashboard','PagesController@GetAdminView');
   $app->get('/auth/logout', 'UsersController@Logout');
 
-  $app->post('/api/scores','DepartmentsController@UpdateScores');
+  $app->post('/api/add/scores','DepartmentsController@AddScore');
+  $app->post('/api/edit/scores','DepartmentsController@EditScore');
 	$app->post('/api/log','ScoresController@LogScores');
 
 });
