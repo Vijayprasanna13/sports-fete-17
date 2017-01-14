@@ -6,31 +6,18 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     public function Login(Request $request) {
-        $data = [];
-        if(isset($request['username']) && isset($request['password'])) {
-            $username = (string)$request['username'];
-            $password = sha1((string)$request['password']);
-            $result = app('db')
-                      ->select('select * from users where username = "'.$username.'"');
-            if((int)count($result) === 1 && $password == $result[0]->password) {
-                session_start();
-                $_SESSION['username'] = $username;
-                $data['status'] = '200 Authorized';
-                $data['message'] = 'Valid credentials';
-                return json_encode($data);
-                //return view of loggd in home page
-            }
-            else {
-                $data['status'] = '401 Unauthorized';
-                $data['message'] = 'Invalid credentials';
-                return json_encode($data);
-            }
+        if(!(isset($request['username']) && isset($request['password']))) {
+          return response()->json('missing paramters',400);
         }
-        else {
-            $data['status'] = '400 BAD REQUEST';
-            $data['message'] = 'missing params';
-            return json_encode($data);
+        $username = (string)$request['username'];
+        $password = (string)$request['password'];
+        $result = app('db')->select('select * from users where username = "'.$username.'"');
+        if((int)count($result) === 1 && sha1($password.$result[0]->created_at) == $result[0]->password) {
+            session_start();
+            $_SESSION['username'] = $username;
+            return response()->json('success',200);
         }
+        return response()->json('invalid credentials',400);
     }
 
     public function Logout() {

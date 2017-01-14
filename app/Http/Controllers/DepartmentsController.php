@@ -41,17 +41,17 @@ class DepartmentsController extends Controller
            return response()->json(['error' => 'missing parameter'],400);
          }
       if(!Department::findDepartment($request['department_id'])){
-          return response()->json(['error' => 'department not found'],400);
+          return response()->json("department not found",400);
       }
       if(!$this->findEvent($request['event_id'],$request['day'])){
-          return response()->json(['error'=> 'event not found'],400);
+          return response()->json("event not found",400);
       }
       if(Score::findDepartmentScore($request['event_id'],$request['department_id'])){
-        return response()->json(['error' => 'event already added'],409);
+        return response()->json("event already added",409);
       }
       if(!(Department::updateScore($request) && Score::store($request))){
-        return response(['error' => 'unable to update'],500);
+        return response("unable to update",500);
       }
-      return response(['status' => 'added successfully'],200);
+      return response("success",200);
     }
 }

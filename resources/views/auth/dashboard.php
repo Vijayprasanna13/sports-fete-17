@@ -47,13 +47,13 @@
       </div>
       <div class="row" id="list">
         <div class="list-group" id="list-content">
-            <a href="departmentCreate" class="list-group-item">
-              <h4><b>Add Department</b></h4>
-              <p>Add a new department to Sportsfete'17 contestant list</p>
+            <a href="add/score" class="list-group-item">
+              <h4><b>Add a New Event Score</b></h4>
+              <p>Add new scores for an event in Sportsfete'17</p>
             </a>
-            <a href="event" class="list-group-item">
-              <h4><b>Update Event Scores</b></h4>
-              <p>Add scores to an event</p>
+            <a href="edit/score" class="list-group-item">
+              <h4><b>Update an Event Score</b></h4>
+              <p>Edit the scores to for an event in Sportsfete'17</p>
             </a>
         </div>
       </div>

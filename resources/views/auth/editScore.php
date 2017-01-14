@@ -10,7 +10,7 @@
      <div class="containter-fluid">
         <div class="row" id="header-wrapper">
           <div class="col-sm-12" id="header">
-            Add Scores
+            Edit Scores
           </div>
       </div>
       <div class="row" id="form-wrapper">
