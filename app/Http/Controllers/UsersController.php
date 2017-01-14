@@ -9,7 +9,7 @@ class UsersController extends Controller
         $data = [];
         if(isset($request['username']) && isset($request['password'])) {
             $username = (string)$request['username'];
-            $password = (string)$request['password'];
+            $password = sha1((string)$request['password']);
             $result = app('db')
                       ->select('select * from users where username = "'.$username.'"');
             if((int)count($result) === 1 && $password == $result[0]->password) {
