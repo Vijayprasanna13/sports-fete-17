@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class Score extends Model{
   protected $table = "scores";
@@ -20,8 +21,12 @@ class Score extends Model{
   public static function getEventsScores($event_id) {
     return Score::where('event_id',$event_id)->get();
   }
-  public static function getDepartmentScores($depatment_id) {
-    return Score::where('department_id', $department_id)->get();
+  public static function getDepartmentScores($department_id) {
+    return Score::select(DB::raw('SUM(score) as score, event_id'))
+                  ->where('department_id', $department_id)
+                  ->groupBy('event_id')
+                  ->havingRaw('SUM(score) > 0')
+                  ->get();
   }
 
 }

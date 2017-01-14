@@ -35,7 +35,6 @@ $(document).ready(function() {
       $('#leaderboardBody').html(" ");
       data = JSON.parse(JSON.stringify(data));
       data = data['data'];
-      console.log(data);
       var pos=1, prevScore;
 
       for(var x in data) {

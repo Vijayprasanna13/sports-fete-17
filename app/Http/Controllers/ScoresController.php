@@ -29,4 +29,11 @@ use Validity;
     return response()->json(['data' => $data],200);
   }
 
+  public function GetDepartmentScores(Request $request) {
+    if(!$data = Score::getDepartmentScores($request['department_id'])) {
+      return response()->json(['error' => 'scores not found'], 400);
+    }
+    return response()->json($data, 200);
+  }
+
 }

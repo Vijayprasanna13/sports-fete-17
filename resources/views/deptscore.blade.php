@@ -5,6 +5,9 @@
 
 @section('body')
   <style media="screen">
+  .container {
+    padding-top: 15vh;
+  }
 
   #departmentScoreboard td {
     letter-spacing: 2px;
@@ -19,7 +22,7 @@
 
   #departmentScoreboard th {
     letter-spacing: 4px;
-    padding: 20px 20px !important;
+    padding: 10px 10px !important;
     color: #ffffff;
     font-size: 20px;
     font-family: Bungee;
@@ -32,8 +35,7 @@
 @endsection
 
 @section('content')
-  <br><br><br><br><br><br><br><br><br>
-  <div class="container-fluid" id="departmentScoreboard">
+  <div class="container" id="departmentScoreboard">
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3 table-responsive">
         <table class="table table-striped text-center">
@@ -42,15 +44,44 @@
               <th colspan="3">{{$department_name}} Scoreboard</th>
             </tr>
             <tr>
-              <th>Event</th>
+              <th>Event Id</th>
               <th>Score</th>
             </tr>
           </thead>
-          <tbody id="leaderboardBody">
-            <!-- The leaderboard will be updated dynamically from the database -->
+          <tbody id="scoreboardBody">
+
           </tbody>
         </table>
       </div>
     </div>
   </div>
+  <p id="test"></p>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var departmentName = {!!json_encode($department_name) !!};
+      var departmentId = {!!$department_id!!}
+      $.ajax({
+        url: '../api/departmentscores',
+        type: 'GET',
+        data: {'department_id': departmentId},
+
+        success: function(data) {
+          data = JSON.parse(JSON.stringify(data));
+          console.log(data);
+          for(var x in data) {
+            $('#scoreboardBody').append(
+                "<tr>"+
+                  "<td>"+data[x].event_id+"</td>"+
+                  "<td>"+data[x].score+"</td>"+
+                "</tr>"
+              );
+          }
+        },
+        error: function(data) {
+          console.log(data);
+        }
+      })
+    })
+  </script>
 @endsection
