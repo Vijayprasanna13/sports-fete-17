@@ -28,4 +28,7 @@ class PagesController extends Controller{
   public function GetContactsView() {
     return view('contacts');
   }
+  public function GetDepartmentScoreView($department_id) {
+    return view('deptscore', ['department_id' => $department_id]);
+  }
 }
