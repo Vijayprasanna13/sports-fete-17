@@ -26,13 +26,13 @@ use Validity;
   public function GetEventsScores(Request $request) {
     $data = Score::getEventsScores($request['event_id']);
     if(!$data)
-      return response()->json(['error' => 'unable to find event'],400);
+      return response()->json(['error' => 'unable to find event'],404);
     return response()->json(['data' => $data],200);
   }
 
   public function GetDepartmentScores(Request $request) {
     if(!$data = Score::getDepartmentScores($request['department_id'])) {
-      return response()->json(['error' => 'scores not found'], 400);
+      return response()->json(['error' => 'scores not found'], 404);
     }
     return response()->json($data, 200);
   }
