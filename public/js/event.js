@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#day-submit').click(function(){
+  $('#day').on('input',function(){
     var day = $('#day').val();
     var depts = ['---','CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
     $.ajax({
@@ -20,7 +20,13 @@ $(document).ready(function(){
   $('#submit').click(function(){
     var day = $('#day').val();
     var event = $('#event').val();
-    var depts = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
+    $.ajax({
+      url: '/api/scores',
+      data: '',
+      type: 'GET',
+      success: function(data){console.log(data);},
+      error: function(data){console.log(data);}
+    });
     var isSuccess = 'success';
     var i=0;
     $.each(depts,function(i,department){

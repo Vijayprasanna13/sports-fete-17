@@ -6,3 +6,7 @@
 @section('body')
   <body>
 @endsection
+
+@section('content')
+  
+@endsection
