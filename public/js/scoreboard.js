@@ -39,8 +39,9 @@ $(document).ready(function() {
     type: 'GET',
 
     success: function(data) {
-      data = JSON.parse(data)['data'];
+      data = JSON.parse(JSON.stringify(data))['data'];
       $('#events_score').html(" ");
+      console.log(data);
       var event = data[0].event;
       var html = '<div class="row">';
       var rowCount = 0;
