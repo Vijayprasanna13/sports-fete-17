@@ -44,7 +44,7 @@
               <th colspan="3">{{$department_name}} Scoreboard</th>
             </tr>
             <tr>
-              <th>Event Id</th>
+              <th>Event</th>
               <th>Score</th>
             </tr>
           </thead>
@@ -72,7 +72,7 @@
           for(var x in data) {
             $('#scoreboardBody').append(
                 "<tr>"+
-                  "<td>"+data[x].event_id+"</td>"+
+                  "<td>"+data[x].event_name+"</td>"+
                   "<td>"+data[x].score+"</td>"+
                 "</tr>"
               );

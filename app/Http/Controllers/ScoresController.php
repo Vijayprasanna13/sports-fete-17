@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Score;
+use App\Event;
 
 class ScoresController extends Controller{
 use Validity;

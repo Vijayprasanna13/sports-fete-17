@@ -22,9 +22,11 @@ class Score extends Model{
     return Score::where('event_id',$event_id)->get();
   }
   public static function getDepartmentScores($department_id) {
-    return Score::select(DB::raw('SUM(score) as score, event_id'))
+    return DB::table('scores')
+                  ->join('events', 'scores.event_id', '=', 'events.event_id')
+                  ->select(DB::raw('SUM(scores.score) as score, events.name as event_name'))
                   ->where('department_id', $department_id)
-                  ->groupBy('event_id')
+                  ->groupBy('scores.event_id')
                   ->havingRaw('SUM(score) > 0')
                   ->get();
   }
