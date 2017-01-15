@@ -66,12 +66,11 @@
         type: 'GET',
 
         success: function(data) {
-          data = JSON.parse(JSON.stringify(data));
           console.log(data);
           for(var x in data) {
             $('#scoreboardBody').append(
                 "<tr>"+
-                  "<td>"+data[x].event_name+"</td>"+
+                  "<td>"+data[x].event.name+"</td>"+
                   "<td>"+data[x].score+"</td>"+
                 "</tr>"
               );

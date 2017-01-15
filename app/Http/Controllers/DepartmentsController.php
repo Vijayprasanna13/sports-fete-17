@@ -18,7 +18,7 @@ class DepartmentsController extends Controller
     */
     public function GetScores(Request $request)
     {
-      $scores = Department::scores();
+      $scores = Department::getScores();
       if(!$scores){
         return response()->json(['error' => 'unable to get scores'],500);
       }

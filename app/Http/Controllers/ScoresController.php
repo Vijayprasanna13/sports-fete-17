@@ -17,8 +17,15 @@ use Validity;
   }
 
   public function GetDepartmentScores($department_id) {
-    if(!$data = Score::getDepartmentScores($department_id)) {
+    if(!($data = Score::getDepartmentScores($department_id))) {
       return response()->json(['error' => 'scores not found'], 404);
+    }
+    return response()->json($data, 200);
+  }
+
+  public function getEventsWiseScores() {
+    if(!($data = Score::getEventsWiseScores())) {
+      return response()->json('scores not found', 404);
     }
     return response()->json($data, 200);
   }
