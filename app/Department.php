@@ -11,6 +11,7 @@ class Department extends Model{
     return Department::join('scores', 'scores.department_id', '=', 'departments.id')
                         ->select(DB::raw('departments.id, departments.department_name, SUM(scores.score) as score'))
                         ->orderBy('score', 'desc')
+                        ->groupBy('departments.id')
                         ->get();
     return Department::select('id','department_name','score')->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')->get();
   }
