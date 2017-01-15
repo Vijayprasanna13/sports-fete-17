@@ -5,9 +5,8 @@ var Login = React.createClass({
         url: '/auth/login',
         data: {"username":$('#username').val(),"password":$('#password').val()},
         success: function(data){
-          data = JSON.parse(data);
-          console.log(data['status']);
-          if(data['status'] == '200 Authorized')
+          console.log(data);
+          if(data == 'success')
             window.location.href = '/auth/dashboard';
         },
         error: function(){console.log('error');}

@@ -29,4 +29,12 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+
+    public static function getUser($username) {
+      return User::select('*')->where('username', $username)->first();
+    }
+
+    public static function verifyPassword($result, $password) {
+      return sha1($password.$result->created_at) == $result->password;
+    }
 }
