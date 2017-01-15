@@ -1,8 +1,7 @@
 var days = [1, 2, 3];
 $.ajax({
-  url: 'api/events',
+  url: 'api/events/'+days[0],
   type: 'GET',
-  data: {'day': days[0]},
 
   success: function(data) {
     data = data['data'];
@@ -25,9 +24,8 @@ $.ajax({
   }
 })
 $.ajax({
-  url: 'api/events',
+  url: 'api/events/'+days[1],
   type: 'GET',
-  data: {'day': days[1]},
 
   success: function(data) {
     data = data['data'];
@@ -50,9 +48,8 @@ $.ajax({
   }
 })
 $.ajax({
-  url: 'api/events',
+  url: 'api/events/'+days[2],
   type: 'GET',
-  data: {'day': days[2]},
 
   success: function(data) {
     data = data['data'];

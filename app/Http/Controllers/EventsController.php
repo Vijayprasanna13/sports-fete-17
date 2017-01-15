@@ -8,13 +8,7 @@ class EventsController extends Controller{
     use Validity;
 
     //Request Parameters : day
-    public function GetEvents(Request $request){
-
-      if(!isset($request['day'])) {
-        return response()->json('missing parameter', 400);
-      }
-
-      $day = $request['day'];
+    public function GetEvents($day){
 
       if(!$this->isDayValid($day)) {
         return response()->json('day not found', 404);

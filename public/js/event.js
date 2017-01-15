@@ -3,8 +3,7 @@ $(document).ready(function(){
     var day = $('#day').val();
     var depts = ['---','CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
     $.ajax({
-      url: "/api/events",
-      data: {"day":day},
+      url: "/api/events/"+day,
       type: "GET",
       success: function(data){
         $('#event').html(" ");

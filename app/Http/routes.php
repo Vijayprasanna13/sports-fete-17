@@ -26,12 +26,11 @@ $app->get('/auth/login','PagesController@GetLoginView');
 $app->post('/auth/login', 'UsersController@Login');
 
 
-$app->get('/api/events','EventsController@GetEvents');
-$app->get('/api/log','ScoresController@GetLog');
+$app->get('/api/events/{day}','EventsController@GetEvents');
 $app->get('/api/scores','DepartmentsController@GetScores');
 $app->get('/api/day','Controller@GetDay');
-$app->get('/api/eventscores', 'ScoresController@GetEventsScores');
-$app->get('/api/departmentscores', 'ScoresController@GetDepartmentScores');
+$app->get('/api/event/{event_id}/scores', 'ScoresController@GetEventsScores');
+$app->get('/api/departmentscores/{department_id}', 'ScoresController@GetDepartmentScores');
 
 /**
 *
