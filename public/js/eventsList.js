@@ -5,7 +5,7 @@ $.ajax({
   data: {'day': days[0]},
 
   success: function(data) {
-    data = JSON.parse(data)['data'];
+    data = data['data'];
     $('#events_body_day1').html(" ");
     for(var event in data) {
       var dt = data[event].start_time.split(/[- :]/);
@@ -30,7 +30,7 @@ $.ajax({
   data: {'day': days[1]},
 
   success: function(data) {
-    data = JSON.parse(data)['data'];
+    data = data['data'];
     $('#events_body_day2').html(" ");
     for(var event in data) {
       var dt = data[event].start_time.split(/[- :]/);
@@ -55,7 +55,7 @@ $.ajax({
   data: {'day': days[2]},
 
   success: function(data) {
-    data = JSON.parse(data)['data'];
+    data = data['data'];
     $('#events_body_day3').html(" ");
     for(var event in data) {
       var dt = data[event].start_time.split(/[- :]/);

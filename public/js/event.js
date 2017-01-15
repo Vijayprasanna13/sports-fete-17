@@ -9,8 +9,8 @@ $(document).ready(function(){
       success: function(data){
         $('#event').html(" ");
         $('#event-form').fadeIn("fast");
-        data = JSON.parse(data);
-        $.map(data['data'],function(data,i){
+        data = data['data'];
+        $.map(data, function(data,i){
             $('#event').append("<option>"+data['name']+"</option>");
         });
       },
