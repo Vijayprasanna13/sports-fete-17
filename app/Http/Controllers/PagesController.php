@@ -33,11 +33,11 @@ class PagesController extends Controller{
     return view('contacts');
   }
   public function GetDepartmentScoreView($department_id) {
-    if(!$department_name = Department::select('department_name')->where('id',$department_id)->first()) {
+    if(!$department = Department::find($department_id)) {
       return redirect('/');
     }
     return view('deptscore', ['department_id' => $department_id,
-                              'department_name' => $department_name['department_name']
+                              'department_name' => $department['department_name']
                             ]);
   }
 }

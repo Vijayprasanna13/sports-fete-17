@@ -40,7 +40,7 @@ class DepartmentsController extends Controller
          {
            return response()->json(['error' => 'missing parameter'],400);
          }
-      if(!Department::findDepartment($request['department_id'])){
+      if(!Department::find($request['department_id'])){
           return response()->json("department not found",404);
       }
       if(!$this->findEvent($request['event_id'],$request['day'])){
