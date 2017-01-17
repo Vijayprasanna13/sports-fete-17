@@ -30,7 +30,7 @@ $app->get('/api/events/{day}','EventsController@GetEvents');
 $app->get('/api/scores','DepartmentsController@GetScores');
 $app->get('/api/day','Controller@GetDay');
 $app->get('/api/event/{event_id}/scores', 'ScoresController@GetEventsScores');
-$app->get('/api/departmentscores/{department_id}', 'ScoresController@GetDepartmentScores');
+$app->get('/api/department/{department_id}/scores', 'ScoresController@GetDepartmentScores');
 $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 
 /**

@@ -16,7 +16,7 @@ class UsersController extends Controller
         if(!($result = User::getUser($username))) {
           return response()->json('username not found', 404);
         }
-        if(User::verifyPassword($result, $password)) {
+        if($result->verifyPassword($password)) {
             session_start();
             $_SESSION['username'] = $username;
             return response()->json('success',200);

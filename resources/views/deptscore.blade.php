@@ -62,7 +62,7 @@
       var departmentName = {!!json_encode($department_name) !!};
       var departmentId = {!!$department_id!!}
       $.ajax({
-        url: '../api/departmentscores/'+departmentId,
+        url: '../api/department/'+departmentId+'/scores',
         type: 'GET',
 
         success: function(data) {
