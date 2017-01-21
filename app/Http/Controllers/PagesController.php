@@ -8,11 +8,8 @@ class PagesController extends Controller{
   public function GetAdminView(){
     return view('auth.dashboard');
   }
-  public function GetAddScoreView(){
-    return view('auth.addScore');
-  }
-  public function GetEditScoreView(){
-    return view('auth.editScore');
+  public function GetScoreView(){
+    return view('auth.score');
   }
   public function GetDepartmentCreateView() {
     return view('auth.departmentCreate');

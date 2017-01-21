@@ -39,8 +39,7 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 */
 $app->group(['middleware'=>'auth'], function($app) {
 
-  $app->get('/auth/add/score','PagesController@GetAddScoreView');
-  $app->get('/auth/edit/score','PagesController@GetEditScoreView');
+  $app->get('/auth/score','PagesController@GetScoreView');
   $app->get('/auth/dashboard','PagesController@GetAdminView');
   $app->get('/auth/logout', 'UsersController@Logout');
 

@@ -10,12 +10,16 @@ use Illuminate\Http\Request;
 class DepartmentsController extends Controller
 {
     use Validity;
+   
+ 
+
    /**
     * This method returns all scores of all departments
     * in descending order.
     *@param none
     *@return
     */
+
     public function GetScores(Request $request)
     {
       $scores = Department::Scores();
@@ -25,12 +29,15 @@ class DepartmentsController extends Controller
       return response()->json($scores,200);
     }
 
+ 
+
     /**
     *
     *This method is used to update the score for a department.
     *@param day, department_id, event_id, score
     *@return
     */
+
     public function AddScore(Request $request)
     {
       if(!isset($request['department_id']) &&
@@ -58,6 +65,8 @@ class DepartmentsController extends Controller
       return response("success",200);
     }
 
+    
+
     /**
     *
     *This method is used to edit scores for a previously
@@ -66,6 +75,7 @@ class DepartmentsController extends Controller
     *@param day, department_id, event_id, score
     *@return
     */
+    
     public function EditScore(Request $request){
       if(!isset($request['department_id']) &&
          !isset($request['day']) &&

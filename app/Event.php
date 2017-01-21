@@ -19,10 +19,10 @@ class Event extends Model{
   *This method groups departments participating in the given event_id
   *under the label 'participants'. Could Write it better:/
   *@param array of objects from SQL output from events table
-  *@return 
+  *@return
   */
   public static function AddParticipants($events){
-    $departments = ['CSE','EEE','ECE','MECH','ICE','MECH','CIVL','CHEM','PROD','META','MSC','MTECH','DOMS','ARCH','MCA'];
+    $departments = ['CSE','EEE','ECE','MECH','ICE','MECH','CIVIL','CHEM','PROD','META','MSC','MTECH','DOMS','ARCH','MCA'];
     foreach ($events as $event) {
       $event->participants = [
                               'CSE' => $event['CSE'],
