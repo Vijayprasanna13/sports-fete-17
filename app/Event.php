@@ -12,7 +12,7 @@ class Event extends Model{
     return $this->hasMany('App\Score', 'event_id', 'event_id');
   }
   public static function GetEventsByDay($day) {
-    return Event::where('day', $day)->orderBy('start_time')->get();
+    return Event::select('id','name','venue','start_time')->where('day', $day)->orderBy('start_time')->get();
   }
 
   /**
@@ -22,28 +22,20 @@ class Event extends Model{
   *@return
   */
   public static function AddParticipants($events){
-    $departments = ['CSE','EEE','ECE','MECH','ICE','MECH','CIVIL','CHEM','PROD','META','MSC','MTECH','DOMS','ARCH','MCA'];
-    foreach ($events as $event) {
-      $event->participants = [
-                              'CSE' => $event['CSE'],
-                              'EEE' => $event['EEE'],
-                              'ECE' => $event['ECE'],
-                              'ICE' => $event['ICE'],
-                              'MECH' => $event['MECH'],
-                              'CIVIL' => $event['CIVIL'],
-                              'CHEM' => $event['CHEM'],
-                              'PROD' => $event['PROD'],
-                              'META' => $event['META'],
-                              'MSC' => $event['MSC'],
-                              'MTECH' => $event['MTECH'],
-                              'DOMS' => $event['DOMS'],
-                              'ARCH' => $event['ARCH'],
-                              'MCA' => $event['MCA']
-                            ];
-      foreach ($departments as $department) {
-        unset($event->$department);
+      foreach ($events as $event) {
+      $validparticipants = [];
+      $participants = Event::select(['CSE','ECE','EEE','MECH','CHEM','ICE','CIVIL',
+                                        'PROD','META','MSC','MCA','DOMS','MTECH','ARCH'])
+                              ->where('id',$event->id)
+                              ->first();
+      $participants = json_decode($participants,true);
+      foreach ($participants as $key => $value) {
+        if($value)
+          array_push($validparticipants, $key);
       }
+      $event['participants'] = $validparticipants;
     }
     return $events;
-  }
+}
+
 }

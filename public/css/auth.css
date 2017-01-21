@@ -33,4 +33,8 @@
   #day-input-wrapper {
     margin-left: 40%;
   }
+  #event-selector-wrapper {
+    margin-left: 40%;
+    display: none;
+  }
 </style>
