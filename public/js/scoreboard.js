@@ -17,7 +17,7 @@ $(document).ready(function() {
           pos--;
         }
         $('#leaderboardBody').append(
-            "<tr>"+
+            "<tr onclick=\"window.document.location=\'deptscore/"+data[x].id+"\';\">"+
               "<td>"+pos+"</td>"+
               "<td>"+data[x].department_name+"</td>"+
               "<td>"+data[x].score+"</td>"+
@@ -35,13 +35,13 @@ $(document).ready(function() {
 
   //To display scores scored in each events
   $.ajax({
-    url: 'api/eventscores',
+    url: 'api/eventswisescores',
     type: 'GET',
 
     success: function(data) {
-      data = JSON.parse(data)['data'];
       $('#events_score').html(" ");
-      var event = data[0].event;
+      console.log(data);
+      var event = data[0].event.name;
       var html = '<div class="row">';
       var rowCount = 0;
       for(var item=0; item < data.length; item++) {
@@ -50,17 +50,17 @@ $(document).ready(function() {
           '<div class="col-sm-4">'+
             '<div class="panel panel-default scoretable">'+
               '<div class="panel-heading">'+
-                '<strong>'+data[item].event+'</strong>'+
+                '<strong>'+data[item].event.name+'</strong>'+
               '</div>'+
               '<div class="panel-body">';
         html += '<div class="col-xs-6">Department</div><div class="col-xs-6">Score</div>';
-        for(; item < data.length && data[item].event === event; item++) {
-          html += '<div class="col-xs-6">'+data[item].department+'</div><div class="col-xs-6">'+data[item].score+'</div>';
+        for(; item < data.length && data[item].event.name === event; item++) {
+          html += '<div class="col-xs-6">'+data[item].department.department_name+'</div><div class="col-xs-6">'+data[item].score+'</div>';
         }
         html += '</div></div></div>';
         item--;
         if(item+1 < data.length) {
-          event = data[item+1].event;
+          event = data[item+1].event.name;
         }
         if(rowCount == 3) {
           rowCount = 0;

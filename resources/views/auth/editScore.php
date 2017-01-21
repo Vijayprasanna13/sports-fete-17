@@ -19,7 +19,6 @@
               <div id="day-form" class="well">
                 <b>Day: </b>
                 <input type="integer" name="day" id="day" class="form-control"/><br/>
-                <button class="btn btn-default" id="day-submit">Submit Day</button>
               </div>
               <div id="event-form" class="well">
                 <b>Event: </b>
@@ -56,5 +55,5 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="/js/jquery.noty.packaged.min.js"></script>
-   <script src="/js/event.js"></script>
+   <script src="/js/event-edit.js"></script>
 </html>

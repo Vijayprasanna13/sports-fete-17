@@ -1,25 +1,31 @@
 <?php
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
+use App\Event;
+
 class EventsController extends Controller{
     use Validity;
-    //Request Parameters : day
-    public function GetEvents(Request $request){
-      $data = [];
-      $data['type'] = 'events';
-      $data['day'] = $request['day'];
-      $day = $request['day'];
-      if($this->isDayValid($day)){
-        $data['status'] = '200 OK';
-        $data['message'] = 'day found';
-        $events = app('db')->select('select * from events where day = '.$day.' order by start_time');
-        $data['data'] = $events;
+
+    /**
+    *This function return the events for the given day
+    *and the participating departments
+    *@param day
+    *@return
+    */
+    public function GetEvents($day){
+
+      if(!$this->IsDayValid($day)) {
+        return response()->json('day not found', 404);
       }
-      else{
-        $data['status'] = '404 NOT FOUND';
-        $data['message'] = 'requested day not found';
-        $data['data'] = NULL;
+      if(!($events = Event::GetEventsByDay($day))) {
+        return response()->json('events not found', 404);
       }
-      return json_encode($data);
-    }
+      if(!($events = Event::AddParticipants($events))){
+        return response()->json('grouping gone wrong',400);
+      }
+      return response()->json($events, 200);
+
+}
+
 }

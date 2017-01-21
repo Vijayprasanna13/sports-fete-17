@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use App\Department;
 class PagesController extends Controller{
   public function GetLoginView(){
     return view('auth.login');
@@ -30,5 +31,13 @@ class PagesController extends Controller{
   }
   public function GetContactsView() {
     return view('contacts');
+  }
+  public function GetDepartmentScoreView($department_id) {
+    if(!$department = Department::find($department_id)) {
+      return redirect('/');
+    }
+    return view('deptscore', ['department_id' => $department_id,
+                              'department_name' => $department['department_name']
+                            ]);
   }
 }

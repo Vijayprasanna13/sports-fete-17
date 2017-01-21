@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDayTable extends Migration
+class CreateScoresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateDayTable extends Migration
      */
     public function up()
     {
-        Schema::create('days', function (Blueprint $table) {
+        Schema::create('scores', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('day');
+            $table->integer("event_id")->unsigned();
+            $table->integer("department_id")->unsigned();
+            $table->integer("score");
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateDayTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('days');
+        Schema::dropIfExists('scores');
     }
 }

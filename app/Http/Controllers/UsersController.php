@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+
 class UsersController extends Controller
 {
     public function Login(Request $request) {
@@ -11,8 +13,10 @@ class UsersController extends Controller
         }
         $username = (string)$request['username'];
         $password = (string)$request['password'];
-        $result = app('db')->select('select * from users where username = "'.$username.'"');
-        if((int)count($result) === 1 && sha1($password.$result[0]->created_at) == $result[0]->password) {
+        if(!($result = User::getUser($username))) {
+          return response()->json('username not found', 404);
+        }
+        if($result->verifyPassword($password)) {
             session_start();
             $_SESSION['username'] = $username;
             return response()->json('success',200);

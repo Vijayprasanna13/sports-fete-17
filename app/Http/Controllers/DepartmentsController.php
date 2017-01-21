@@ -18,11 +18,11 @@ class DepartmentsController extends Controller
     */
     public function GetScores(Request $request)
     {
-      $scores = Department::scores();
+      $scores = Department::Scores();
       if(!$scores){
         return response()->json(['error' => 'unable to get scores'],500);
       }
-      return response()->json(['data' => $scores],200);
+      return response()->json($scores,200);
     }
 
     /**
@@ -40,14 +40,14 @@ class DepartmentsController extends Controller
          {
            return response()->json(['error' => 'missing parameter'],400);
          }
-      if(!Department::findDepartment($request['department_id'])){
-          return response()->json("department not found",400);
+      if(!Department::find($request['department_id'])){
+          return response()->json("department not found",404);
       }
       if($request['score'] < 0){
           return response()->json("invalid score, not allowed",409);
       }
       if(!$this->findEvent($request['event_id'],$request['day'])){
-          return response()->json("event not found",400);
+          return response()->json("event not found",404);
       }
       if(Score::findDepartmentScore($request['event_id'],$request['department_id'])){
         return response()->json("event already added",409);

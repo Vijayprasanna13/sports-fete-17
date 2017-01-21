@@ -31,6 +31,11 @@
       font-family: Bungee;
     }
 
+    #leaderboardBody tr:hover {
+      background-color: orange;
+      cursor: pointer;
+    }
+
     th {
       letter-spacing: 4px;
       padding: 20px 20px !important;

@@ -9,21 +9,21 @@ use App\Score;
 use Laravel\Lumen\Routing\Controller as BaseController;
 
 trait Validity{
-    public function isDayValid($day){
+    public function IsDayValid($day){
       return $day <= 3;
     }
-    public function isDepartmentCountValid($scores){
+    public function IsDepartmentCountValid($scores){
         return count($scores) == 11;
     }
-    public function isDepartmentValid($department_id){
+    public function IsDepartmentValid($department_id){
       $department = Department::select('department_name')->where('id',$department_id)->first();
       return $department['department_name'];
     }
-    public function findEvent($event_id,$day){
+    public function FindEvent($event_id,$day){
       $event = Event::select('event_id')->where('event_id',$event_id)->where('day',$day)->first();
       return (bool) $event;
     }
-    public function eventAlreadyExists($event) {
+    public function EventAlreadyExists($event) {
       $found = app('db')->select('select * from scores where event = "'.$event.'"');
       return (int)(count($found) >= 1);
     }
