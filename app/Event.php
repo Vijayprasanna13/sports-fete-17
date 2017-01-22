@@ -38,4 +38,19 @@ class Event extends Model{
     return $events;
 }
 
+  /**
+  * This function filters the events array (with the particants) to contain the
+  * only the elements with the requested department in it. 
+  *@param events, department
+  *@return 
+  */
+  public static function FilterByDepartment($day, $department){
+    $events = Event::GetEventsByDay($day);
+    $event = Event::AddParticipants($events);
+    foreach ($events as $key => $value) {
+      if(!in_array($department,$value['participants']))
+        unset($events[$key]);
+    }
+    return $events;
+  }
 }

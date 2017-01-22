@@ -13,7 +13,7 @@ class EventsController extends Controller{
     *@param day
     *@return
     */
-    public function GetEvents($day){
+    public function GetEventsByDay($day){
 
       if(!$this->IsDayValid($day)) {
         return response()->json('day not found', 404);
@@ -26,6 +26,17 @@ class EventsController extends Controller{
       }
       return response()->json($events, 200);
 
-}
+  }
+
+  /**
+  *
+  *This function return the list of all events for the department
+  *@param department
+  *@return
+  */
+  public function GetEventsByDepartment($day,$department){
+    $events = Event::FilterByDepartment($day,$department);
+    return $events;
+  }
 
 }

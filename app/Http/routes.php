@@ -11,24 +11,27 @@
 |
 */
 date_default_timezone_set('Asia/Calcutta');
-$app->get('/', 'PagesController@GetHomepage');
 
 //view routes
+$app->get('/', 'PagesController@GetHomepage');
 $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/eventsList', 'PagesController@GetEventsListView');
 $app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
-
-
-
 $app->get('/auth/login','PagesController@GetLoginView');
+
+
+
 $app->post('/auth/login', 'UsersController@Login');
 
 
-$app->get('/api/events/{day}','EventsController@GetEvents');
+$app->get('/api/events/day/{day}','EventsController@GetEventsByDay');
+$app->get('/api/events/day/{day}/department/{department}','EventsController@GetEventsByDepartment');
+
+//$app->get('/api/day','Controller@GetDay');
 $app->get('/api/scores','DepartmentsController@GetScores');
-$app->get('/api/day','Controller@GetDay');
+
 $app->get('/api/event/{event_id}/scores', 'ScoresController@GetEventsScores');
 $app->get('/api/department/{department_id}/scores', 'ScoresController@GetDepartmentScores');
 $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
