@@ -13,7 +13,7 @@ use Validity;
     if(!($data = Score::getEventsScores($event_id)))
       return response()->json(['error' => 'unable to find event'],404);
 
-    return response()->json(['data' => $data],200);
+    return response()->json($data,200);
   }
 
   public function GetDepartmentScores($department_id) {
@@ -23,7 +23,7 @@ use Validity;
     return response()->json($data, 200);
   }
 
-  public function getEventsWiseScores() {
+  public function GetEventsWiseScores() {
     if(!($data = Score::getEventsWiseScores())) {
       return response()->json('scores not found', 404);
     }
