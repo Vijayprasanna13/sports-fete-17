@@ -24,8 +24,18 @@ trait Validity{
 
 class Controller extends BaseController
 {
+// $now = time(); // or your date as well
+// $your_date = strtotime("2010-01-01");
+// $datediff = $now - $your_date;
+//
+// echo floor($datediff / (60 * 60 * 24));
+
+
     public function GetDay(){
-      $day = app('db')->select("select * from days where id = 1")[0]->day;
-      return $day;
+      $day1 = strtotime(getenv('DAY1'));
+      $curdate = time();
+      $curday = $curdate - $day1;
+      $curday = floor($curday / (60 * 60 * 24));
+      return response()->json($curday+1, 200);
     }
 }

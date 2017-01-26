@@ -37,6 +37,9 @@ $app->get('/api/event/{event_id}/scores', 'ScoresController@GetEventsScores');
 $app->get('/api/department/{department_id}/scores', 'ScoresController@GetDepartmentScores');
 $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 
+
+$app->get('/api/day', 'Controller@GetDay');
+
 /**
 *
 *Protected routes
