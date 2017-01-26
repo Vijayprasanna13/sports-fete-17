@@ -39,4 +39,14 @@ class EventsController extends Controller{
     return $events;
   }
 
+  public function StartEvent($event_id) {
+    if(!Event::find($event_id)) {
+      return response()->json('event not found', 404);
+    }
+    if(!Event::StartEvent($event_id)) {
+      return response()->json('cannot update event status', 500);
+    }
+    return response()->json('event status changed', 200);
+  }
+
 }

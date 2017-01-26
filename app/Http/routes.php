@@ -28,8 +28,8 @@ $app->post('/auth/login', 'UsersController@Login');
 
 $app->get('/api/events/day/{day}','EventsController@GetEventsByDay');
 $app->get('/api/events/day/{day}/department/{department}','EventsController@GetEventsByDepartment');
+$app->post('/api/event/{event_id}/start', 'EventsController@StartEvent');
 
-//$app->get('/api/day','Controller@GetDay');
 $app->get('/api/scores','DepartmentsController@GetScores');
 
 $app->get('/api/event/{event_id}/scores', 'ScoresController@GetEventsScores');

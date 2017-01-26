@@ -53,4 +53,8 @@ class Event extends Model{
     }
     return $events;
   }
+
+  public static function StartEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 's']);
+  }
 }
