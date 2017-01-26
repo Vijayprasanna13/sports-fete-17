@@ -24,13 +24,6 @@ trait Validity{
 
 class Controller extends BaseController
 {
-// $now = time(); // or your date as well
-// $your_date = strtotime("2010-01-01");
-// $datediff = $now - $your_date;
-//
-// echo floor($datediff / (60 * 60 * 24));
-
-
     public function GetDay(){
       $day1 = strtotime(getenv('DAY1'));
       $curdate = time();
