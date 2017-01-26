@@ -12,7 +12,7 @@ class Event extends Model{
     return $this->hasMany('App\Score', 'event_id', 'event_id');
   }
   public static function GetEventsByDay($day) {
-    return Event::select('id','name','venue','start_time')->where('day', $day)->orderBy('start_time')->get();
+    return Event::select('id','name','venue','start_time','round')->where('day', $day)->orderBy('start_time')->get();
   }
 
   /**
