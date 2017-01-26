@@ -57,4 +57,8 @@ class Event extends Model{
   public static function StartEvent($event_id) {
     return Event::where('id', $event_id)->update(['status' => 's']);
   }
+
+  public static function CompleteEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 'c']);
+  }
 }
