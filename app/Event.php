@@ -12,7 +12,7 @@ class Event extends Model{
     return $this->hasMany('App\Score', 'event_id', 'event_id');
   }
   public static function GetEventsByDay($day) {
-    if($day != -1)
+    if($day >= 0)
       return Event::select('id','name','venue','start_time','round')->where('day', $day)->orderBy('start_time')->get();
     else
       return Event::select('id','name','venue','start_time','round')->orderBy('start_time')->get();
@@ -48,12 +48,16 @@ class Event extends Model{
   *@return
   */
   public static function FilterByDepartment($day, $department){
+    $new_events = [];
     $events = Event::GetEventsByDay($day);
     $events = Event::AddParticipants($events);
-    foreach ($events as $key => $value) {
-      if(!in_array($department,$value['participants']))
-        unset($events[$key]);
+    //return $events;
+    $events = json_decode($events, true);
+    foreach ($events as $event) {
+      if(in_array($department, $event['participants']))
+        array_push($new_events, $event);
     }
+    $events = $new_events;
     return $events;
   }
 

@@ -34,6 +34,9 @@ class EventsController extends Controller{
   *@return
   */
   public function GetEventsByDepartment($day,$department){
+    if(!$this->IsDayValid($day)){
+      return response()->json('day not found',404);
+    }
     $events = Event::FilterByDepartment($day,$department);
     return $events;
   }
