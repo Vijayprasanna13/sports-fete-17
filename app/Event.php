@@ -13,9 +13,9 @@ class Event extends Model{
   }
   public static function GetEventsByDay($day) {
     if($day >= 0)
-      return Event::select('id','name','venue','start_time','round')->where('day', $day)->orderBy('start_time')->get();
+      return Event::select('id','day','name','venue','start_time','round','status')->where('day', $day)->orderBy('start_time')->get();
     else
-      return Event::select('id','name','venue','start_time','round')->orderBy('start_time')->get();
+      return Event::select('id','day','name','venue','start_time','round','status')->orderBy('start_time')->get();
   }
 
   /**
