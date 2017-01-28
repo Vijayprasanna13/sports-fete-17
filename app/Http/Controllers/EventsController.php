@@ -14,7 +14,6 @@ class EventsController extends Controller{
     *@return
     */
     public function GetEventsByDay($day){
-
       if(!$this->IsDayValid($day)) {
         return response()->json('day not found', 404);
       }
