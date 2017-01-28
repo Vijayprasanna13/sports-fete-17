@@ -12,13 +12,6 @@ trait Validity{
     public function IsDayValid($day){
       return $day <= 3;
     }
-    public function IsDepartmentCountValid($scores){
-        return count($scores) == 11;
-    }
-    public function IsDepartmentValid($department_id){
-      $department = Department::select('department_name')->where('id',$department_id)->first();
-      return $department['department_name'];
-    }
     public function FindEvent($event_id,$day){
       $event = Event::select('event_id')->where('event_id',$event_id)->where('day',$day)->first();
       return (bool) $event;
@@ -32,7 +25,10 @@ trait Validity{
 class Controller extends BaseController
 {
     public function GetDay(){
-      $day = app('db')->select("select * from days where id = 1")[0]->day;
-      return $day;
+      $day1 = strtotime(getenv('DAY1'));
+      $curdate = time();
+      $curday = $curdate - $day1;
+      $curday = floor($curday / (60 * 60 * 24));
+      return response()->json($curday+1, 200);
     }
 }

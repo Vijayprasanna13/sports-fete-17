@@ -22,7 +22,7 @@ class Event extends Model{
   *@return
   */
   public static function AddParticipants($events){
-      foreach ($events as $event) {
+    foreach ($events as $event) {
       $validparticipants = [];
       $participants = Event::select(['CSE','ECE','EEE','MECH','CHEM','ICE','CIVIL',
                                         'PROD','META','MSC','MCA','DOMS','MTECH','ARCH'])
@@ -40,17 +40,25 @@ class Event extends Model{
 
   /**
   * This function filters the events array (with the particants) to contain the
-  * only the elements with the requested department in it. 
+  * only the elements with the requested department in it.
   *@param events, department
-  *@return 
+  *@return
   */
   public static function FilterByDepartment($day, $department){
     $events = Event::GetEventsByDay($day);
-    $event = Event::AddParticipants($events);
+    $events = Event::AddParticipants($events);
     foreach ($events as $key => $value) {
       if(!in_array($department,$value['participants']))
         unset($events[$key]);
     }
     return $events;
+  }
+
+  public static function StartEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 's']);
+  }
+
+  public static function CompleteEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 'c']);
   }
 }
