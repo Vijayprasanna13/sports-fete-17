@@ -1,0 +1,126 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+      height: 100%;
+      background: url('../images/contacts.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+   
+
+}
+
+
+body {
+    padding-top: 50px;
+    font-size:16px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+
+#menubar1
+{
+    font-size:18px;
+    font-weight:bold;
+}
+@import "compass/css3";
+
+/*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+
+// Default options for table style
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+  span {color: #167F92;}
+}
+
+.menulinks:hover
+{
+  background-color: #40E0D0;
+  color:white;
+
+}
+.contacts
+{
+  width:200px;
+  height:200px;
+  border-radius:100px;
+}
+.fa:hover
+{
+  color:blue;
+}
+.cont
+{
+  margin-left:150px;
+  margin-top:20px;
+}
+.page-header
+{
+  color:white;
+}
+.navbar-brand {
+    font-family: Pacifico;
+}

@@ -1,0 +1,188 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family:Vollkorn,serif;
+}
+.heading
+{
+    font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: #FF8C00;
+    font-family:Vollkorn,serif;
+    font-size:18px;
+    color:white;
+    padding:10px;
+
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    border-radius: 0;
+
+    color: #fff;
+    background-color:#FFA520;
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+
+body{
+    text-align: center;
+    background: #00ECB9;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h3{
+  color: #396;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px 0px -10px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+a.btn {
+    display: inline-block;
+    color: #FFF;
+    font-family: Vollkorn,serif;
+    background-color: #699DB6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+}
+
+a.btn:hover {
+        background-color: #e3e3e3;
+        border-color: rgba(0,0,0,0.5);
+}
+    
+a.btn:active {
+        background-color: #CCC;
+        border-color: rgba(0,0,0,0.9);
+}
+
+a.btn.btn-blue {
+    background-color: #699DB6;
+    border-color: rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+a.btn.btn-blue:hover {
+        background-color: #4F87A2;
+        border-color: rgba(0,0,0,0.5);
+}
+    
+a.btn.btn-blue:active {
+        background-color: #3C677B;
+        border-color: rgba(0,0,0,0.9);
+}
+
+.col-sm-3 {
+    padding-right: 20px;
+}
+
+#spider {
+    font-family: sans-serif;
+    font-size: 10px;
+    border-radius: 3px #00816A;
+}

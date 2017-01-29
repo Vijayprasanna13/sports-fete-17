@@ -1,124 +1,133 @@
-@extends('layouts/base')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('title', 'Scoreboard')
+<head>
 
-@section('body')
-  <style media="screen">
-    .container {
-      padding-top: 15vh;
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    div {
-      text-align: center;
-      text-transform: capitalize;
-    }
+    <title>Scoreboard</title>
 
-    #leaderboard {
-      background-image: url('../images/leaderboard_bg.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 10% 0;
-    }
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    td {
-      letter-spacing: 2px;
-      padding: 10px 0px !important;
-      text-transform: uppercase;
-    }
+    <!-- Custom CSS -->
+    <link href="/css/score.css" rel="stylesheet">
+     
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
 
-    tr {
-      background-color: #F59065;
-      font-family: Bungee;
-    }
 
-    #leaderboardBody tr:hover {
-      background-color: orange;
-      cursor: pointer;
-    }
+</head>
 
-    th {
-      letter-spacing: 4px;
-      padding: 20px 20px !important;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: Bungee;
-      text-align: center;
-      background-color: #F36223;
-      font-weight: normal;
-    }
+<body>
 
-    .scoretable {
-      position: relative;
-      font-family: bungee;
-    }
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menubar1">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Sportsfete</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <a href="about.html">About us</a>
+                    </li>-->
+                    <li class="menulinks">
+                        <a href="/">Home</a>
+                    </li class="menulinks">
+                    <li class="menulinks">
+                        <a href="gallery.html">Photos</a>
+                    </li>
+                    
+                    <li class="menulinks">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="menulinks">
+                        <a href="/scoreboard">Scoreboard</a>
+                    </li>
+                    <li class="menulinks">
+                        <a href="/contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container" id="pagecontent">
 
-    .panel-heading {
-      background-color: #F36223 !important;
-      color: #ffffff !important;
-    }
+        
 
-    .scoretable:before, .scoretable:after
-    {
-      z-index: -1;
-      position: absolute;
-      content: "";
-      bottom: 15px;
-      left: 10px;
-      width: 50%;
-      top: 80%;
-      max-width:300px;
-      background: #777;
-      -webkit-box-shadow: 0 15px 10px #777;
-      -moz-box-shadow: 0 15px 10px #777;
-      box-shadow: 0 15px 10px #777;
-      -webkit-transform: rotate(-3deg);
-      -moz-transform: rotate(-3deg);
-      -o-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-    }
-    .scoretable:after
-    {
-      -webkit-transform: rotate(3deg);
-      -moz-transform: rotate(3deg);
-      -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-      transform: rotate(3deg);
-      right: 10px;
-      left: auto;
-    }
-
-    .scoretable {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      text-align: center;
-    }
-  </style>
-  <script type="text/javascript" src="/js/scoreboard.js"></script>
-  <body>
-@endsection
-
-@section('content')
-  <div class="container-fluid" id="leaderboard">
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-1 table-responsive">
-        <table class="table table-striped text-center">
-          <thead>
-            <tr>
-              <th colspan="3">Leaderboard</th>
-            </tr>
-          </thead>
-          <tbody id="leaderboardBody">
-            <!-- The leaderboard will be updated dynamically from the database -->
-          </tbody>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Scoreboard
+                    
+                </h1>
+                
+            </div>
+        </div>
+        <table class="table table-striped table-bordered table-hover" id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+                <tr>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+                <tr>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+            </tbody>
         </table>
-      </div>
-      <div class="col-sm-3 col-sm-offset-1">
-        <img src="images/leaderboard.png" class="img-responsive table-image" alt="">
-      </div>
+      
+  
+
+        
+
+        <!-- Pagination -->
+        
+        <!-- /.row -->
+
+        
     </div>
-  </div>
+    <!-- /.container -->
 
-  <div class="container" id="events_score">
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
 
-  </div>
-@endsection
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -21,7 +21,7 @@
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,13 +45,13 @@
                 <a class="menulinks" href="gallery.html">Photos</a>
             </li>
             <li>
-                <a class="menulinks" href="events.html" >Events</a>
+                <a class="menulinks" href="/events" >Events</a>
             </li>
             <li>
-                <a class="menulinks" href="scoreboard.html">Scoreboard</a>
+                <a class="menulinks" href="/scoreboard">Scoreboard</a>
             </li>
             <li>
-                <a class="menulinks" href="contact.html" >Contacts</a>
+                <a class="menulinks" href="/contacts" >Contacts</a>
             </li>
             <li>
                 <a class="menulinks" href="#leaderboard" onclick=$("#menu-close").click();>Leaderboard</a>
@@ -66,23 +66,23 @@
    
     <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SPORTSFETE 2017</h1>
+            <h1>Sportsfete'17</h1>
         </div>              
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SPORTSFETE 2017</h1>
+            <h1>Sportsfete'17</h1>
         </div>  
     </div>   
     <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SPORTSFETE 2017</h1>
+            <h1>Sportsfete'17</h1>
         </div>  
     </div>   
     
     <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SPORTSFETE 2017</h1>
+            <h1>Sportsfete'17</h1>
         </div>     
 
     </div>
@@ -186,7 +186,7 @@
                     <a href="#" class="btn btn-lg btn-light">Click Me!</a>
                     <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
 
-                    <img src="./img/spider.jpg" style="width: 37px;height: 37px;border-radius: 50%;"  />
+                    <img src="images/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
                     <br><p id="spider">Designed by <b>Spider</b></p>
           
 

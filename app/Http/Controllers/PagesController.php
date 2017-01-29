@@ -20,8 +20,8 @@ class PagesController extends Controller{
   public function GetPhotosView() {
     return view('photos');
   }
-  public function GetEventsListView() {
-    return view('eventsList');
+  public function GetEventsView() {
+    return view('events');
   }
   public function GetScoreboardView() {
     return view('scoreboard');
