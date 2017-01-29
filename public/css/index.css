@@ -19,6 +19,7 @@ body {
 
 .text-vertical-center {
     //display: table-cell;
+    font-family: Pacifico;
     text-align: center;
     vertical-align: middle;
 }
@@ -26,8 +27,8 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-size: 4em;
+    font-weight: 400;
 }
 
 /* Custom Button Styles */
