@@ -14,7 +14,9 @@
     }
   </style>
   <link rel="stylesheet" href="/css/jquery.galereya.css">
-  <!--[if lt IE 9]> <link rel="stylesheet" href="/css/jquery.galereya.ie.css"> <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="/css/jquery.galereya.ie.css">
+  <![endif]-->
   <body>
 @endsection
 
@@ -95,7 +97,7 @@
           />
 </div>
 </div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery.galereya.js"></script>
 <script type="text/javascript">
   $(function() {
