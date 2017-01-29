@@ -193,7 +193,7 @@
     z-index: 1000;
 }
 
-.galereya-cell:hover .galereya-cell-desc {
+.galereya-cell:hover{
     bottom: 10px;
 
     opacity: 100;
