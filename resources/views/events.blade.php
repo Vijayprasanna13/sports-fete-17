@@ -20,9 +20,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 
 <body>
@@ -1201,7 +1201,7 @@
 
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
     <script>

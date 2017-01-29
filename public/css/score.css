@@ -19,7 +19,7 @@ body {
 
 body {
     padding-top: 50px;
-    font-family:Vollkorn,serif; 
+   font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -233,4 +233,7 @@ h1 {
 {
   color:  #003300;
   font-weight:bold;
+}
+.navbar-brand {
+    font-family: Pacifico;
 }

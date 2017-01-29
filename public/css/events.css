@@ -12,7 +12,7 @@ body {
 
 body {
     padding-top: 50px;
-    font-family:Vollkorn,serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 .img-portfolio {
@@ -139,7 +139,7 @@ footer {
 }
 .rules
 {
-    font-family: Vollkorn,serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:18px;
 }
 .eventname
@@ -172,8 +172,13 @@ footer {
 .list-inline{
     margin-left: 5%; 
 }
+
 img {
     width: 180px;
     max-height: 180px;
+}
+
+.navbar-brand {
+    font-family: Pacifico;
 }
 
