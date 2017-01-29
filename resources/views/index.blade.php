@@ -69,7 +69,7 @@
             <h1>Sportsfete'17</h1>
         </div>              
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
+   <!-- <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>  
@@ -85,7 +85,7 @@
             <h1>Sportsfete'17</h1>
         </div>     
 
-    </div>
+    </div>-->
     
     <br>
     <div class="dots" style="text-align:center;">
@@ -269,7 +269,7 @@
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n) 
+    /*function showSlides(n) 
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
@@ -285,6 +285,23 @@
             dots[i].classList.remove("active");
         }
         slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].classList.add("active");
+    }*/
+    function showSlides(n) 
+    {
+        var i;
+        var bgs=["url(images/image4.jpg)","url(images/image5.jpg)","url(images/image6.jpg)","url(images/image7.jpg)"];
+        
+        var dots = document.getElementsByClassName("dot");
+        if (n > bgs.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = bgs.length} ;
+        document.getElementById('top').style.backgroundImage=bgs[slideIndex-1]; 
+        
+        for (i = 0; i < dots.length; i++) 
+        {
+            dots[i].classList.remove("active");
+        }
+        //slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].classList.add("active");
     }
     function change()
