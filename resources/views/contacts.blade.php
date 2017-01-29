@@ -54,7 +54,7 @@
                     </li>
                     
                     <li class="menulinks">
-                        <a href="events.html">Events</a>
+                        <a href="/events">Events</a>
                     </li>
                     <li class="menulinks">
                         <a href="/scoreboard">Scoreboard</a>

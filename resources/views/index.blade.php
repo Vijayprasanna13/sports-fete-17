@@ -45,7 +45,7 @@
                 <a class="menulinks" href="gallery.html">Photos</a>
             </li>
             <li>
-                <a class="menulinks" href="events.html" >Events</a>
+                <a class="menulinks" href="/events" >Events</a>
             </li>
             <li>
                 <a class="menulinks" href="/scoreboard">Scoreboard</a>
