@@ -48,10 +48,10 @@
                 <a class="menulinks" href="events.html" >Events</a>
             </li>
             <li>
-                <a class="menulinks" href="scoreboard.html">Scoreboard</a>
+                <a class="menulinks" href="/scoreboard">Scoreboard</a>
             </li>
             <li>
-                <a class="menulinks" href="contact.html" >Contacts</a>
+                <a class="menulinks" href="/contacts" >Contacts</a>
             </li>
             <li>
                 <a class="menulinks" href="#leaderboard" onclick=$("#menu-close").click();>Leaderboard</a>
@@ -186,7 +186,7 @@
                     <a href="#" class="btn btn-lg btn-light">Click Me!</a>
                     <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
 
-                    <img src="./img/spider.jpg" style="width: 37px;height: 37px;border-radius: 50%;"  />
+                    <img src="images/spider.jpg" style="width: 37px;height: 37px;border-radius: 50%;"  />
                     <br><p id="spider">Designed by <b>Spider</b></p>
           
 
