@@ -69,7 +69,7 @@
             <h1>Sportsfete'17</h1>
         </div>              
     </div>
-   <!-- <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>  
@@ -85,7 +85,7 @@
             <h1>Sportsfete'17</h1>
         </div>     
 
-    </div>-->
+    </div>
     
     <br>
     <div class="dots" style="text-align:center;">
@@ -269,7 +269,7 @@
         showSlides(slideIndex = n);
     }
 
-    /*function showSlides(n) 
+    function showSlides(n) 
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
@@ -286,8 +286,8 @@
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].classList.add("active");
-    }*/
-    function showSlides(n) 
+    }
+    /*function showSlides(n) 
     {
         var i;
         var bgs=["url(images/image4.jpg)","url(images/image5.jpg)","url(images/image6.jpg)","url(images/image7.jpg)"];
@@ -303,7 +303,7 @@
         }
         //slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].classList.add("active");
-    }
+    }*/
     function change()
     {
         slideIndex+=1;
