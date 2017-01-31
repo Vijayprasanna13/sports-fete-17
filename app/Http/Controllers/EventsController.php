@@ -41,6 +41,19 @@ class EventsController extends Controller{
     return $events;
   }
 
+  /**
+  *This function return the event by id
+  *@param event id
+  *@return 
+  */
+  public function GetEventById($event_id){
+    if(!$this->FindEvent($event_id)){
+      return response()->json('event not found',400);
+    }
+    $event = Event::EventById($event_id);
+    return response()->json($event,200);
+  }
+
   public function StartEvent($event_id) {
     if(!Event::find($event_id)) {
       return response()->json('event not found', 404);

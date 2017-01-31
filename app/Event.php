@@ -61,6 +61,12 @@ class Event extends Model{
     return $events;
   }
 
+  public static function EventById($event_id){
+    $event = Event::select('id','day','name','venue','start_time','round','status')->where('id',$event_id)->get();
+    $event = Event::AddParticipants($event);
+    return $event;
+  }
+
   public static function StartEvent($event_id) {
     return Event::where('id', $event_id)->update(['status' => 's']);
   }

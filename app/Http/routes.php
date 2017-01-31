@@ -28,6 +28,7 @@ $app->post('/auth/login', 'UsersController@Login');
 
 $app->get('/api/events/day/{day}','EventsController@GetEventsByDay');
 $app->get('/api/events/day/{day}/department/{department}','EventsController@GetEventsByDepartment');
+$app->get('/api/events/id/{id}','EventsController@GetEventById');
 $app->post('/api/event/{event_id}/start', 'EventsController@StartEvent');
 $app->post('/api/event/{event_id}/complete', 'EventsController@CompleteEvent');
 

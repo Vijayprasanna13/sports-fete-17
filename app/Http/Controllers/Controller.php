@@ -12,9 +12,9 @@ trait Validity{
     public function IsDayValid($day){
       return ($day <= 3 && $day > 0) || $day == -1;
     }
-    public function FindEvent($event_id,$day){
-      $event = Event::select('event_id')->where('event_id',$event_id)->where('day',$day)->first();
-      return (bool) $event;
+    public function FindEvent($event_id){
+      $event = Event::where('id',$event_id)->first();
+      return $event;
     }
     public function EventAlreadyExists($event) {
       $found = app('db')->select('select * from scores where event = "'.$event.'"');
