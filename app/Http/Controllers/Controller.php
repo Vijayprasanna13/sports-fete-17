@@ -38,10 +38,25 @@ class Controller extends BaseController
         if($dh = opendir($dir)) {
           while(($file = readdir($dh)) != false) {
             if($file != "." and $file != "..") {
-              $files_array[] = array('lowsrc' => 'images/'.$file,
-                                     'fullsrc' => 'images/'.$file,
-                                     'category' => 'others'
-                                    );
+              if(is_dir($dir.'/'.$file)) {
+                $sub_dir = $dir.'/'.$file;
+                if($dh1 = opendir($sub_dir)) {
+                  while(($file1 = readdir($dh1)) != false) {
+                    if($file1 != "." and $file1 != "..") {
+                      $files_array[] = array('lowsrc' => 'images/'.$file.'/'.$file1,
+                                             'fullsrc' => 'images/'.$file.'/'.$file1,
+                                             'category' => $file
+                                            );
+                    }
+                  }
+                }
+              }
+              else {
+                $files_array[] = array('lowsrc' => 'images/'.$file,
+                                       'fullsrc' => 'images/'.$file,
+                                       'category' => 'images'
+                                      );
+              }
             }
           }
         }
