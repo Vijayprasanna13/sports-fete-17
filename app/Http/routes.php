@@ -40,6 +40,7 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 
 
 $app->get('/api/day', 'Controller@GetDay');
+$app->get('/api/images', 'Controller@GetImages');
 
 /**
 *
@@ -53,6 +54,6 @@ $app->group(['middleware'=>'auth'], function($app) {
 
   $app->post('/api/add/scores','DepartmentsController@AddScore');
   $app->post('/api/edit/scores','DepartmentsController@EditScore');
-	$app->post('/api/log','ScoresController@LogScores');
+  $app->post('/api/log','ScoresController@LogScores');
 
 });

@@ -22,7 +22,7 @@
 }
 
 .galereya-top {
-    position: absolute;
+    position: relative;;
     top: 0;
     left: 0;
     z-index: 10000;
@@ -35,7 +35,7 @@
 }
 /* Gallery category select(begin) */
 .galereya-cats {
-    display: block;
+    display: none;
     overflow: hidden;
 
     width: 125px;

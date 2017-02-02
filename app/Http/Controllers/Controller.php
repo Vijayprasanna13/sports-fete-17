@@ -31,4 +31,22 @@ class Controller extends BaseController
       $curday = floor($curday / (60 * 60 * 24));
       return response()->json($curday+1, 200);
     }
+
+    public function GetImages() {
+      $dir = '../public/images';
+      if(is_dir($dir)) {
+        if($dh = opendir($dir)) {
+          while(($file = readdir($dh)) != false) {
+            if($file != "." and $file != "..") {
+              $files_array[] = array('lowsrc' => 'images/'.$file,
+                                     'fullsrc' => 'images/'.$file,
+                                     'category' => 'others'
+                                    );
+            }
+          }
+        }
+      }
+      return response()->json($files_array);
+    }
+
 }

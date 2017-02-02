@@ -23,78 +23,7 @@
 @section('content')
 <div id="container">
 <div id="gallery" style="padding-top: 15vh;">
-  <img src="images/image1.png"
-        data-fullsrc="images/image1.png"
-    />
-    <img src="images/image3.jpg"
-        data-fullsrc="images/image3.jpg"
-    />
-    <img src="images/image4.jpg"
-        data-fullsrc="images/image4.jpg"
-    />
-    <img src="images/image5.jpg"
-        data-fullsrc="images/image5.jpg"
-    />
-    <img src="images/image5.jpg"
-        data-fullsrc="images/image5.jpg"
-    />
-    <img src="images/image6.jpg"
-        data-fullsrc="images/image6.jpg"
-    />
-    <img src="images/image1.png"
-          data-fullsrc="images/image1.png"
-      />
-      <img src="images/image3.jpg"
-          data-fullsrc="images/image3.jpg"
-      />
-      <img src="images/image4.jpg"
-          data-fullsrc="images/image4.jpg"
-      />
-      <img src="images/image5.jpg"
-          data-fullsrc="images/image5.jpg"
-      />
-      <img src="images/image5.jpg"
-          data-fullsrc="images/image5.jpg"
-      />
-      <img src="images/image6.jpg"
-          data-fullsrc="images/image6.jpg"
-      />
-      <img src="images/image1.png"
-            data-fullsrc="images/image1.png"
-        />
-        <img src="images/image3.jpg"
-            data-fullsrc="images/image3.jpg"
-        />
-        <img src="images/image4.jpg"
-            data-fullsrc="images/image4.jpg"
-        />
-        <img src="images/image5.jpg"
-            data-fullsrc="images/image5.jpg"
-        />
-        <img src="images/image5.jpg"
-            data-fullsrc="images/image5.jpg"
-        />
-        <img src="images/image6.jpg"
-            data-fullsrc="images/image6.jpg"
-        />
-        <img src="images/image1.png"
-              data-fullsrc="images/image1.png"
-          />
-          <img src="images/image3.jpg"
-              data-fullsrc="images/image3.jpg"
-          />
-          <img src="images/image4.jpg"
-              data-fullsrc="images/image4.jpg"
-          />
-          <img src="images/image5.jpg"
-              data-fullsrc="images/image5.jpg"
-          />
-          <img src="images/image5.jpg"
-              data-fullsrc="images/image5.jpg"
-          />
-          <img src="images/image6.jpg"
-              data-fullsrc="images/image6.jpg"
-          />
+  <!-- Load images from images directory -->
 </div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -102,7 +31,13 @@
 <script type="text/javascript">
   $(function() {
     $('#gallery').galereya({
-      slideShowSpeed: 10000
+      load: function(next) {
+        $.getJSON('/api/images', function(data) {
+          console.log(data);
+          next(data);
+        });
+      },
+      slideShowSpeed: 3000
     });
   });
 </script>
