@@ -91,9 +91,9 @@ class EventsController extends Controller{
                 0, 1
             );
         if ($imap_token != false) {
-            return true;
+            return response()->json("success",200);
         }
-        return false;
+        return response()->json("wrong username or password",400);
   }
 
 }
