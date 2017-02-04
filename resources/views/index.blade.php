@@ -118,25 +118,8 @@
 
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>CSE</td>
-                                        <td>89</td>
+                                <tbody id="leaderboardBody">
 
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>EEE</td>
-                                        <td>56</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>ECE</td>
-                                        <td>54</td>
-
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -161,9 +144,24 @@
                     <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3 col-sm-6">
                             <img class="img-responsive" src="images/upcoming_events.jpg">
 
+                        </div>
+                        <div class="col-md-9 col-sm-6">
+                          <table class="table table-hover table-striped">
+                              <thead>
+                                  <tr>
+                                      <th>Date</th>
+                                      <th>Event</th>
+                                      <th>Start Time</th>
+                                      <th>Venue</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="events_body">
+
+                              </tbody>
+                          </table>
                         </div>
 
                     </div>
@@ -204,6 +202,7 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script src="js/index.js"></script>
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {

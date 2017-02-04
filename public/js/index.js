@@ -32,8 +32,6 @@ $(document).ready(function() {
 
     success: function(data) {
       $('#leaderboardBody').html(" ");
-      data = JSON.parse(JSON.stringify(data));
-      data = data['data'];
       var pos=1, prevScore;
 
       for(var x in data) {
@@ -66,6 +64,7 @@ $(document).ready(function() {
 
       success: function(data) {
         day = data;
+        console.log(day);
       },
       error: function(data) {
         console.log(data);
@@ -76,13 +75,13 @@ $(document).ready(function() {
   //Update the events table with the events happening on the current day.
   $.when(currentDay()).done(function(a) { //Wait for the currentDay function to process first
     $.ajax({
-      url: 'api/events/'+day,
+      url: 'api/events/day/'+day,
       type: 'GET',
 
       success: function(data) {
         $('#events_body').html(" ");
         var numberOfEvents = 0;
-        data = data['data'];
+        console.log(data);
         for(var event in data) {
           var dt = data[event].start_time.split(/[- :]/);
           var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
