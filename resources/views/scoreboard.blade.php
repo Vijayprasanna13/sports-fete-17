@@ -52,11 +52,11 @@
                         <a href="/">Home</a>
                     </li class="menulinks">
                     <li class="menulinks">
-                        <a href="gallery.html">Photos</a>
+                        <a href="/photos">Photos</a>
                     </li>
                     
                     <li class="menulinks">
-                        <a href="events.html">Events</a>
+                        <a href="/events">Events</a>
                     </li>
                     <li class="menulinks">
                         <a href="/scoreboard">Scoreboard</a>
