@@ -31,7 +31,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menubar1">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <!--<div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <div class="sr-only">Toggle navigation</div>
                     <div class="icon-bar"></div>
@@ -41,12 +41,12 @@
                 <a class="navbar-brand" href="/">SportsFete'17</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li>
                         <a href="about.html">About us</a>
                     </li>-->
-                    <li>
+                    <!--<li>
                         <a href="/">Home</a>
                     </li>
                      <li>
@@ -62,6 +62,39 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">SportsFete'17</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <a href="about.html">About us</a>
+                    </li>-->
+                    <li class="menulinks">
+                        <a href="/">Home</a>
+                    </li class="menulinks">
+                    <li class="menulinks">
+                        <a href="/photos">Photos</a>
+                    </li>
+
+                    <li class="menulinks">
+                        <a href="/events">Events</a>
+                    </li>
+                    <li class="menulinks">
+                        <a href="/scoreboard">Scoreboard</a>
+                    </li>
+                    <li class="menulinks">
+                        <a href="/contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- /.container -->
     </nav>
