@@ -221,127 +221,193 @@
                 font-size:18px !important;font-family: times !important;
             }
             </style>
-            <h3>Athletics</h3><b>
-            <p>INDIVIDUAL:- <br>
-                            &emsp;&emsp;&emsp;1st place - 5 points<br>
-                            &emsp;&emsp;&emsp;2nd place - 3 points<br>
-                            &emsp;&emsp;&emsp;3rd place - 1 point<br>
-            </p>
-            <p>
-                            RELAY:-        
-                            <br>&emsp;&emsp;&emsp;1st place - 10 points
-                            <br>&emsp;&emsp;&emsp;2nd- 6 points
-                            <br>&emsp;&emsp;&emsp;3rd- 4 points</b>
-            </p>     
+            <h3>Athletics</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture0">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules0">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture0" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules0" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>INDIVIDUAL:- <br>
+                        &emsp;&emsp;&emsp;1st place - 5 points<br>
+                        &emsp;&emsp;&emsp;2nd place - 3 points<br>
+                        &emsp;&emsp;&emsp;3rd place - 1 point<br>
+                    </p>
+                    <p>
+                        RELAY:-        
+                        <br>&emsp;&emsp;&emsp;1st place - 10 points
+                        <br>&emsp;&emsp;&emsp;2nd- 6 points
+                        <br>&emsp;&emsp;&emsp;3rd- 4 points</b>
+                    </p>     
         
 
-            <p>MEN’S EVENTS-100m, 200m, 400m, 800m, 1500m, 5000m, 4*100 relay, 4*400 relay.
-            Long Jump, High Jump, Triple Jump, Shotput, Discuss Throw, Javelin
-            Throw.</p>
+                    <p>MEN’S EVENTS-100m, 200m, 400m, 800m, 1500m, 5000m, 4*100 relay, 4*400 relay.
+                    Long Jump, High Jump, Triple Jump, Shotput, Discuss Throw, Javelin
+                    Throw.</p>
 
-            <p>GIRL’S EVENTS-
-            100m, 200m, 400m, 800m, 1500m, 4*100 relay, 4 *400 relay
-            Long Jump, High Jump, Shotput and Discuss Throw.:</p>
-            <p>Rules:
-                <ul class="rules">
-                <li>For each event, only 2 participants can take part from each department.</li>
-                <li>A minimum of 5 different departments must be there for each event to take place.</li>
-                <li>A participant can take part in maximum of 4 events excluding relay (maximum of 2 field and 2 track events or vice versa).</li>
-                <li>Standard IAAF rules apply.</li>
-                
-                
-                </ul>
-            </p>
-            <p>CONTACT : 
-                   <p>Girish Babu :9629392048(Boys)</p>
-                   <p>Ankita:9962290429(Girls)</p>
+                    <p>GIRL’S EVENTS-
+                    100m, 200m, 400m, 800m, 1500m, 4*100 relay, 4 *400 relay
+                    Long Jump, High Jump, Shotput and Discuss Throw.:</p>
+                    <p>Rules:
+                        <ul class="rules">
+                        <li>For each event, only 2 participants can take part from each department.</li>
+                        <li>A minimum of 5 different departments must be there for each event to take place.</li>
+                        <li>A participant can take part in maximum of 4 events excluding relay (maximum of 2 field and 2 track events or vice versa).</li>
+                        <li>Standard IAAF rules apply.</li>
+                        
+                        
+                        </ul>
+                    </p>
+                    <p>CONTACT : 
+                           <p>Girish Babu :9629392048(Boys)</p>
+                           <p>Ankita:9962290429(Girls)</p>
 
-            </p>
+                    </p>
+                    
+                </div>
+    
+            </div>
+
+
             
             </div>
             <div class="item">
             
-            <h3>Badminton(Mixed)</h3><b>
-            <p>POINTS:-
-               <br>&emsp;&emsp;&emsp;1st place - 20 points
-               <br>&emsp;&emsp;&emsp;2nd place - 12 points
-               <br>&emsp;&emsp;&emsp;3rd place - 8 points</b>
-            </p>
+            <h3>Badminton(Mixed)</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture1">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules1">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture1" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules1" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                   <p>POINTS:-
+                       <br>&emsp;&emsp;&emsp;1st place - 20 points
+                       <br>&emsp;&emsp;&emsp;2nd place - 12 points
+                       <br>&emsp;&emsp;&emsp;3rd place - 8 points</b>
+                    </p>
               
         
 
             
-            <p>Rules:
-                <ul class="rules">
-                <li>Only 1 team per department.</li>
-                <li>Each team should have minimum of 2 boys and 2 girls and maximum of 4 boys and 4 girls.</li>
-                <li>The tournament is conducted on a knockout basis.</li>
-                <li>The order of play for each match will be:<br>
-                    i) Boys Singles  <br>
-                    ii) Girls Singles <br>
-                    iii) Mixed Doubles <br>
-                    iv) Girls Doubles <br>
-                    v) Boys Doubles <br>
-                    Team should secure 3 out of 5 games to win the match.</li>
+                    <p>Rules:
+                        <ul class="rules">
+                        <li>Only 1 team per department.</li>
+                        <li>Each team should have minimum of 2 boys and 2 girls and maximum of 4 boys and 4 girls.</li>
+                        <li>The tournament is conducted on a knockout basis.</li>
+                        <li>The order of play for each match will be:<br>
+                            i) Boys Singles  <br>
+                            ii) Girls Singles <br>
+                            iii) Mixed Doubles <br>
+                            iv) Girls Doubles <br>
+                            v) Boys Doubles <br>
+                            Team should secure 3 out of 5 games to win the match.</li>
 
-               <li>The order of play can be changed only if both the departments are willing to change.</li>
-                <li>Each game will be played for best for 3 sets and each set will be played for 15 points. Finals alone will be best of 3 sets for 21 points. </li>
-                <li>Initial rounds will be played in plastic shuttles. </li>
-                <li>Umpire’s decision is final in any dispute (point, line judgement, faults etc...).</li>
-                <li>Standard BWF rules apply.</li>
-                
-                </ul>
-            </p>
-            <p>CONTACT : 
-                   <p>Sethil Kumar: 8754174358 </p>
-                  
-            </p>
+                       <li>The order of play can be changed only if both the departments are willing to change.</li>
+                        <li>Each game will be played for best for 3 sets and each set will be played for 15 points. Finals alone will be best of 3 sets for 21 points. </li>
+                        <li>Initial rounds will be played in plastic shuttles. </li>
+                        <li>Umpire’s decision is final in any dispute (point, line judgement, faults etc...).</li>
+                        <li>Standard BWF rules apply.</li>
+                        
+                        </ul>
+                    </p>
+                    <p>CONTACT : 
+                           <p>Sethil Kumar: 8754174358 </p>
+                          
+                    </p>
+                            
+                    </div>
             
-            
+                </div>  
             </div>
             <div class="item"> 
             
             <h3>Basketball(Boys)</h3>
-            <p>
-                POINTS:-<br><b>
-                &emsp;&emsp;&emsp;1st place - 20 points<br>
-               &emsp;&emsp;&emsp;2nd place - 12 points<br>
-               &emsp;&emsp;&emsp;3rd place - 8 points</b>
-            </p>
-            <p>
-                GAME TIME:<br>
-
-                &emsp;4 Quarters of 10 minutes each.<br>
-                &emsp;1 Timeout per quarter till third quarter, 2 Timeouts in the fourth quarter.<br>
-                &emsp;Side change is mandatory after the first half.<br>
-            </p>
-            <p>Rules:
-            <ul class="rules">
-                <li>Each round is knockout based.</li>
-                <li>A team can have a maximum of 12 players.</li>
-                <li>A maximum of 5 personal fouls per player will be allowed per game.</li>
-                <li>A player receiving 2 technical fouls shall be replaced immediately and will not be allowed to take part any further in that tie.</li>
-                <li>Every foul after 5 team fouls in a quarter will results in 2 free throws.</li>
-                <li>A technical foul will result in two free throws to the opposite team in open court.</li>
-                <li>All the violations will be judged according to FIBA rules and regulations.</li>
-                <li>Referee’s decision is final.</li>
-
-
-                
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture2">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules2">Rules</a></li>
+    
             </ul>
 
-            </p>
-         
-            <p>CONTACT : 
-                   <p>Jana Lakshman: 7598140119 </p>
+            <div class="tab-content">
+                <div id="fixture2" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
                   
-            </p>
+                </div>
+                <div id="rules2" class="tab-pane fade">
+                    <h3>Rules</h3>
+                       <p>
+                            POINTS:-<br><b>
+                            &emsp;&emsp;&emsp;1st place - 20 points<br>
+                            &emsp;&emsp;&emsp;2nd place - 12 points<br>
+                            &emsp;&emsp;&emsp;3rd place - 8 points</b>
+                        </p>
+                        <p>
+                            GAME TIME:<br>
+
+                            &emsp;4 Quarters of 10 minutes each.<br>
+                            &emsp;1 Timeout per quarter till third quarter, 2 Timeouts in the fourth quarter.<br>
+                            &emsp;Side change is mandatory after the first half.<br>
+                        </p>
+                        <p>Rules:
+                        <ul class="rules">
+                            <li>Each round is knockout based.</li>
+                            <li>A team can have a maximum of 12 players.</li>
+                            <li>A maximum of 5 personal fouls per player will be allowed per game.</li>
+                            <li>A player receiving 2 technical fouls shall be replaced immediately and will not be allowed to take part any further in that tie.</li>
+                            <li>Every foul after 5 team fouls in a quarter will results in 2 free throws.</li>
+                            <li>A technical foul will result in two free throws to the opposite team in open court.</li>
+                            <li>All the violations will be judged according to FIBA rules and regulations.</li>
+                            <li>Referee’s decision is final.</li>
+
+
+                            
+                        </ul>
+
+                        </p>
+                     
+                        <p>CONTACT : 
+                               <p>Jana Lakshman: 7598140119 </p>
+                              
+                        </p>
+                    
+                </div>
+    
+            </div>  
             
             </div>
             <div class="item"> 
             
             <h3>Basketball(girls)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture3">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules3">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture3" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules3" class="tab-pane fade">
+                    <h3>Rules</h3>
+                        <p>
                 POINTS:- <b>
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                <br>&emsp;&emsp;&emsp;2nd place - 8 points
@@ -386,13 +452,28 @@
              <p>CONTACT : 
                    <p>Ritu Choudhary: 9629605830 </p>
                   
-            </p>
-            
+            </p>     
+                </div>
+    
+            </div>  
             </div>
             <div class="item"> 
             
             <h3>Carrom(Mixed)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture4">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules4">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture4" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules4" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  <p>
                 POINTS:-<b>
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
                 <br>&emsp;&emsp;&emsp;2nd place - 10 points
@@ -424,12 +505,28 @@
                    <p>Deepak Chauhan:9659229695</p>
                   
             </p>
-            
+                  
+                        </div>
+    
+            </div>              
             </div>
             <div class="item"> 
             
             <h3>Chess(Mixed)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture5">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules5">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture5" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules5" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  <p>
                 POINTS:-<b>
                 <br>&emsp;&emsp;&emsp;1st place- 15 points
                 <br>&emsp;&emsp;&emsp;2nd place- 10 points
@@ -455,11 +552,29 @@
             </p>
             
             
+                  
+                        </div>
+    
+            </div>              
             </div>
             <div class="item"> 
             
             <h3>Cricket(Boys)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture6">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules6">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture6" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules6" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>
                 POINTS:- <b>
                 <br>&emsp;&emsp;&emsp;1st place - 25 points
                 <br>&emsp;&emsp;&emsp;2nd place - 18 points
@@ -504,13 +619,31 @@
 
                   
             </p>
+                    
+                </div>
+    
+            </div>  
             
             
         </div>
         <div class="item"> 
             
             <h3>Cricket(Girls)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture7">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules7">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture7" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules7" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                     <p>
                 <b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                 <br>&emsp;&emsp;&emsp;2nd place - 8 points
@@ -551,12 +684,31 @@
                   
         </p>
             
+                    
+                </div>
+    
+            </div>  
+            
             
         </div>
         <div class="item"> 
             
             <h3>Football(Boys)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture8">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules8">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture8" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules8" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>
                 <b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 25 points
                 <br>&emsp;&emsp;&emsp;2nd place - 18 points
@@ -593,13 +745,30 @@
 
                   
             </p>
-            
+                    
+                </div>
+    
+            </div>  
             
             </div>
             <div class="item"> 
             
             <h3>Football(Girls)</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture9">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules9">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture9" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules9" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>
                 <b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                 <br>&emsp;&emsp;&emsp;2nd place - 8 points
@@ -627,13 +796,31 @@
 
                   
             </p>
+                    
+                </div>
+    
+            </div>  
             
             
             </div>
             <div class="item"> 
             
             <h3>Handball</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture10">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules10">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture10" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules10" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>
                 <b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 20 points
                 <br>&emsp;&emsp;&emsp;2nd place - 12 points
@@ -663,7 +850,10 @@
 
                   
             </p>
-            
+                    
+                </div>
+    
+            </div>  
             
 
             
@@ -672,7 +862,21 @@
             <div class="item"> 
             
             <h3>Hockey</h3>
-            <p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture11">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules11">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture11" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules11" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>
                 <b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 20 points
                 <br>&emsp;&emsp;&emsp;2nd place - 12 points
@@ -723,13 +927,29 @@
                   
             </p>
             
-
-            
+                    
+                </div>
+    
+            </div>  
             </div>
             <div class="item">
             
             <h3>Kabaddi</h3>
-            <p> <b>POINTS:-
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture12">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules12">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture12" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules12" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p> <b>POINTS:-
             <br>&emsp;&emsp;&emsp;1st place - 20 points
             <br>&emsp;&emsp;&emsp;2nd place - 12 points
             <br>&emsp;&emsp;&emsp;3rd place - 8 points </b>
@@ -769,11 +989,29 @@
             <p>CONTACT : 
                    <p>Bharath : 8464954210</p>
             </p>
+                    
+                </div>
+    
+            </div>  
             </div>
             <div class="item">
             
             <h3>Kho-Kho(Boys)</h3>
-            <p><b>POINTS:- 
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture13">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules13">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture13" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules13" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:- 
             <br>&emsp;&emsp;&emsp;1st place - 20 points
             <br>&emsp;&emsp;&emsp;2nd place - 12 points
             <br>&emsp;&emsp;&emsp;3rd place - 8 points </b>
@@ -796,11 +1034,29 @@
             <p>CONTACT : 
                     <p>Bibek : 8122349537</p>
             </p>
+                    
+                </div>
+    
+            </div>  
             </div>
             <div class="item"> 
             
             <h3>Kho-Kho(Girls)</h3>
-            <p><b>POINTS:-
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture14">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules14">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture14" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules14" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
             <br>&emsp;&emsp;&emsp;1st place - 15 points
             <br>&emsp;&emsp;&emsp;2nd place - 10 points
             <br>&emsp;&emsp;&emsp;3rd place - 6 points</b>
@@ -823,11 +1079,29 @@
             <p>CONTACT : 
                     <p>Supriya : 9629527138</p>
             </p>
+                    
+                </div>
+    
+            </div>  
             </div>
 
             <div class="item">
                 <h3>Marathon</h3>
-                <p><b>POINTS (Men):-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture15">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules15">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture15" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules15" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS (Men):-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                 <br>&emsp;&emsp;&emsp;2nd place - 8 points
                 <br>&emsp;&emsp;&emsp;3rd place - 5 points </b>
@@ -856,11 +1130,28 @@
                     <p>BOYS - Girish Babu : 9629392048</p>
                     <p>GIRLS - Ankita : 9962290429</p>
                 </p>
+                </div>
+    
+            </div>  
             </div>
 
             <div class="item">
                 <h3>Powerlifting</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture16">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules16">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture16" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules16" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 5 points
                 <br>&emsp;&emsp;&emsp;2nd place - 3 points
                 <br>&emsp;&emsp;&emsp;3rd place - 1 point</b>
@@ -900,11 +1191,29 @@
                 <p>CONTACT : 
                     <p>Aman Bakolia : 9965186109</p>
                 </p>
+                    
+                </div>
+    
+            </div>  
             </div>
 
             <div class="item">
                 <h3>Sports Quiz</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture17">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules17">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture17" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules17" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 5 points
                 <br>&emsp;&emsp;&emsp;2nd place - 3 points
                 <br>&emsp;&emsp;&emsp;3rd place - 1 point</b>
@@ -919,11 +1228,30 @@
                         <li>Quiz masters decision will be final. Using nefarious means when attempting the quiz will lead to disqualification of the whole department from the quiz.</li>
                     </ul>
                 </p>
+                    
+                </div>
+    
+            </div> 
+                
             </div>
 
             <div class="item">
                 <h3>Swimming</h3>
-                <p>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture18">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules18">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture18" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules18" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p>POINTS:-
                 <p><b>INDIVIDUAL:
                       <br>&emsp;&emsp;&emsp;1st place - 5 points
                       <br>&emsp;&emsp;&emsp;2nd place - 3 points
@@ -972,11 +1300,29 @@
                     <p>Aravind MK : 9445153324</p>
                     <p>Snigdha Nagarajan : 9629478442</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>Table Tennis (Mixed)</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture19">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules19">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture19" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules19" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                 <br>&emsp;&emsp;&emsp;2nd place - 8 points
                 <br>&emsp;&emsp;&emsp;3rd place - 5 points</b>
@@ -1002,10 +1348,27 @@
                 <p>CONTACT : 
                     <p>Dwarak Varadharajan : 9884063262</p>
                 </p>
+                </div>
+    
+            </div> 
             </div>
             <div class="item">
                 <h3>Tennis (MEN)</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture20">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules20">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture20" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules20" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
                 <br>&emsp;&emsp;&emsp;2nd place - 8 points
                 <br>&emsp;&emsp;&emsp;3rd place - 5 points</b>
@@ -1029,11 +1392,29 @@
                 <p>CONTACT : 
                     <p>Siddharth Palanichamy : 9698855688</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>Tennis (WOMEN)</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture21">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules21">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture21" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules21" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 10 points
                 <br>&emsp;&emsp;&emsp;2nd place - 6 points
                 <br>&emsp;&emsp;&emsp;3rd place - 4 points</b>
@@ -1052,11 +1433,29 @@
                 <p>CONTACT : 
                     <p>Rishmitha : 9994688344</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>Throwball</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture22">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules22">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture22" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules22" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                   <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
                 <br>&emsp;&emsp;&emsp;2nd place - 10 points
                 <br>&emsp;&emsp;&emsp;3rd place - 6 points </b>
@@ -1085,11 +1484,29 @@
                 <p>CONTACT : 
                     <p>Nirmitha Rao : 9629606757</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>VolleyBall (Boys)</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture23">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules23">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture23" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules23" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 20 points
                 <br>&emsp;&emsp;&emsp;2nd place - 12 points
                 <br>&emsp;&emsp;&emsp;3rd place - 8 points</b>
@@ -1112,11 +1529,29 @@
                 <p>CONTACT : 
                    <p>Aravind : 9791504254</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>VolleyBall (Girls)</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture24">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules24">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture24" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules24" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
                 <br>&emsp;&emsp;&emsp;2nd place - 10 points
                 <br>&emsp;&emsp;&emsp;3rd place - 6 points</b>
@@ -1139,11 +1574,29 @@
                 <p>CONTACT : 
                     <p>Nirmitha Rao : 9629606757</p>
                 </p>
+                    
+                </div>
+    
+            </div> 
             </div>
 
             <div class="item">
                 <h3>WaterPolo</h3>
-                <p><b>POINTS:-
+                <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#fixture25">Fixture</a></li>
+                <li><a data-toggle="tab" href="#rules25">Rules</a></li>
+    
+            </ul>
+
+            <div class="tab-content">
+                <div id="fixture25" class="tab-pane fade in active">
+                  <h3>Fixture</h3>
+                  
+                </div>
+                <div id="rules25" class="tab-pane fade">
+                  <h3>Rules</h3>
+                  
+                   <p><b>POINTS:-
                  <br>&emsp;&emsp;&emsp;1st place - 20 points
                  <br>&emsp;&emsp;&emsp;2nd place - 12 points
                  <br>&emsp;&emsp;&emsp;3rd place - 8 points</b>
@@ -1169,7 +1622,10 @@
                 <p>CONTACT : 
                     <p>Aravind MK : 9445153324</p>
                 </p>
-
+                    
+                </div>
+    
+            </div> 
             </div>
             
             
