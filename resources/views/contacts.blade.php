@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="/css/contacts.css" rel="stylesheet">
-     
+
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
@@ -51,19 +51,16 @@
                         <a href="/">Home</a>
                     </li class="menulinks">
                     <li class="menulinks">
-                        <a href="gallery.html">Photos</a>
+                        <a href="/photos">Photos</a>
                     </li>
-                    
+
                     <li class="menulinks">
                         <a href="/events">Events</a>
                     </li>
                     <li class="menulinks">
                         <a href="/scoreboard">Scoreboard</a>
                     </li>
-                    <li class="menulinks">
-                        <a href="/contacts">Contact</a>
-                    </li>
-                </ul>
+                  </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -72,23 +69,23 @@
     <!-- Page Content -->
     <div class="container-fluid" id="pagecontent">
 
-        
+
 
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Contact Us
-                    
+
                 </h1>
-                
+
             </div>
         </div>
         <ul class="list-inline" style="margin-top:40px;">
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/image4.jpg">
             <br>
             <p>Name:</p><br>
-            
+
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-            
+
             <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
             <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
             </li>
@@ -96,7 +93,7 @@
             <br>
             <p>Name:</p><br>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-            
+
             <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
             <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
             </li>
@@ -104,7 +101,7 @@
             <br>
             <p>Name:</p><br>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-            
+
             <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
             <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
             </li>
@@ -112,24 +109,24 @@
             <br>
             <p>Name:</p><br>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-            
+
             <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
             <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
             </li>
-            
-            
+
+
 
             <!--end of thumbnails-->
         </ul>
-  
 
-        
+
+
 
         <!-- Pagination -->
-        
+
         <!-- /.row -->
 
-        
+
     </div>
     <!-- /.container -->
 
@@ -142,7 +139,7 @@
 
         $(document).ready(function()
             {
-                $('[data-toggle="tooltip"]').tooltip(); 
+                $('[data-toggle="tooltip"]').tooltip();
             });
     </script>
 
