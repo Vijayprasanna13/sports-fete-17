@@ -23,7 +23,9 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
-
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <script src='/js/scoreboard.js'></script>
 
 </head>
 
@@ -90,7 +92,7 @@
                     <th style="text-align: center">Winner</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="scoreboard_body">
               
             </tbody>
         </table>
@@ -106,9 +108,6 @@
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>

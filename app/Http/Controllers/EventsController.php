@@ -15,6 +15,15 @@ class EventsController extends Controller{
     *@param day
     *@return
     */
+
+
+    public function GetEvents(Request $request) {
+      if(!$data = Event::GetEvents()) {
+        return response()->json('internal server error', 500);
+      }
+      return response()->json($data, 200);
+    }
+
     public function GetEventsByDay($day){
       if(!$this->IsDayValid($day)) {
         return response()->json('day not found', 404);
