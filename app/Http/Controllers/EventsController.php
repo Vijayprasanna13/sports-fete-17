@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 use App\Event;
 
 class EventsController extends Controller{
@@ -54,6 +55,12 @@ class EventsController extends Controller{
     return response()->json($event,200);
   }
 
+/**
+*
+*This function sets the event status to 's'
+*@param event id
+*@return 
+*/
   public function StartEvent($event_id) {
     if(!Event::find($event_id)) {
       return response()->json('event not found', 404);
@@ -64,6 +71,12 @@ class EventsController extends Controller{
     return response()->json('event status changed', 200);
   }
 
+  /**
+  *
+  *This function sets the event status to 'c'
+  *@param event id
+  *@return 
+  */
   public function CompleteEvent($event_id) {
     if(!Event::find($event_id)) {
       return response()->json('event not found', 404);
@@ -74,26 +87,18 @@ class EventsController extends Controller{
     return response()->json('event status changed', 200);
   }
 
+  /**
+  *
+  *This is used for user authentication using .nitt.edu webmail username 
+  *and password. 
+  *@param rollno, password
+  *@return
+  */
   public function Authenticate(Request $request){
-       // dev mode: login automatically; APP_ENV defaults to local
-        /*if (env('APP_ENV', 'local') != 'production') {
-            return true;
-        }        
-        */
-        // Attempt IMAP
-        $rollno = $request['rollno'];
-        $password = $request['password'];
-        $imap_token =
-            @\imap_open(
-                "{vayu.nitt.edu:993/imap/ssl/novalidate-cert}",
-                $rollno,
-                $password,
-                0, 1
-            );
-        if ($imap_token != false) {
-            return response()->json("success",200);
-        }
-        return response()->json("wrong username or password",400);
+      $imap_response = User::AuthenticateStudent($request['rollno'],$request['password']);
+      if($imap_response)
+        return response()->json("success", 200);
+      return response()->json("wrong rollno or password", 400);
   }
 
 }
