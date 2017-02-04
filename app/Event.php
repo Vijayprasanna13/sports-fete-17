@@ -8,6 +8,10 @@ class Event extends Model{
 
   protected $table = "events";
 
+  public static function GetEvents() {
+    return Event::where('status', 'c')->orderBy('updated_at', 'desc')->get();
+  }
+
   public function Scores() {
     return $this->hasMany('App\Score', 'event_id', 'event_id');
   }
