@@ -9,10 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SportsFete</title>
+    <title>Sportsfete</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="/css/countdown.css" rel="stylesheet">-->
 
     <!-- Custom CSS -->
     <link href="/css/index.css" rel="stylesheet">
@@ -63,41 +64,68 @@
     </nav>
 
     <!-- Header -->
-
+    
+    
     <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SportsFete'17</h1>
-        </div>
+            <h1>Sportsfete'17</h1>
+        </div>              
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SportsFete'17</h1>
-        </div>
-    </div>
+            <h1>Sportsfete'17</h1>
+        </div>  
+    </div>   
     <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SportsFete'17</h1>
-        </div>
-    </div>
-
+            <h1>Sportsfete'17</h1>
+        </div>  
+    </div>   
+    
     <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>SportsFete'17</h1>
-        </div>
+            <h1>Sportsfete'17</h1>
+        </div>     
 
     </div>
-
+    <div class="container" id="countdown">
+        <div id="clockdiv" class="row">
+            <div class="col-sm-3">
+              <span class="days"></span>
+              <div class="smalltext"><b>Days</b></div>
+            </div>
+            <div class="col-sm-3">
+                <span class="hours"></span>
+                <div class="smalltext"><b>Hours</b></div>
+            </div>
+            <div class="col-sm-3">
+                <span class="minutes"></span>
+                <div class="smalltext"><b>Minutes</b></div>
+            </div>
+            <div class="col-sm-3">
+                <span class="seconds"></span>
+                <div class="smalltext"><b>Seconds</b></div>
+            </div>
+      
+          
+        </div>
+    </div>
+    
+       
+   
+    
+    
     <br>
     <div class="dots" style="text-align:center;">
-        <span class="dot" onclick="particular(1)"></span>
-        <span class="dot" onclick="particular(2)"></span>
-        <span class="dot" onclick="particular(3)"></span>
+        <span class="dot" onclick="particular(1)"></span> 
+        <span class="dot" onclick="particular(2)"></span> 
+        <span class="dot" onclick="particular(3)"></span> 
         <span class="dot" onclick="particular(4)"></span>
-
+        
     </div>
+    
 
-
-
+    
     <section id="leaderboard" class="services">
         <div class="container">
             <div class="row text-center">
@@ -106,7 +134,7 @@
                     <b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <img src="images/leaderboard.png" class="img-responsive">
+                            <img src="images/leaderboard.png" class="img-responsive">    
                         </div>
                         <div class="col-md-9 col-sm-6">
                             <table class="table table-hover table-striped">
@@ -115,15 +143,32 @@
                                         <th>Serial No.</th>
                                         <th>Department</th>
                                         <th>Score</th>
-
+                                        
                                     </tr>
                                 </thead>
-                                <tbody id="leaderboardBody">
-
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CSE</td>
+                                        <td>89</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>EEE</td>
+                                        <td>56</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>ECE</td>
+                                        <td>54</td>
+                                        
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-
+                        
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -133,10 +178,10 @@
         </div>
         <!-- /.container -->
     </section>
-
-
-
-
+    
+    
+   
+ 
     <section id="upcomingevents" class="upcomingevents">
         <div class="container">
             <div class="row">
@@ -144,29 +189,39 @@
                     <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3">
                             <img class="img-responsive" src="images/upcoming_events.jpg">
-
+                            
                         </div>
-                        <div class="col-md-9 col-sm-6">
-                          <table class="table table-hover table-striped">
-                              <thead>
-                                  <tr>
-                                      <th>Date</th>
-                                      <th>Event</th>
-                                      <th>Start Time</th>
-                                      <th>Venue</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="events_body">
-
-                              </tbody>
-                          </table>
+                        
+                        <div class="col-md-9">
+                            <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
                         </div>
-
+                            
+                        
+                        
                     </div>
                     <!-- /.row (nested) -->
-
+                        <div class="row" id="clockdiv2">
+                           
+                            <div class="col-sm-3">
+                              <span class="days"></span>
+                              <div class="smalltext"><b>Days</b></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <span class="hours"></span>
+                                <div class="smalltext"><b>Hours</b></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <span class="minutes"></span>
+                                <div class="smalltext"><b>Minutes</b></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <span class="seconds"></span>
+                                <div class="smalltext"><b>Seconds</b></div>
+                            </div>
+                        </div>
+                    
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -186,15 +241,15 @@
 
                     <img src="images/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
                     <br><p id="spider">Designed by <b>Spider</b></p>
-
+          
 
                 </div>
             </div>
         </div>
     </aside>
-    <a id="to-top" href="#" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    <a id="to-top" href="#clockdiv" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 
-
+   
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
 
@@ -202,7 +257,6 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/index.js"></script>
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -254,38 +308,55 @@
             }
         }
     });
-
+    
     var slideIndex = 1;
     showSlides(slideIndex);
 
-    function plusSlides(n)
+    function plusSlides(n) 
     {
         showSlides(slideIndex += n);
     }
 
-    function currentSlide(n)
+    function currentSlide(n) 
     {
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n)
+    function showSlides(n) 
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
+        if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length} ;
-        for (i = 0; i < slides.length; i++)
+        for (i = 0; i < slides.length; i++) 
         {
-            slides[i].style.display = "none";
+            slides[i].style.display = "none";  
         }
-        for (i = 0; i < dots.length; i++)
+        for (i = 0; i < dots.length; i++) 
         {
             dots[i].classList.remove("active");
         }
-        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].classList.add("active");
     }
+    /*function showSlides(n) 
+    {
+        var i;
+        var bgs=["url(images/image4.jpg)","url(images/image5.jpg)","url(images/image6.jpg)","url(images/image7.jpg)"];
+        
+        var dots = document.getElementsByClassName("dot");
+        if (n > bgs.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = bgs.length} ;
+        document.getElementById('top').style.backgroundImage=bgs[slideIndex-1]; 
+        
+        for (i = 0; i < dots.length; i++) 
+        {
+            dots[i].classList.remove("active");
+        }
+        //slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].classList.add("active");
+    }*/
     function change()
     {
         slideIndex+=1;
@@ -303,6 +374,79 @@
         //setTimeout(continuous,4000);
         continuous();
     }
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    var deadline = "Tue Feb 23 2017 06:00:00 GMT+0530 (IST)";
+    var deadline2= "Sat Feb 11 2017 06:00:00 GMT+0530 (IST)";
+
+    initializeClock('clockdiv', deadline);
+    initializeClock('clockdiv2', deadline2);
+
+
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+      $("#to-top").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top-500
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
     </script>
 
 </body>

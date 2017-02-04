@@ -22,7 +22,7 @@ body {
     font-family: Pacifico;
     text-align: center;
     vertical-align: middle;
-
+    
 }
 
 .text-vertical-center h1 {
@@ -159,7 +159,8 @@ hr.small {
     -o-background-size: cover;
     animation-name: slide;
     animation-duration: 1s;
-
+    //margin-top:-140px;
+    
     animation-fill-mode: forwards;
     opacity:0;
 }
@@ -216,7 +217,7 @@ hr.small {
 /* Call to Action */
 
 .call-to-action {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .call-to-action .btn {
@@ -265,7 +266,7 @@ footer {
   to{opacity: 1;}
 }
 @-webkit-keyframes slide{
-  from {opacity: .0}
+  from {opacity: .0} 
   to {opacity: 1}
 }
 
@@ -293,12 +294,12 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
 }
 #caption
@@ -329,7 +330,7 @@ footer {
     font-size:20px;
     font-family:Vollkorn,serif;
 }
-.table-striped
+.table-striped 
 {
     font-family:Vollkorn,serif;
     font-size:16px;
@@ -352,11 +353,128 @@ footer {
     width:70%;
 }
 
-.table-striped > thead
+.table-striped > thead 
 {
     font-size:20px;
     padding-left: 20px;
     background-color:   #C0C0C0 ;
     color:white;
+
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    //font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    //margin-left:auto;
+    //margin-right:auto;
+    //margin-top:-40%;
+    //margin-left:150px;
+    //margin-left:;
+    //position:absolute;
+    //z-index:1000;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    //background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    //background: #DCDCDC;
+    display: inline-block;
+    color:white;
+    font-weight: 100;
+    font-size:39px;
+    background-color: rgba(192,192,192,0.7);
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+#countdown
+{
+  position:absolute;
+  z-index:1000;
+  margin-top:-250px;
+  //margin-left:40%;
+  margin-left:8%;
+
+
+  text-align: center;
+}
+@media(max-device-width:400px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv > div
+       {
+          padding: 10px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:5px;
+      }
+      #countdown
+      {
+        margin-left:7%;
+      }
+
+}
+#clockdiv2{
+    font-family: sans-serif;
+    
+    display: inline-block;
+    
+    text-align: center;
+    font-size: 30px;
+    margin-left:30%;
+    
+}
+
+#clockdiv2 > div{
+    padding: 10px;
+    border-radius: 3px;
+    //background: #00BF96;
+    display: inline-block;
+
+}
+
+#clockdiv2 div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #DCDCDC;
+    display: inline-block;
+    color:black;
+    font-weight: 100;
+    font-size:39px;
+    
+}
+@media(max-device-width:400px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv2 > div
+       {
+          padding: 0px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv2 div > span
+      {
+        padding:1px;
+      }
+      #clockdiv2
+      {
+        margin-left:2%.c;
+      }
+      
 
 }
