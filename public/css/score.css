@@ -231,8 +231,9 @@ h1 {
 }
 .page-header
 {
-  color:  #003300;
-  font-weight:bold;
+  color:  #FFFFFF;
+  margin-left: 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 .navbar-brand {
     font-family: Pacifico;

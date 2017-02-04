@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sportsfete</title>
+    <title>SportsFete</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -66,23 +66,23 @@
 
     <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1>SportsFete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1>SportsFete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1>SportsFete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1>SportsFete'17</h1>
         </div>
 
     </div>

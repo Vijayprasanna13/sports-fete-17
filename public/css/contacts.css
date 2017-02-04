@@ -9,7 +9,7 @@
 html,
 body {
       height: 100%;
-      background: url('../images/contacts.jpg') no-repeat fixed; 
+    background-color: #A9CCE3;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,7 +23,7 @@ body {
 body {
     padding-top: 50px;
     font-size:16px;
-    color:white;
+    color:#566573 ;
     font-family: 'Open Sans', sans-serif;
 }
 

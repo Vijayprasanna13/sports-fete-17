@@ -74,4 +74,26 @@ class EventsController extends Controller{
     return response()->json('event status changed', 200);
   }
 
+  public function Authenticate(Request $request){
+       // dev mode: login automatically; APP_ENV defaults to local
+        /*if (env('APP_ENV', 'local') != 'production') {
+            return true;
+        }        
+        */
+        // Attempt IMAP
+        $rollno = $request['rollno'];
+        $password = $request['password'];
+        $imap_token =
+            @\imap_open(
+                "{vayu.nitt.edu:993/imap/ssl/novalidate-cert}",
+                $rollno,
+                $password,
+                0, 1
+            );
+        if ($imap_token != false) {
+            return true;
+        }
+        return false;
+  }
+
 }
