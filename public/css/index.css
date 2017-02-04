@@ -22,7 +22,7 @@ body {
     font-family: Pacifico;
     text-align: center;
     vertical-align: middle;
-    
+
 }
 
 .text-vertical-center h1 {
@@ -159,7 +159,7 @@ hr.small {
     -o-background-size: cover;
     animation-name: slide;
     animation-duration: 1s;
-    
+
     animation-fill-mode: forwards;
     opacity:0;
 }
@@ -265,7 +265,7 @@ footer {
   to{opacity: 1;}
 }
 @-webkit-keyframes slide{
-  from {opacity: .0} 
+  from {opacity: .0}
   to {opacity: 1}
 }
 
@@ -293,12 +293,12 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 #caption
@@ -329,7 +329,7 @@ footer {
     font-size:20px;
     font-family:Vollkorn,serif;
 }
-.table-striped 
+.table-striped
 {
     font-family:Vollkorn,serif;
     font-size:16px;
@@ -352,7 +352,7 @@ footer {
     width:70%;
 }
 
-.table-striped > thead 
+.table-striped > thead
 {
     font-size:20px;
     padding-left: 20px;

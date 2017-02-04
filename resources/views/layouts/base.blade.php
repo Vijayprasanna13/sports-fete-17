@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="{{ URL::asset('/css/base.css') }}">
   </head>
 
@@ -32,7 +32,7 @@
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
           <li><a href="/photos">Photos</a></li>
-          <li><a href="/eventsList">Events</a></li>
+          <li><a href="/events">Events</a></li>
           <li><a href="/scoreboard">Scoreboard</a></li>
           <li><a href="/contacts">Contacts</a></li>
         </ul>

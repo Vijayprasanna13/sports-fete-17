@@ -42,7 +42,7 @@
                 <a class="menulinks" href="#top" onclick=$("#menu-close").click();>Home</a>
             </li>
             <li>
-                <a class="menulinks" href="gallery.html">Photos</a>
+                <a class="menulinks" href="/photos">Photos</a>
             </li>
             <li>
                 <a class="menulinks" href="/events" >Events</a>
@@ -63,41 +63,41 @@
     </nav>
 
     <!-- Header -->
-   
+
     <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
-        </div>              
+        </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
-        </div>  
-    </div>   
+        </div>
+    </div>
     <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
-        </div>  
-    </div>   
-    
+        </div>
+    </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
-        </div>     
+        </div>
 
     </div>
-    
+
     <br>
     <div class="dots" style="text-align:center;">
-        <span class="dot" onclick="particular(1)"></span> 
-        <span class="dot" onclick="particular(2)"></span> 
-        <span class="dot" onclick="particular(3)"></span> 
+        <span class="dot" onclick="particular(1)"></span>
+        <span class="dot" onclick="particular(2)"></span>
+        <span class="dot" onclick="particular(3)"></span>
         <span class="dot" onclick="particular(4)"></span>
-        
-    </div>
-    
 
-    
+    </div>
+
+
+
     <section id="leaderboard" class="services">
         <div class="container">
             <div class="row text-center">
@@ -106,7 +106,7 @@
                     <b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <img src="images/leaderboard.png" class="img-responsive">    
+                            <img src="images/leaderboard.png" class="img-responsive">
                         </div>
                         <div class="col-md-9 col-sm-6">
                             <table class="table table-hover table-striped">
@@ -115,32 +115,15 @@
                                         <th>Serial No.</th>
                                         <th>Department</th>
                                         <th>Score</th>
-                                        
+
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>CSE</td>
-                                        <td>89</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>EEE</td>
-                                        <td>56</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>ECE</td>
-                                        <td>54</td>
-                                        
-                                    </tr>
+                                <tbody id="leaderboardBody">
+
                                 </tbody>
                             </table>
                         </div>
-                        
+
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -150,10 +133,10 @@
         </div>
         <!-- /.container -->
     </section>
-    
-    
-   
- 
+
+
+
+
     <section id="upcomingevents" class="upcomingevents">
         <div class="container">
             <div class="row">
@@ -161,14 +144,29 @@
                     <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3 col-sm-6">
                             <img class="img-responsive" src="images/upcoming_events.jpg">
-                            
+
                         </div>
-                        
+                        <div class="col-md-9 col-sm-6">
+                          <table class="table table-hover table-striped">
+                              <thead>
+                                  <tr>
+                                      <th>Date</th>
+                                      <th>Event</th>
+                                      <th>Start Time</th>
+                                      <th>Venue</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="events_body">
+
+                              </tbody>
+                          </table>
+                        </div>
+
                     </div>
                     <!-- /.row (nested) -->
-                    
+
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -188,7 +186,7 @@
 
                     <img src="images/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
                     <br><p id="spider">Designed by <b>Spider</b></p>
-          
+
 
                 </div>
             </div>
@@ -196,7 +194,7 @@
     </aside>
     <a id="to-top" href="#" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 
-   
+
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
 
@@ -204,6 +202,7 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script src="js/index.js"></script>
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -255,36 +254,36 @@
             }
         }
     });
-    
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
-    function plusSlides(n) 
+    function plusSlides(n)
     {
         showSlides(slideIndex += n);
     }
 
-    function currentSlide(n) 
+    function currentSlide(n)
     {
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n) 
+    function showSlides(n)
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
+        if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length} ;
-        for (i = 0; i < slides.length; i++) 
+        for (i = 0; i < slides.length; i++)
         {
-            slides[i].style.display = "none";  
+            slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) 
+        for (i = 0; i < dots.length; i++)
         {
             dots[i].classList.remove("active");
         }
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].classList.add("active");
     }
     function change()
