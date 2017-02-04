@@ -18,7 +18,7 @@ $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/events', 'PagesController@GetEventsView');
-$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
+//$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
 $app->get('/auth/login','PagesController@GetLoginView');
 
 

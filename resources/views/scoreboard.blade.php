@@ -86,27 +86,12 @@
         <table class="table table-striped text-center table-hover" id="scoreboard">
             <thead>
                 <tr>
-                    <th style="text-align: center">Sample</th>
-                    <th style="text-align: center">Sample</th>
-                    <th style="text-align: center">Sample</th>
+                    <th style="text-align: center">Event</th>
+                    <th style="text-align: center">Winner</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
+              
             </tbody>
         </table>
 
