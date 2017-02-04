@@ -16,13 +16,13 @@
 
     <!-- Custom CSS -->
     <link href="/css/score.css" rel="stylesheet">
-     
+
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    
+
 
 
 </head>
@@ -54,7 +54,7 @@
                     <li class="menulinks">
                         <a href="/photos">Photos</a>
                     </li>
-                    
+
                     <li class="menulinks">
                         <a href="/events">Events</a>
                     </li>
@@ -73,22 +73,22 @@
     <!-- Page Content -->
     <div class="container" id="pagecontent">
 
-        
+
 
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                Scoreboard    
+                Scoreboard
                 </h1>
-                
+
             </div>
         </div>
-        <table class="table table-striped table-bordered table-hover" id="scoreboard">
+        <table class="table table-striped text-center table-hover" id="scoreboard">
             <thead>
                 <tr>
-                    <th>Sample</th>
-                    <th>Sample</th>
-                    <th>Sample</th>
+                    <th style="text-align: center">Sample</th>
+                    <th style="text-align: center">Sample</th>
+                    <th style="text-align: center">Sample</th>
                 </tr>
             </thead>
             <tbody>
@@ -109,16 +109,16 @@
                 </tr>
             </tbody>
         </table>
-      
-  
 
-        
+
+
+
 
         <!-- Pagination -->
-        
+
         <!-- /.row -->
 
-        
+
     </div>
     <!-- /.container -->
 

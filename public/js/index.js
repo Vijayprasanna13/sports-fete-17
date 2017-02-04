@@ -40,7 +40,8 @@ $(document).ready(function() {
           pos--;
         }
         $('#leaderboardBody').append(
-            "<tr onclick=\"window.document.location=\'deptscore/"+data[x].id+"\';\">"+
+            // "<tr onclick=\"window.document.location=\'deptscore/"+data[x].id+"\';\">"+
+            "<tr>"+
               "<td>"+pos+"</td>"+
               "<td>"+data[x].department_name+"</td>"+
               "<td>"+data[x].score+"</td>"+
