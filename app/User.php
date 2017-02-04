@@ -32,6 +32,20 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
     protected $table = "users";
 
+    public static function AuthenticateStudent($rollno, $password){
+        $imap_token =
+            @\imap_open(
+                "{vayu.nitt.edu:993/imap/ssl/novalidate-cert}",
+                $rollno,
+                $password,
+                0, 1
+            );
+        if ($imap_token != false) {
+            return 1;
+        }
+        return 0;
+    }
+
     public static function getUser($username) {
       return User::select('*')->where('username', $username)->first();
     }
