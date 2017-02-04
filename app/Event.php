@@ -61,11 +61,17 @@ class Event extends Model{
     return $events;
   }
 
-  public static function StartEvent($event_id) {
-    return Event::where('id', $event_id)->update(['status' => 's']);
+  public static function EventById($event_id){
+    $event = Event::select('id','day','name','venue','start_time','round','status')->where('id',$event_id)->get();
+    $event = Event::AddParticipants($event);
+    return $event;
   }
 
-  public static function CompleteEvent($event_id) {
-    return Event::where('id', $event_id)->update(['status' => 'c']);
+  public static function StartEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 'l']);
+  }
+
+  public function CompleteEvent($winner) {
+    return Event::where('id', $this->id)->update(['status' => 'c', 'winner' => $winner]);
   }
 }

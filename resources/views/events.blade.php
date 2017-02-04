@@ -70,7 +70,7 @@
 
         
 
-        <div class="row">
+            <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
                     Events
@@ -88,72 +88,72 @@
 
 
         <ul class="list-inline" style="margin-top:40px;">
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/tdvQriV.jpg" ><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/pipI6QY.jpg" ><br>
             </a>
             <br><div class="eventname">Athletics</div></li>
 
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/3qAu0BY.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/YHg7cQp.jpg"><br>
             </a>
             <br><div class="eventname">Badminton(mixed)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/xJ77iyM.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/lgKdiK9.jpg"><br>
             </a>
             <br><div class="eventname">Basketball(Boys)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/5BrHj08.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/lgKdiK9.jpg"><br>
             </a>
             <br><div class="eventname">Basketball(Girls)</div></li>
             
             <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4"><img class="
-            img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/rDWMTcJ.jpg"><br>
+            img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/FOPVkvt.jpg"><br>
             </a>
             <br><div class="eventname">Carrom(Mixed)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/92ORyiF.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/RaI1a3w.jpg"><br>
             </a>
             <br><div class="eventname">Chess(mixed)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="6"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/ggbz7cR.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="6"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/qLQ444o.jpg"><br>
             </a>
             <br><div class="eventname">Cricket(Boys)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="7"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/0IlDj4k.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="7"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/qLQ444o.jpg"><br>
             </a>
             <br><div class="eventname">Cricket(Girls)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="8"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/buk7yBW.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="8"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/9seZXS3.jpg"><br>
             </a>
             <br><div class="eventname">Football(Boys)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="9"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/zkn49rZ.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="9"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/9seZXS3.jpg"><br>
             </a>
             <br><div class="eventname">Football(Girls)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="10"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/qoxGSdI.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="10"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/QFbAkWC.jpg"><br>
             </a>
             <br><div class="eventname">Handball</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="11"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/j6CjolO.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="11"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/FBlTMwx.jpg"><br>
             </a>
             <br><div class="eventname">Hockey</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="12"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/kpNRQ2I.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="12"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/FOPVkvt.jpg"><br>
             </a>
             <br><div class="eventname">Kabaddi</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="13"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/ip0wziR.png"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="13"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/1wZAs1p.jpg"><br>
             </a>
             <br><div class="eventname">Kho-kho(Boys)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="14"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/1Mtxzaz.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="14"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/1wZAs1p.jpg"><br>
             </a>
             <br><div class="eventname">Kho-kho(Girls)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="15"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/1A2M80z.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="15"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/ScZOhXS.jpg"><br>
             </a>
             <br><div class="eventname">Marathon</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="16"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/wlrWIMq.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="16"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/79jPnS3.jpg"><br>
             </a>
             <br><div class="eventname">Powerlifting</div></li>
             
@@ -162,35 +162,35 @@
             </a>
             <br><div class="eventname">Sportsquiz</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="18"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/kK0iooO.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="18"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/CTXtuSl.jpg"><br>
             </a>
             <br><div class="eventname">Swimming</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="19"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/w77Gr1P.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="19"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/fAxgHAo.jpg"><br>
             </a>
             <br><div class="eventname">Table Tennis(mixed)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="20"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/mwIPrXw.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="20"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/RBiDb6k.jpg"><br>
             </a>
             <br><div class="eventname">Tennis(Men)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="21"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/Esu5RLN.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="21"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/RBiDb6k.jpg"><br>
             </a>
             <br><div class="eventname">Tennis(women)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="22"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/oBFXvxa.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="22"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/7iVbcET.jpg"><br>
             </a>
             <br><div class="eventname">Throwball</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="23"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/W18Jesd.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="23"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/6SdwPb7.jpg"><br>
             </a>
             <br><div class="eventname">Volleyball(Boys)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="24"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/4qHdzUm.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="24"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/6SdwPb7.jpg"><br>
             </a>
             <br><div class="eventname">Volleyball(Girls)</div></li>
             
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="25"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/3Qlg71F.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="25"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/QMwMrKM.jpg"><br>
             </a>
             <br><div class="eventname">Water Polo</div></li>
 

@@ -18,7 +18,7 @@ $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/events', 'PagesController@GetEventsView');
-$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
+//$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
 $app->get('/auth/login','PagesController@GetLoginView');
 
 
@@ -28,8 +28,10 @@ $app->post('/auth/login', 'UsersController@Login');
 
 $app->get('/api/events/day/{day}','EventsController@GetEventsByDay');
 $app->get('/api/events/day/{day}/department/{department}','EventsController@GetEventsByDepartment');
-$app->post('/api/event/{event_id}/start', 'EventsController@StartEvent');
-$app->post('/api/event/{event_id}/complete', 'EventsController@CompleteEvent');
+$app->get('/api/events/id/{id}','EventsController@GetEventById');
+$app->post('/api/events/{event_id}/start', 'EventsController@StartEvent');
+$app->post('/api/events/{event_id}/complete', 'EventsController@CompleteEvent');
+$app->post('/api/auth/user','EventsController@Authenticate');
 
 $app->get('/api/scores','DepartmentsController@GetScores');
 
@@ -39,6 +41,7 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 
 
 $app->get('/api/day', 'Controller@GetDay');
+$app->get('/api/images', 'Controller@GetImages');
 
 /**
 *
@@ -52,6 +55,6 @@ $app->group(['middleware'=>'auth'], function($app) {
 
   $app->post('/api/add/scores','DepartmentsController@AddScore');
   $app->post('/api/edit/scores','DepartmentsController@EditScore');
-	$app->post('/api/log','ScoresController@LogScores');
+  $app->post('/api/log','ScoresController@LogScores');
 
 });

@@ -16,13 +16,13 @@
 
     <!-- Custom CSS -->
     <link href="/css/score.css" rel="stylesheet">
-     
+
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    
+
 
 
 </head>
@@ -40,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Sportsfete</a>
+                <a class="navbar-brand" href="/">SportsFete'17</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,11 +52,11 @@
                         <a href="/">Home</a>
                     </li class="menulinks">
                     <li class="menulinks">
-                        <a href="gallery.html">Photos</a>
+                        <a href="/photos">Photos</a>
                     </li>
-                    
+
                     <li class="menulinks">
-                        <a href="events.html">Events</a>
+                        <a href="/events">Events</a>
                     </li>
                     <li class="menulinks">
                         <a href="/scoreboard">Scoreboard</a>
@@ -73,52 +73,37 @@
     <!-- Page Content -->
     <div class="container" id="pagecontent">
 
-        
+
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Scoreboard
-                    
+                <h1 class="page-header">
+                Scoreboard
                 </h1>
-                
+
             </div>
         </div>
-        <table class="table table-striped table-bordered table-hover" id="scoreboard">
+        <table class="table table-striped text-center table-hover" id="scoreboard">
             <thead>
                 <tr>
-                    <th>Sample</th>
-                    <th>Sample</th>
-                    <th>Sample</th>
+                    <th style="text-align: center">Event</th>
+                    <th style="text-align: center">Winner</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
-                <tr>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                    <td>Sample</td>
-                </tr>
+              
             </tbody>
         </table>
-      
-  
 
-        
+
+
+
 
         <!-- Pagination -->
-        
+
         <!-- /.row -->
 
-        
+
     </div>
     <!-- /.container -->
 

@@ -7,7 +7,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background: #00ECB9;;
+    background: #D2B4DE;
 }
 
 body {
@@ -124,7 +124,7 @@ footer {
 {
     height:200px;
     width:200px;
-    border-radius:200px;
+    border-radius: 10%;
     background-size: contain;
 }
 #evbg
