@@ -124,7 +124,7 @@ footer {
 {
     height:200px;
     width:200px;
-    border-radius:200px;
+    border-radius: 10%;
     background-size: contain;
 }
 #evbg
