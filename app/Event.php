@@ -71,7 +71,7 @@ class Event extends Model{
     return Event::where('id', $event_id)->update(['status' => 'l']);
   }
 
-  public static function CompleteEvent($event_id) {
-    return Event::where('id', $event_id)->update(['status' => 'c']);
+  public function CompleteEvent($winner) {
+    return Event::where('id', $this->id)->update(['status' => 'c', 'winner' => $winner]);
   }
 }

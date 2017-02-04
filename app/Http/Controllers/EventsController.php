@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Event;
+use App\Department;
 
 class EventsController extends Controller{
     use Validity;
@@ -34,18 +35,18 @@ class EventsController extends Controller{
   *@param department
   *@return
   */
-  public function GetEventsByDepartment($day,$department){
+  public function GetEventsByDepartment($day, $department){
     if(!$this->IsDayValid($day)){
       return response()->json('day not found',404);
     }
-    $events = Event::FilterByDepartment($day,$department);
+    $events = Event::FilterByDepartment($day, $department);
     return $events;
   }
 
   /**
   *This function return the event by id
   *@param event id
-  *@return 
+  *@return
   */
   public function GetEventById($event_id){
     if(!$this->FindEvent($event_id)){
@@ -59,7 +60,7 @@ class EventsController extends Controller{
 *
 *This function sets the event status to 's'
 *@param event id
-*@return 
+*@return
 */
   public function StartEvent($event_id) {
     if(!Event::find($event_id)) {
@@ -75,13 +76,19 @@ class EventsController extends Controller{
   *
   *This function sets the event status to 'c'
   *@param event id
-  *@return 
+  *@return
   */
-  public function CompleteEvent($event_id) {
-    if(!Event::find($event_id)) {
+  public function CompleteEvent(Request $request, $event_id) {
+    if(!isset($request['winner'])) {
+      return response()->json('missing parameters', 400);
+    }
+    if(!Department::find($request['winner'])) {
+      return response()->json('department not found', 404);
+    }
+    if(!$event = Event::find($event_id)) {
       return response()->json('event not found', 404);
     }
-    if(!Event::CompleteEvent($event_id)) {
+    if(!$event->CompleteEvent($request['winner'])) {
       return response()->json('cannot update event status', 500);
     }
     return response()->json('event status changed', 200);
@@ -89,8 +96,8 @@ class EventsController extends Controller{
 
   /**
   *
-  *This is used for user authentication using .nitt.edu webmail username 
-  *and password. 
+  *This is used for user authentication using .nitt.edu webmail username
+  *and password.
   *@param rollno, password
   *@return
   */

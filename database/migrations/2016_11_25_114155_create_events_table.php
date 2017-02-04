@@ -33,6 +33,9 @@ class CreateEventsTable extends Migration
             $table->boolean("MSC")->default(0);
             $table->boolean("DOMS")->default(0);
             $table->dateTime("start_time");
+            $table->string('round');
+            $table->string('status')->default('u');
+            $table->integer('winner')->unsigned();
             $table->timestamps();
         });
     }

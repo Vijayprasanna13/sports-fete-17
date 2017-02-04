@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddScoreColumnToEvents extends Migration
+class UpdateEventsTableAddForeignKey extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddScoreColumnToEvents extends Migration
      */
     public function up()
     {
-        Schema::table('events', function (Blueprint $table) {
-            $table->string('score');
-        });
+      Schema::table('events', function (Blueprint $table) {
+        $table->foreign('winner')->references('id')->on('departments');
+      });
     }
 
     /**
@@ -25,8 +25,8 @@ class AddScoreColumnToEvents extends Migration
      */
     public function down()
     {
-        Schema::table('events', function (Blueprint $table) {
-            //
-        });
+      Schema::table('events', function (Blueprint $table) {
+        $table->dropForeign('winner');
+      });
     }
 }
