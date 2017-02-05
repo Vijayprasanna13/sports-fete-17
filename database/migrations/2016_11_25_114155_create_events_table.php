@@ -35,7 +35,7 @@ class CreateEventsTable extends Migration
             $table->dateTime("start_time");
             $table->string('round');
             $table->string('status')->default('u');
-            $table->integer('winner')->unsigned();
+            $table->integer('winner')->unsigned()->nullable();
             $table->timestamps();
         });
     }
