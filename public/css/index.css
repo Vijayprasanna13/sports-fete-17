@@ -477,8 +477,8 @@ footer {
       }
 
 }
-@media(min-device-width:1000px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
+/*@media(min-device-width:2000px){
+       
        #clockdiv > div
        {
           padding:10px;
@@ -492,10 +492,10 @@ footer {
       }
       #countdown
       {
-        margin-left:12%;
+        margin-left:30%;
       }
 
-}
+}*/
 #clockdiv2{
     font-family: sans-serif;
     
