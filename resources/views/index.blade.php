@@ -32,7 +32,7 @@
 
 </head>
 
-<body onload="continuous()">
+<body id="start" onload="continuous()">
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -230,7 +230,7 @@
             </div>
         </div>
     </aside>
-    <a id="to-top" href="#clockdiv" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    <a id="to-top" href="#start" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 
 
     <!-- jQuery -->
@@ -420,7 +420,7 @@
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
-            scrollTop: $(hash).offset().top-500
+            scrollTop: $(hash).offset().top
           }, 800, function(){
 
             // Add hash (#) to URL when done scrolling (default click behavior)
