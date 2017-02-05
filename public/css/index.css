@@ -320,11 +320,12 @@ footer {
 #leaderboardBody tr:hover {
   background-color: #000080;
   cursor: pointer;
+  color: #ffffff;
 }
 #leadheading
 {
     color:white;
-    
+
     //padding:30px;
 }
 #lbh
@@ -450,7 +451,7 @@ footer {
           padding:6px;
           border-radius: 3px;
           display: inline-block;
-          
+
       }
       #clockdiv div > span
       {
@@ -469,7 +470,7 @@ footer {
           padding:3px;
           border-radius: 3px;
           display: inline-block;
-          
+
       }
       #clockdiv div > span
       {
@@ -482,13 +483,13 @@ footer {
 
 }
 /*@media(min-device-width:2000px){
-       
+
        #clockdiv > div
        {
           padding:10px;
           border-radius: 3px;
           display: inline-block;
-          
+
       }
       #clockdiv div > span
       {

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{$department_name}}</title>
+    <title>{{$department_name}} Events</title>
     <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -69,15 +69,17 @@
 
   <div class="container-fluid" id="departmentScoreboard" style="padding-top: 5vh;">
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 table-responsive">
+      <div class="col-sm-10 col-sm-offset-2 table-responsive">
         <table class="table table-striped text-center">
           <thead>
             <tr>
-              <th colspan="3">{{$department_name}} Scoreboard</th>
+              <th colspan="4" style="text-align:center">{{$department_name}} Events</th>
             </tr>
             <tr>
-              <th>Event</th>
-              <th>Winner</th>
+              <th style="text-align:center">Event</th>
+              <th style="text-align:center">Start Time</th>
+              <th style="text-align:center">Winner</th>
+              <th style="text-align:center">Venue</th>
             </tr>
           </thead>
           <tbody id="scoreboardBody">
@@ -103,20 +105,30 @@
             if(data[x].department == null) {
               data[x].department = {department_name: "---"}
             }
+            if(data[x].status == "c") {
+              data[x].start_time = "Completed";
+            }
+            if(data[x].status == "l") {
+              data[x].start_time = "Live";
+            }
             if(data[x].participants.length == 2) {
               $('#scoreboardBody').append(
                   "<tr>"+
-                    "<td>"+data[x].name+" "+data[x].participants[0]+" vs "+data[x].participants[1]+"</td>"+
-                    "<td>"+data[x].department.department_name+"</td>"+
-                  "</tr>"
+                    "<td>"+data[x].name+" "+data[x].participants[0]+" vs "+data[x].participants[1]+"</td>\
+                    <td>"+data[x].start_time+"</td>\
+                    <td>"+data[x].department.department_name+"</td>\
+                    <td>"+data[x].venue+"</td>\
+                  </tr>"
                 );
             }
             else {
               $('#scoreboardBody').append(
                   "<tr>"+
-                    "<td>"+data[x].name+"</td>"+
-                    "<td>"+data[x].department.department_name+"</td>"+
-                  "</tr>"
+                    "<td>"+data[x].name+"</td>\
+                    <td>"+data[x].start_time+"</td>\
+                    <td>"+data[x].department.department_name+"</td>\
+                    <td>"+data[x].venue+"</td>\
+                  </tr>"
                 );
             }
           }
