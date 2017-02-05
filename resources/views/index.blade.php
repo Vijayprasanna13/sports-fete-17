@@ -399,7 +399,7 @@
 
     //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
     var deadline = "Tue Feb 23 2017 06:00:00 GMT+0530 (IST)";
-    var deadline2= "Sat Feb 11 2017 06:00:00 GMT+0530 (IST)";
+    var deadline2= "Sat Feb 21 2017 05:00:00 GMT+0530 (IST)";
 
     initializeClock('clockdiv', deadline);
     initializeClock('clockdiv2', deadline2);

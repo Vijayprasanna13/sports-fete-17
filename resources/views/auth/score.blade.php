@@ -11,8 +11,8 @@
 
   <!-- Input for day-->
     <div class="form-group form-inline" id="day-input-wrapper">
-      <label for="day">Day : </label>
-      <input id="day" type="number" class="form-control"/>
+      <label for="event">Event Name : </label>
+      <input id="event" type="event" class="form-control"/>
     </div>
 
     <!-- Input for event-->

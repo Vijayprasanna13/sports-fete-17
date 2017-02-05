@@ -33,6 +33,7 @@ $app->post('/api/events/{event_id}/start', 'EventsController@StartEvent');
 $app->post('/api/events/{event_id}/complete', 'EventsController@CompleteEvent');
 $app->post('/api/auth/user','EventsController@Authenticate');
 $app->get('/api/events', 'EventsController@GetEvents');
+$app->get('/api/events/list','EventsController@GetEventList');
 
 $app->get('/api/scores','DepartmentsController@GetScores');
 

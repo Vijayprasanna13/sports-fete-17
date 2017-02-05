@@ -10,14 +10,12 @@ class EventsController extends Controller{
     use Validity;
 
     /**
-    *This function return the events for the given day
-    *and the participating departments
-    *@param day
+    *This function returns the 'event groups'
+    *
+    *@param none
     *@return
     */
-
-
-    public function GetEvents(Request $request) {
+    public function GetEvents() {
       if(!$data = Event::GetEvents()) {
         return response()->json('internal server error', 500);
       }
@@ -115,6 +113,14 @@ class EventsController extends Controller{
       if($imap_response)
         return response()->json("success", 200);
       return response()->json("wrong rollno or password", 400);
+  }
+
+  public function GetEventList(){
+    $eventlist = Event::GetEventList(); 
+    if(!$eventlist){
+      return response()->json("events not found", 400);
+    }
+    return response()->json($eventlist, 200);
   }
 
 }

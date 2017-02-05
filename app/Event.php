@@ -8,6 +8,7 @@ class Event extends Model{
 
   protected $table = "events";
 
+
   public static function GetEvents() {
     return Event::where('status', 'c')->orderBy('updated_at', 'desc')->get();
   }
@@ -75,7 +76,11 @@ class Event extends Model{
     return Event::where('id', $event_id)->update(['status' => 'l']);
   }
 
-  public function CompleteEvent($winner) {
+  public static function CompleteEvent($winner) {
     return Event::where('id', $this->id)->update(['status' => 'c', 'winner' => $winner]);
+  }
+
+  public static function GetEventList(){
+    return Event::select('name')->distinct();
   }
 }
