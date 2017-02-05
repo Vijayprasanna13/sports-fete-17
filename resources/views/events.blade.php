@@ -1410,7 +1410,7 @@
             <div class="tab-content">
                 <div id="fixture20" class="tab-pane fade in active">
                   <h3>Fixture</h3>
-                  <img src="images/fixtures/tabletennis_boys.jpg" alt="tabletennis_boys"/>
+                  <img src="images/fixtures/tabletennis_men.jpg" alt="tabletennis_men"/>
 
                 </div>
                 <div id="rules20" class="tab-pane fade">

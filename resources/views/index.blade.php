@@ -134,7 +134,7 @@
                     <b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <img src="images/leaderboard.png" class="img-responsive">
+                            <img src="images/homepage/leaderboard.png" class="img-responsive">
                         </div>
                         <div class="col-md-9 col-sm-6">
                             <table class="table table-hover table-striped">
