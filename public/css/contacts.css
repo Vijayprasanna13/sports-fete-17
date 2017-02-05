@@ -113,13 +113,15 @@ h1 {
   color:blue;
 }
 .cont
-{
-  margin-left:20%;
-  margin-top:2%;
+{ 
+  margin-left: 2.5%;
+  margin-right: 5%;
+  padding: 3%;
 }
 .page-header
 {
   color:white;
+  margin-left: 2%;
 }
 .navbar-brand {
     font-family: Pacifico;

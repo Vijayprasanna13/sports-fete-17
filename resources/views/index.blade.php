@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="col-md-9">
-                            <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                            <h3 style="font-family: Vollkorn,serif;">Marathon coming up in</h3>
                         </div>
 
 

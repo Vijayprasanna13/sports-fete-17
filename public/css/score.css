@@ -9,8 +9,7 @@
 html,
 body {
     height: 100%;
-    background-image: url('../images/grass.jpg');
-    background: url('../images/grass.jpg') no-repeat fixed;
+    background-color: #A3E4D7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -224,13 +223,15 @@ h1 {
 }
 #scoreboard
 {
-  margin-left:30px;
-  //margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
   margin-top:7%;
 }
 .page-header
 {
-  color:  #FFFFFF;
+  color: #34495E;
+  font-weight: 400;
+  font-size: 3em;
   margin-left: 10%;
   font-family: 'Open Sans', sans-serif;
 }

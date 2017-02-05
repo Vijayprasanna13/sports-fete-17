@@ -85,8 +85,7 @@
             <p>Name:</p><br>
             
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-            <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
+            
             
             </li>
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/image6.jpg">
@@ -94,24 +93,18 @@
             <p>Name:</p><br>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
 
-            <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
+            <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/image6.jpg">
+            <br>
+            <p>Name:</p><br>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
+
+    
             </li>
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/image6.jpg">
             <br>
             <p>Name:</p><br>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
 
-            <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
-            </li>
-            <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/image6.jpg">
-            <br>
-            <p>Name:</p><br>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-3x" style="color:black;"></i></a>
-
-            <a href="#"><i class="fa fa-facebook fa-fw fa-3x" style="color:black;"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-fw fa-3x" style="color:black;"></i></a><br>
             </li>
 
 
