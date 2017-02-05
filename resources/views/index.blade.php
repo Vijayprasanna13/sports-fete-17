@@ -66,23 +66,23 @@
     <!-- Header -->
 
 
-    <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
 
-    <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="col-md-9">
-                            <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                            <h3 style="font-family: Vollkorn,serif;">Marathon coming up in</h3>
                         </div>
 
 

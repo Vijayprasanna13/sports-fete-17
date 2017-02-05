@@ -235,7 +235,7 @@
         <div class="modal-content">
         <div class="modal-header">
         <div class="pull-left">Events</div>
-        <button type="button" class="close" data-dismiss="modal" title="Close"> <div class="glyphicon glyphicon-remove"></div></button>
+        <!--<button type="button" class="close" data-dismiss="modal" title="Close"><span class="glyphicon glyphicon-remove"></span></button>-->
         </div>
         <div class="modal-body">
 
