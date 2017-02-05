@@ -56,7 +56,7 @@
                 <a class="navbar-brand" href="/">SportsFete'17</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li>
                         <a href="about.html">About us</a>
@@ -100,5 +100,6 @@
     });
   });
 </script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
