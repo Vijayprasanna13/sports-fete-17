@@ -320,6 +320,16 @@ footer {
 #leadheading
 {
     color:white;
+    
+    //padding:30px;
+}
+#lbh
+{
+  margin-left:30%;
+}
+#uph
+{
+  margin-left:30%;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #4169E1;
@@ -484,5 +494,20 @@ footer {
 
 }
       
+
+}
+.small
+{
+  margin-left:60%;
+}
+@media(max-device-width:991px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #lbh,#uph{
+        margin-left:10%;
+       }
+      .small{
+        margin-left:40%;
+
+      }
 
 }
