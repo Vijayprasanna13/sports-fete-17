@@ -61,9 +61,6 @@
                         <a href="/events">Events</a>
                     </li>
                     <li class="menulinks">
-                        <a href="/scoreboard">Scoreboard</a>
-                    </li>
-                    <li class="menulinks">
                         <a href="/contacts">Contact</a>
                     </li>
                 </ul>
