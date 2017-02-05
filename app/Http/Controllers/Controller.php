@@ -37,7 +37,7 @@ class Controller extends BaseController
       if(is_dir($dir)) {
         if($dh = opendir($dir)) {
           while(($file = readdir($dh)) != false) {
-            if($file != "." and $file != ".." and $file != "secret") {
+            if($file != "." and $file != ".." and $file != "secret" and $file != "fixtures") {
               if(is_dir($dir.'/'.$file)) {
                 $sub_dir = $dir.'/'.$file;
                 if($dh1 = opendir($sub_dir)) {
