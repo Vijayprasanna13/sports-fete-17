@@ -92,8 +92,19 @@
                     <th style="text-align: center">Winner</th>
                 </tr>
             </thead>
-            <tbody id="scoreboard_body">
-              
+            <tbody>
+              <tr>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+              <tr>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+              <tr>
+                <td>---</td>
+                <td>---</td>
+              </tr>
             </tbody>
         </table>
 

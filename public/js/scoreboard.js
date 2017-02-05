@@ -46,10 +46,11 @@ $(document).ready(function() {
           $('#scoreboardBody').append(
               // "<tr onclick=\"window.document.location=\'deptscore/"+data[x].id+"\';\">"+
               "<tr>"+
-                "<td>"+data[x].name+"</td>"+
-                "<td>"+data[x].winner+"</td>"+
+                "<td>"+data[x]['name']+"</td>"+
+                "<td>"+data[x]['winner']+"</td>"+
               "</tr>"
             );
+          console.log(data[x]);
         }
       },
       // var event = data[0].name;
