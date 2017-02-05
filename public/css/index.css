@@ -439,6 +439,44 @@ footer {
       }
 
 }
+@media(max-device-width:365px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv > div
+       {
+          padding:6px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:5px;
+      }
+      #countdown
+      {
+        margin-left:7%;
+      }
+
+}
+@media(max-device-width:365px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv > div
+       {
+          padding:3px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:5px;
+      }
+      #countdown
+      {
+        margin-left:7%;
+      }
+
+}
 #clockdiv2{
     font-family: sans-serif;
     
