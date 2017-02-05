@@ -202,7 +202,7 @@
 
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3 style="font-family: Vollkorn,serif;">Marathon coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
