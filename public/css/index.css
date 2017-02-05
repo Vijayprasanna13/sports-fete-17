@@ -335,7 +335,7 @@ footer {
     font-family:Vollkorn,serif;
     font-size:16px;
     color:white;
-    padding
+    margin-left:20%;
 
 }
 .table-striped > tbody > tr:nth-of-type(even) {
@@ -475,6 +475,14 @@ footer {
       {
         margin-left:2%;
       }
+      .table-striped 
+{
+    font-family:Vollkorn,serif;
+    font-size:16px;
+    color:white;
+    margin-left:4%;
+
+}
       
 
 }
