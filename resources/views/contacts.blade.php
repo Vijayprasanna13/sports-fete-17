@@ -90,7 +90,7 @@
             <p><b>Ramakrishnan</b><br/>Associate Sports Secretary</p>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9952045494
 
-            <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/NIKHIL CHAUDHARY.jpg">
+            <li class="cont"><img class="img-responsive img-thumbnail contacts" style="-o-object-fit: contain;" src="images/contacts/NIKHIL CHAUDHARY.jpg">
             <br>
             <p><b>Nikhil Chaudary</b><br/>Chairman</p>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>8438207811
