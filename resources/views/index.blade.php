@@ -66,23 +66,23 @@
     <!-- Header -->
 
 
-    <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
 
-    <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
@@ -134,7 +134,7 @@
                     <b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <img src="images/leaderboard.png" class="img-responsive">
+                            <img src="images/homepage/leaderboard.png" class="img-responsive">
                         </div>
                         <div class="col-md-9 col-sm-6">
                             <table class="table table-hover table-striped">

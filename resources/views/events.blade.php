@@ -235,7 +235,7 @@
         <div class="modal-content">
         <div class="modal-header">
         <div class="pull-left">Events</div>
-        <button type="button" class="close" data-dismiss="modal" title="Close"> <div class="glyphicon glyphicon-remove"></div></button>
+        <!--<button type="button" class="close" data-dismiss="modal" title="Close"><span class="glyphicon glyphicon-remove"></span></button>-->
         </div>
         <div class="modal-body">
 
@@ -1410,7 +1410,7 @@
             <div class="tab-content">
                 <div id="fixture20" class="tab-pane fade in active">
                   <h3>Fixture</h3>
-                  <img src="images/fixtures/tabletennis_boys.jpg" alt="tabletennis_boys"/>
+                  <img src="images/fixtures/tabletennis_men.jpg" alt="tabletennis_men"/>
 
                 </div>
                 <div id="rules20" class="tab-pane fade">
