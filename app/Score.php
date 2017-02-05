@@ -11,7 +11,7 @@ class Score extends Model{
   protected $table = "scores";
 
   public function event() {
-    return $this->belongsTo('App\Event', 'event_id', 'event_id');
+    return $this->belongsTo('App\Event');
   }
 
   public function department() {

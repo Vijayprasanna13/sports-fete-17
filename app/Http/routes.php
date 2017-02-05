@@ -12,13 +12,13 @@
 */
 date_default_timezone_set('Asia/Calcutta');
 
+$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
 //view routes
 $app->get('/', 'PagesController@GetHomepage');
 $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/events', 'PagesController@GetEventsView');
-//$app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
 $app->get('/auth/login','PagesController@GetLoginView');
 
 
@@ -34,6 +34,7 @@ $app->post('/api/events/{event_id}/complete', 'EventsController@CompleteEvent');
 $app->post('/api/auth/user','EventsController@Authenticate');
 $app->get('/api/events', 'EventsController@GetEvents');
 $app->get('/api/events/list','EventsController@GetEventList');
+$app->get('/api/events/department/{department_id}', 'EventsController@GetEventsByDepartmentDays');
 
 $app->get('/api/scores','DepartmentsController@GetScores');
 
