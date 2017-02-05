@@ -125,11 +125,11 @@
             </a>
             <br><div class="eventname">Badminton(mixed)</div></li>
 
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/lgKdiK9.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/H7cFvTV.jpg"><br>
             </a>
             <br><div class="eventname">Basketball(Boys)</div></li>
 
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/lgKdiK9.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/H7cFvTV.jpg"><br>
             </a>
             <br><div class="eventname">Basketball(Girls)</div></li>
 
@@ -187,7 +187,7 @@
             <br><div class="eventname">Powerlifting</div></li>
 
             <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="17"><img class="
-            img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/ghtkiaH.png"><br>
+            img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/BxDYyJt.jpg"><br>
             </a>
             <br><div class="eventname">Sportsquiz</div></li>
 
