@@ -115,8 +115,16 @@ h1 {
 .cont
 { 
   margin-left: 2.5%;
+  text-align: center;
   margin-right: 5%;
   padding: 3%;
+}
+.cont > p{
+  margin-top: 1%;
+}
+.fa-phone{
+  width: 20px;
+  height: 20px;
 }
 .page-header
 {

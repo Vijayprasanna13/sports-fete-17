@@ -130,8 +130,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <span id="leadheading"><h2><b>Leaderboard</b></h2>
-                    <b><hr class="small"></b></span>
+                    <span id="leadheading"><h2 id="lbh"><b>Leaderboard</b></h2></span>
+                    <span><b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <img src="images/homepage/leaderboard.png" class="img-responsive">
@@ -169,7 +169,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Upcoming events</h2>
+                    <h2 id="uph">Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3">
@@ -202,7 +202,7 @@
 
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3 style="font-family: Vollkorn,serif;">Marathon coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->

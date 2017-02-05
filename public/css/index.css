@@ -324,6 +324,16 @@ footer {
 #leadheading
 {
     color:white;
+    
+    //padding:30px;
+}
+#lbh
+{
+  margin-left:30%;
+}
+#uph
+{
+  margin-left:30%;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #4169E1;
@@ -433,6 +443,63 @@ footer {
       }
 
 }
+@media(max-device-width:365px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv > div
+       {
+          padding:6px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:5px;
+      }
+      #countdown
+      {
+        margin-left:7%;
+      }
+
+}
+@media(max-device-width:365px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv > div
+       {
+          padding:3px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:5px;
+      }
+      #countdown
+      {
+        margin-left:7%;
+      }
+
+}
+/*@media(min-device-width:2000px){
+       
+       #clockdiv > div
+       {
+          padding:10px;
+          border-radius: 3px;
+          display: inline-block;
+          
+      }
+      #clockdiv div > span
+      {
+        padding:15px;
+      }
+      #countdown
+      {
+        margin-left:30%;
+      }
+
+}*/
 #clockdiv2{
     font-family: sans-serif;
 
@@ -488,5 +555,17 @@ footer {
 
 }
 
+.small
+{
+  margin-left:60%;
+}
+@media(max-device-width:991px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #lbh,#uph{
+        margin-left:10%;
+       }
+      .small{
+        margin-left:40%;
 
+      }
 }
