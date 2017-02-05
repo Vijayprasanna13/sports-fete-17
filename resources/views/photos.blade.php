@@ -81,7 +81,7 @@
     </nav>
 
 <div id="container">
-<div id="gallery" style="padding-top: 15vh;">
+<div id="gallery" style="padding-top: 5vh;">
   <!-- Load images from images directory -->
 </div>
 </div>
