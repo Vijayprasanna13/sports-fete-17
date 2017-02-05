@@ -75,25 +75,26 @@ $(document).ready(function() {
 
   //Update the events table with the events happening on the current day.
   $.when(currentDay()).done(function(a) { //Wait for the currentDay function to process first
+    day = 1;
     $.ajax({
       url: 'api/events/day/'+day,
       type: 'GET',
 
       success: function(data) {
-        $('#events_body').html(" ");
+        $('#upcomingEventsBody').html(" ");
         var numberOfEvents = 0;
-        console.log(data);
         for(var event in data) {
           var dt = data[event].start_time.split(/[- :]/);
           var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
-          var curDate = new Date();
-          if(eventDate > curDate && numberOfEvents < 7) {
-            $('#events_body').append(
+          //var curDate = new Date();
+          //if(eventDate > curDate && numberOfEvents < 5) {
+          if(numberOfEvents < 5) {
+            $('#upcomingEventsBody').append(
               "<tr>"+
                 "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-                "<td>"+data[event].name+"</td>"+
+                "<td>"+data[event]['name']+"</td>"+
                 "<td>"+dt[3]+":"+dt[4]+"</td>"+
-                "<td>"+data[event].venue+"</td>"+
+                "<td>"+data[event]['venue']+"</td>"+
               "</tr>"
             );
             numberOfEvents++;

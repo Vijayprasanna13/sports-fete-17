@@ -66,23 +66,23 @@
     <!-- Header -->
 
 
-    <div id="top" class="headerslides" style="background-image:url('images/image4.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image4.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image5.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image5.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/image6.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
 
-    <div id="top" class="headerslides" style="background-image:url('images/image7.jpg');">
+    <div id="top" class="headerslides" style="background-image:url('images/carousel/image7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
@@ -174,41 +174,53 @@
                     <div class="row">
                         <div class="col-md-3">
                             <img class="img-responsive" src="images/upcoming_events.jpg">
-
                         </div>
-
                         <div class="col-md-9">
-                            <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                          <table class="table table-hover table-striped">
+                              <thead>
+                                  <tr>
+                                      <th>Date</th>
+                                      <th>Event</th>
+                                      <th>Start Time</th>
+                                      <th>Venue</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="upcomingEventsBody">
+
+                              </tbody>
+                          </table>
                         </div>
-
-
-
                     </div>
-                    <!-- /.row (nested) -->
-                        <div class="row" id="clockdiv2">
-
-                            <div class="col-sm-3">
-                              <span class="days"></span>
-                              <div class="smalltext"><b>Days</b></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <span class="hours"></span>
-                                <div class="smalltext"><b>Hours</b></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <span class="minutes"></span>
-                                <div class="smalltext"><b>Minutes</b></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <span class="seconds"></span>
-                                <div class="smalltext"><b>Seconds</b></div>
-                            </div>
-                        </div>
-
+                    <!-- /.col-lg-10 -->
+                  </div>
                 </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <h3 style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+                <div class="row" id="clockdiv2">
+                    <div class="col-sm-3">
+                      <span class="days"></span>
+                      <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
+                </div>
+
         </div>
         <!-- /.container -->
     </section>
