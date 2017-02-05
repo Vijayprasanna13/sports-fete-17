@@ -49,6 +49,12 @@ class EventsController extends Controller{
     $events = Event::FilterByDepartment($day, $department);
     return $events;
   }
+  // 
+  // public function GetEventsByDepartmentDays($department_id) {
+  //   if(!Department::find($department_id)) {
+  //     return response()->json('department not found', 404);
+  //   }
+  // }
 
   /**
   *This function return the event by id
@@ -116,7 +122,7 @@ class EventsController extends Controller{
   }
 
   public function GetEventList(){
-    $eventlist = Event::GetEventList(); 
+    $eventlist = Event::GetEventList();
     if(!$eventlist){
       return response()->json("events not found", 400);
     }

@@ -22,7 +22,7 @@ body {
     font-family: Pacifico;
     text-align: center;
     vertical-align: middle;
-    
+
 }
 
 .text-vertical-center h1 {
@@ -160,7 +160,7 @@ hr.small {
     animation-name: slide;
     animation-duration: 1s;
     //margin-top:-140px;
-    
+
     animation-fill-mode: forwards;
     opacity:0;
 }
@@ -266,7 +266,7 @@ footer {
   to{opacity: 1;}
 }
 @-webkit-keyframes slide{
-  from {opacity: .0} 
+  from {opacity: .0}
   to {opacity: 1}
 }
 
@@ -294,12 +294,12 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 #caption
@@ -316,6 +316,10 @@ footer {
     color:black;
     background-color: #ADD8E6;
 
+}
+#leaderboardBody tr:hover {
+  background-color: #000080;
+  cursor: pointer;
 }
 #leadheading
 {
@@ -340,7 +344,7 @@ footer {
     font-size:20px;
     font-family:Vollkorn,serif;
 }
-.table-striped 
+.table-striped
 {
     font-family:Vollkorn,serif;
     font-size:16px;
@@ -363,7 +367,7 @@ footer {
     width:70%;
 }
 
-.table-striped > thead 
+.table-striped > thead
 {
     font-size:20px;
     padding-left: 20px;
@@ -427,7 +431,7 @@ footer {
           padding: 10px;
           border-radius: 3px;
           display: inline-block;
-          
+
       }
       #clockdiv div > span
       {
@@ -479,13 +483,13 @@ footer {
 }
 #clockdiv2{
     font-family: sans-serif;
-    
+
     display: inline-block;
-    
+
     text-align: center;
     font-size: 30px;
     margin-left:30%;
-    
+
 }
 
 #clockdiv2 > div{
@@ -504,7 +508,7 @@ footer {
     color:black;
     font-weight: 100;
     font-size:39px;
-    
+
 }
 @media(max-device-width:400px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
@@ -513,7 +517,7 @@ footer {
           padding: 0px;
           border-radius: 3px;
           display: inline-block;
-          
+
       }
       #clockdiv2 div > span
       {
@@ -523,7 +527,7 @@ footer {
       {
         margin-left:2%;
       }
-      .table-striped 
+      .table-striped
 {
     font-family:Vollkorn,serif;
     font-size:16px;
@@ -531,9 +535,7 @@ footer {
     margin-left:4%;
 
 }
-      
 
-}
 .small
 {
   margin-left:60%;
@@ -547,5 +549,4 @@ footer {
         margin-left:40%;
 
       }
-
 }

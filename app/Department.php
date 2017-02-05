@@ -8,6 +8,9 @@ class Department extends Model{
 
   protected $table = "departments";
 
+  public function events() {
+    return $this->hasMany('App\Event');
+  }
   public static function Scores(){
     return Department::select('id','department_name','score')->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')->get();
   }
