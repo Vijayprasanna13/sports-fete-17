@@ -68,23 +68,23 @@
 
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image4.jpg');">
-       <div class="text-vertical-center" style="z-index:4;color:white;">
+       <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image5.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image6.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image7.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
 
