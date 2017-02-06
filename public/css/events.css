@@ -183,6 +183,8 @@ img {
 }
 
 .fixt{
-    height:900px;
-    width:400px;
+    height:1500px;
+    width:580px;
+    //text-align: center;
+    margin-top:8%;
 }
