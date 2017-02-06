@@ -16,6 +16,13 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.text-vertical-center1{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    //horizontal-align:;
+
+}
 
 .text-vertical-center {
     //display: table-cell;
@@ -414,9 +421,7 @@ footer {
   position:absolute;
   z-index:1000;
   margin-top:-250px;
-  //margin-left:40%;
-  margin-left:8%;
-
+  
 
   text-align: center;
 }
@@ -435,29 +440,11 @@ footer {
       }
       #countdown
       {
-        margin-left:7%;
+        //margin-left:7%;
       }
 
 }
-@media(max-device-width:365px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
-       #clockdiv > div
-       {
-          padding:6px;
-          border-radius: 3px;
-          display: inline-block;
-          
-      }
-      #clockdiv div > span
-      {
-        padding:5px;
-      }
-      #countdown
-      {
-        margin-left:7%;
-      }
 
-}
 @media(max-device-width:365px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
        #clockdiv > div
@@ -473,11 +460,11 @@ footer {
       }
       #countdown
       {
-        margin-left:7%;
+        margin-left:5%;
       }
 
 }
-/*@media(min-device-width:2000px){
+/*@media(min-device-width:1430px){
        
        #clockdiv > div
        {
@@ -492,7 +479,7 @@ footer {
       }
       #countdown
       {
-        margin-left:30%;
+        margin-left:3%;
       }
 
 }*/
@@ -553,13 +540,13 @@ footer {
       
 
 }
-.small
+/*.small
 {
   margin-left:60%;
-}
-@media(max-device-width:991px){
+}*/
+/*@media(max-device-width:987px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
-       #lbh,#uph{
+      /* #lbh,#uph{
         margin-left:10%;
        }
       .small{
@@ -567,4 +554,4 @@ footer {
 
       }
 
-}
+}*/

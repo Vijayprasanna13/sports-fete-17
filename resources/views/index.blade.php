@@ -89,25 +89,29 @@
 
     </div>
     <div class="container" id="countdown">
-        <div id="clockdiv" class="row">
-            <div class="col-sm-3">
-              <span class="days"></span>
-              <div class="smalltext"><b>Days</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="hours"></span>
-                <div class="smalltext"><b>Hours</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="minutes"></span>
-                <div class="smalltext"><b>Minutes</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="seconds"></span>
-                <div class="smalltext"><b>Seconds</b></div>
-            </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-lg-offset-1 text-center">
+                <div id="clockdiv" class="row">
+                    <div class="col-sm-3">
+                        <span class="days"></span>
+                        <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
 
 
+                </div>
+            </div>
         </div>
     </div>
 
@@ -130,7 +134,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <span id="leadheading"><h2 id="lbh"><b>Leaderboard</b></h2></span>
+                    <span id="leadheading"><h2><b>Leaderboard</b></h2></span>
                     <span><b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -169,7 +173,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 id="uph">Upcoming events</h2>
+                    <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3">
