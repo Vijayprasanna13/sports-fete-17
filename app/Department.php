@@ -24,4 +24,8 @@ class Department extends Model{
   public static function FindDepartment($department_id){
     return Department::where('id',$department_id)->first();
   }
+
+  public static function FindDepartmentByName($department){
+    return (Department::select('id')->where('department_name',$department)->first())['id'];
+  }
 }
