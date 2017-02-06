@@ -257,12 +257,12 @@
 
             <div class="tab-content">
                 <div id="fixture0" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/athletics.jpg" alt="athletics"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/athletics.jpg" alt="athletics"/>
 
                 </div>
                 <div id="rules0" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>INDIVIDUAL:- <br>
                         &emsp;&emsp;&emsp;1st place - 5 points<br>
@@ -318,12 +318,12 @@
 
             <div class="tab-content">
                 <div id="fixture1" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/badminton_mixed.jpg" alt="Badminton_mixed"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/badminton_mixed.jpg" alt="Badminton_mixed"/>
 
                 </div>
                 <div id="rules1" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                    <p>POINTS:-
                        <br>&emsp;&emsp;&emsp;1st place - 20 points
@@ -375,11 +375,11 @@
 
             <div class="tab-content">
                 <div id="fixture2" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/basketball_boys.jpg" alt="Basketball_boys"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/basketball_boys.jpg" alt="Basketball_boys"/>
                 </div>
                 <div id="rules2" class="tab-pane fade">
-                    <h3>Rules</h3>
+                    
                        <p>
                             POINTS:-<br><b>
                             &emsp;&emsp;&emsp;1st place - 20 points<br>
@@ -431,12 +431,12 @@
 
             <div class="tab-content">
                 <div id="fixture3" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/basketball_girls.jpg" alt="basketball_girls"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/basketball_girls.jpg" alt="basketball_girls"/>
 
                 </div>
                 <div id="rules3" class="tab-pane fade">
-                    <h3>Rules</h3>
+                    
                         <p>
                 POINTS:- <b>
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
@@ -498,12 +498,12 @@
 
             <div class="tab-content">
                 <div id="fixture4" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/carrom_mixed.jpg" alt="carrom_mixed"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/carrom_mixed.jpg" alt="carrom_mixed"/>
 
                 </div>
                 <div id="rules4" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
                   <p>
                 POINTS:-<b>
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
@@ -552,12 +552,12 @@
 
             <div class="tab-content">
                 <div id="fixture5" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/chess_mixed.jpg" alt="chess_mixed"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/chess_mixed.jpg" alt="chess_mixed"/>
 
                 </div>
                 <div id="rules5" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
                   <p>
                 POINTS:-<b>
                 <br>&emsp;&emsp;&emsp;1st place- 15 points
@@ -600,11 +600,11 @@
 
             <div class="tab-content">
                 <div id="fixture6" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/cricket_boys.jpg" alt="cricket_boys"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/cricket_boys.jpg" alt="cricket_boys"/>
                 </div>
                 <div id="rules6" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>
                 POINTS:- <b>
@@ -669,12 +669,12 @@
 
             <div class="tab-content">
                 <div id="fixture7" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/cricket_girls.jpg" alt="cricket_girls"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/cricket_girls.jpg" alt="cricket_girls"/>
 
                 </div>
                 <div id="rules7" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                      <p>
                 <b>POINTS:-
@@ -735,12 +735,12 @@
 
             <div class="tab-content">
                 <div id="fixture8" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/football_boys.jpg" alt="football_boys"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/football_boys.jpg" alt="football_boys"/>
 
                 </div>
                 <div id="rules8" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>
                 <b>POINTS:-
@@ -796,12 +796,12 @@
 
             <div class="tab-content">
                 <div id="fixture9" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/football_girls.jpg" alt="football_girls"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/football_girls.jpg" alt="football_girls"/>
 
                 </div>
                 <div id="rules9" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>
                 <b>POINTS:-
@@ -849,12 +849,12 @@
 
             <div class="tab-content">
                 <div id="fixture10" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/handball.jpg" alt="handball"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/handball.jpg" alt="handball"/>
 
                 </div>
                 <div id="rules10" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>
                 <b>POINTS:-
@@ -906,12 +906,12 @@
 
             <div class="tab-content">
                 <div id="fixture11" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/hockey.jpg" alt="hockey"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/hockey.jpg" alt="hockey"/>
 
                 </div>
                 <div id="rules11" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>
                 <b>POINTS:-
@@ -980,12 +980,12 @@
 
             <div class="tab-content">
                 <div id="fixture12" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/kabaddi.jpg" alt="kabaddi"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/kabaddi.jpg" alt="kabaddi"/>
 
                 </div>
                 <div id="rules12" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p> <b>POINTS:-
             <br>&emsp;&emsp;&emsp;1st place - 20 points
@@ -1043,12 +1043,12 @@
 
             <div class="tab-content">
                 <div id="fixture13" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/kho-kho_boys.jpg" alt="kho-kho_boys"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/kho-kho_boys.jpg" alt="kho-kho_boys"/>
 
                 </div>
                 <div id="rules13" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
             <br>&emsp;&emsp;&emsp;1st place - 20 points
@@ -1089,12 +1089,12 @@
 
             <div class="tab-content">
                 <div id="fixture14" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/kho-kho_girls.jpg" alt="kho-kho_girls"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/kho-kho_girls.jpg" alt="kho-kho_girls"/>
 
                 </div>
                 <div id="rules14" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
             <br>&emsp;&emsp;&emsp;1st place - 15 points
@@ -1135,12 +1135,12 @@
 
             <div class="tab-content">
                 <div id="fixture15" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/marathon.jpg" alt="marathon"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/marathon.jpg" alt="marathon"/>
 
                 </div>
                 <div id="rules15" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS (Men):-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
@@ -1186,12 +1186,12 @@
 
             <div class="tab-content">
                 <div id="fixture16" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/powerlifting.jpg" alt="powerlifting"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/powerlifting.jpg" alt="powerlifting"/>
 
                 </div>
                 <div id="rules16" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 5 points
@@ -1249,12 +1249,12 @@
 
             <div class="tab-content">
                 <div id="fixture17" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/sportsquiz.jpg" alt="sportsquiz"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/sportsquiz.jpg" alt="sportsquiz"/>
 
                 </div>
                 <div id="rules17" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 5 points
@@ -1288,12 +1288,12 @@
 
             <div class="tab-content">
                 <div id="fixture18" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/swimming.jpg" alt="swimming"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/swimming.jpg" alt="swimming"/>
 
                 </div>
                 <div id="rules18" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p>POINTS:-
                 <p><b>INDIVIDUAL:
@@ -1360,12 +1360,12 @@
 
             <div class="tab-content">
                 <div id="fixture19" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/tabletennis_mixed.jpg" alt="tabletennis_mixed"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/tabletennis_mixed.jpg" alt="tabletennis_mixed"/>
 
                 </div>
                 <div id="rules19" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
@@ -1407,12 +1407,12 @@
 
             <div class="tab-content">
                 <div id="fixture20" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/tabletennis_men.jpg" alt="tabletennis_men"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/tabletennis_men.jpg" alt="tabletennis_men"/>
 
                 </div>
                 <div id="rules20" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 12 points
@@ -1454,12 +1454,12 @@
 
             <div class="tab-content">
                 <div id="fixture21" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/tabletennis_women.jpg" alt="tabletennis_women"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/tabletennis_women.jpg" alt="tabletennis_women"/>
 
                 </div>
                 <div id="rules21" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 10 points
@@ -1496,12 +1496,12 @@
 
             <div class="tab-content">
                 <div id="fixture22" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/throwball.jpg" alt="throwball"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/throwball.jpg" alt="throwball"/>
 
                 </div>
                 <div id="rules22" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                    <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
@@ -1548,12 +1548,12 @@
 
             <div class="tab-content">
                 <div id="fixture23" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/volleyball_boys.jpg" alt="volleyball_boys"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/volleyball_boys.jpg" alt="volleyball_boys"/>
 
                 </div>
                 <div id="rules23" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 20 points
@@ -1594,12 +1594,12 @@
 
             <div class="tab-content">
                 <div id="fixture24" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/volleyball_girls.jpg" alt="volleyball_girls"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/volleyball_girls.jpg" alt="volleyball_girls"/>
 
                 </div>
                 <div id="rules24" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                     <p><b>POINTS:-
                 <br>&emsp;&emsp;&emsp;1st place - 15 points
@@ -1640,12 +1640,12 @@
 
             <div class="tab-content">
                 <div id="fixture25" class="tab-pane fade in active">
-                  <h3>Fixture</h3>
-                  <img class="fixt" src="images/fixtures/waterpolo.jpg" alt="waterpolo"/>
+                  
+                  <img class="fixt img-responsive" src="images/fixtures/waterpolo.jpg" alt="waterpolo"/>
 
                 </div>
                 <div id="rules25" class="tab-pane fade">
-                  <h3>Rules</h3>
+                  
 
                    <p><b>POINTS:-
                  <br>&emsp;&emsp;&emsp;1st place - 20 points

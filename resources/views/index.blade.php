@@ -34,6 +34,7 @@
 
 <body id="start" onload="continuous()">
 
+
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -258,6 +259,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/timer.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
