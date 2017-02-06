@@ -167,7 +167,6 @@ hr.small {
     animation-name: slide;
     animation-duration: 1s;
     //margin-top:-140px;
-
     animation-fill-mode: forwards;
     opacity:0;
 }
