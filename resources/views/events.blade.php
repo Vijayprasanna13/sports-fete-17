@@ -358,7 +358,7 @@
                         </ul>
                     </p>
                     <p>CONTACT :
-                           <p>Sethil Kumar: 8754174358 </p>
+                           <p>Senthil Kumar: 8754174358 </p>
 
                     </p>
 
@@ -581,7 +581,7 @@
 
             </p>
             <p>CONTACT :
-                   <p>Ashiq Mohammed:9840164953</p>
+                   <p>Ashiq Mohammed:9941132953</p>
 
             </p>
 
@@ -1438,7 +1438,7 @@
                     </ul>
                 </p>
                 <p>CONTACT :
-                    <p>Siddharth Palanichamy : 9698855688</p>
+                    <p>Siddharth Palanichamy : 8754112843</p>
                 </p>
 
                 </div>
