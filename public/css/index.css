@@ -449,26 +449,7 @@ footer {
       }
 
 }
-<<<<<<< HEAD
-@media(max-device-width:365px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
-       #clockdiv > div
-       {
-          padding:6px;
-          border-radius: 3px;
-          display: inline-block;
 
-      }
-      #clockdiv div > span
-      {
-        padding:5px;
-      }
-      #countdown
-      {
-        margin-left:7%;
-      }
-=======
->>>>>>> e417cc88f0e0400cea43877cf40d910a4cabc3dc
 
 @media(max-device-width:365px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
@@ -489,7 +470,7 @@ footer {
       }
 
 }
-<<<<<<< HEAD
+
 /*@media(min-device-width:2000px){
 
 =======

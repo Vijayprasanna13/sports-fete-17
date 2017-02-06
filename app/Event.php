@@ -82,6 +82,6 @@ class Event extends Model{
   }
 
   public static function GetEventList(){
-    return Event::select('name')->distinct();
+    return Event::select('name')->distinct()->get();
   }
 }

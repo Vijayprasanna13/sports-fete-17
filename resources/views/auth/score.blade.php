@@ -12,7 +12,8 @@
   <!-- Input for day-->
     <div class="form-group form-inline" id="day-input-wrapper">
       <label for="event">Event Name : </label>
-      <input id="event" type="event" class="form-control"/>
+      <select class="form-control">
+      </select>
     </div>
 
     <!-- Input for event-->
