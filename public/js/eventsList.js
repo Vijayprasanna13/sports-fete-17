@@ -1,22 +1,42 @@
 var days = [1, 2, 3];
 $.ajax({
-  url: 'api/events/'+days[0],
+  url: 'api/events/day/'+days[0],
   type: 'GET',
 
   success: function(data) {
-    data = data['data'];
     $('#events_body_day1').html(" ");
     for(var event in data) {
-      var dt = data[event].start_time.split(/[- :]/);
-      var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
-      $('#events_body_day1').append(
-        "<tr>"+
-          "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-          "<td>"+data[event].name+"</td>"+
-          "<td>"+dt[3]+":"+dt[4]+"</td>"+
-          "<td>"+data[event].venue+"</td>"+
-        "</tr>"
-      );
+      if(data[event].department == null) {
+        data[event].department = {department_name: "---"}
+      }
+      if(data[event].status == "c") {
+        data[event].start_time = "Completed";
+      }
+      if(data[event].status == "l") {
+        data[event].start_time = "Live";
+      }
+      if(data[event].participants.length == 2) {
+        $('#events_body_day1').append(
+          "<tr>"+
+            "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
+      else {
+        $('#events_body_day1').append(
+          "<tr>"+
+            "<td>"+data[event].name+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
     }
   },
   error: function(data) {
@@ -24,23 +44,43 @@ $.ajax({
   }
 })
 $.ajax({
-  url: 'api/events/'+days[1],
+  url: 'api/events/day/'+days[1],
   type: 'GET',
 
   success: function(data) {
-    data = data['data'];
     $('#events_body_day2').html(" ");
     for(var event in data) {
-      var dt = data[event].start_time.split(/[- :]/);
-      var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
-      $('#events_body_day2').append(
-        "<tr>"+
-          "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-          "<td>"+data[event].name+"</td>"+
-          "<td>"+dt[3]+":"+dt[4]+"</td>"+
-          "<td>"+data[event].venue+"</td>"+
-        "</tr>"
-      );
+      if(data[event].department == null) {
+        data[event].department = {department_name: "---"}
+      }
+      if(data[event].status == "c") {
+        data[event].start_time = "Completed";
+      }
+      if(data[event].status == "l") {
+        data[event].start_time = "Live";
+      }
+      if(data[event].participants.length == 2) {
+        $('#events_body_day2').append(
+          "<tr>"+
+            "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
+      else {
+        $('#events_body_day2').append(
+          "<tr>"+
+            "<td>"+data[event].name+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
     }
   },
   error: function(data) {
@@ -48,23 +88,43 @@ $.ajax({
   }
 })
 $.ajax({
-  url: 'api/events/'+days[2],
+  url: 'api/events/day/'+days[2],
   type: 'GET',
 
   success: function(data) {
-    data = data['data'];
     $('#events_body_day3').html(" ");
     for(var event in data) {
-      var dt = data[event].start_time.split(/[- :]/);
-      var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
-      $('#events_body_day3').append(
-        "<tr>"+
-          "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-          "<td>"+data[event].name+"</td>"+
-          "<td>"+dt[3]+":"+dt[4]+"</td>"+
-          "<td>"+data[event].venue+"</td>"+
-        "</tr>"
-      );
+      if(data[event].department == null) {
+        data[event].department = {department_name: "---"}
+      }
+      if(data[event].status == "c") {
+        data[event].start_time = "Completed";
+      }
+      if(data[event].status == "l") {
+        data[event].start_time = "Live";
+      }
+      if(data[event].participants.length == 2) {
+        $('#events_body_day3').append(
+          "<tr>"+
+            "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
+      else {
+        $('#events_body_day3').append(
+          "<tr>"+
+            "<td>"+data[event].name+"</td>"+
+            "<td>"+data[event].start_time+"</td>"+
+            "<td>"+data[event].department.department_name+"</td>"+
+            "<td>"+data[event].venue+"</td>"+
+            "<td>"+data[event].round+"</td>"+
+          "</tr>"
+        );
+      }
     }
   },
   error: function(data) {
