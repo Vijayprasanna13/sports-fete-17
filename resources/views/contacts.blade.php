@@ -83,36 +83,36 @@
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/SRIVANTH.jpg">
             <br>
             <p><b>Srivanth</b><br/>Sports Secretary</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598096831
-            
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598096831
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/RAMAKRISHNAN.jpg">
             <br>
             <p><b>Ramakrishnan</b><br/>Associate Sports Secretary</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9952045494
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9952045494
 
             <li class="cont"><img class="img-responsive img-thumbnail contacts" style="-o-object-fit: contain;" src="images/contacts/NIKHIL CHAUDHARY.jpg">
             <br>
             <p><b>Nikhil Chaudary</b><br/>Chairman</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>8438207811
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>8438207811
             </li>
-            
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Vinay.jpg">
-            <br/>   
+            <br/>
             <p>
             <b>Vinay Kumar Chowdary</b><br/>Overall Coordinater</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9629404269
-            
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9629404269
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Bharath Ram.jpg">
             <br>
             <p><b>Bharath Ram</b><br/>Organising Head</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9444398070
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9444398070
             </li>
-            
+
             </li>
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/akhil.JPG">
             <br>
             <p><b>Akhil</b><br/>Treasurer</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598579364
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598579364
 
             <!--end of thumbnails-->
         </ul>
