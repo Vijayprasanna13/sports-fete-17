@@ -94,11 +94,76 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Page Content -->
-    <div class="container" id="pagecontent">
 
+      <div class="container" id="days" style="padding: 5vh">
+          <ul class="nav nav-pills nav-justified">
+            <li class="active"><a data-toggle="pill" href="#day1">Day 1</a></li>
+            <li><a data-toggle="pill" href="#day2">Day 2</a></li>
+            <li><a data-toggle="pill" href="#day3">Day 3</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="day1">
+              <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
+                <table class="table table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Event</th>
+                      <th class="text-center">Start Time</th>
+                      <th class="text-center">Winner</th>
+                      <th class="text-center">Venue</th>
+                      <th class="text-center">Round</th>
+                    </tr>
+                  </thead>
 
+                  <tbody id="events_body_day1">
+                    <!-- The events table will be updated dynamically from the database -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="day2">
+              <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
+                <table class="table table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Event</th>
+                      <th class="text-center">Start Time</th>
+                      <th class="text-center">Winner</th>
+                      <th class="text-center">Venue</th>
+                      <th class="text-center">Round</th>
+                    </tr>
+                  </thead>
 
+                  <tbody id="events_body_day2">
+                    <!-- The events table will be updated dynamically from the database -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="day3">
+              <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
+                <table class="table table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Event</th>
+                      <th class="text-center">Start Time</th>
+                      <th class="text-center">Winner</th>
+                      <th class="text-center">Venue</th>
+                      <th class="text-center">Round</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="events_body_day3">
+                    <!-- The events table will be updated dynamically from the database -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container" id="pagecontent">
             <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
@@ -1713,6 +1778,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/eventsList.js">
+
+    </script>
     <script>
     $('#myModal').on('shown.bs.modal', function () {
  $('html, body').animate({
