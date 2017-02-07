@@ -40,7 +40,8 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
             'body' => [
             'rollno' => $rollno,
             'password' => $password
-            ]
+          ],
+          'connect_timeout' => 20
         ]);
         return $result->getBody()->getContents();
     }

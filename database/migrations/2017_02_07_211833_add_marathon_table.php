@@ -13,7 +13,7 @@ class AddMarathonTable extends Migration
      */
     public function up()
     {
-        Schema::table('marathon', function (Blueprint $table) {
+        Schema::create('marathon', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('rollno');
             $table->string('department');
@@ -29,8 +29,6 @@ class AddMarathonTable extends Migration
      */
     public function down()
     {
-        Schema::table('marathon', function (Blueprint $table) {
-          Schema::dropIfExists('marathon');    
-        });
+      Schema::dropIfExists('events');
     }
 }
