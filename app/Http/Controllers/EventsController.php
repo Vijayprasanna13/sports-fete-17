@@ -110,6 +110,7 @@ class EventsController extends Controller{
   */
   public function Authenticate(Request $request){
       $imap_response = User::AuthenticateStudent($request['rollno'],$request['password']);
+      return $imap_response;
       if($imap_response)
         return response()->json("success", 200);
       return response()->json("wrong rollno or password", 400);
