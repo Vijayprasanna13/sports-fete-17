@@ -38,6 +38,7 @@ class CreateEventsTable extends Migration
             $table->integer('winner')->unsigned()->nullable();
             $table->string('teama')->nullable();
             $table->string('teamb')->nullable();
+            $table->string('fixture')->nullable();
             $table->timestamps();
         });
     }
