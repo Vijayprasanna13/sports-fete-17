@@ -36,6 +36,8 @@ class CreateEventsTable extends Migration
             $table->string('round');
             $table->string('status')->default('u');
             $table->integer('winner')->unsigned()->nullable();
+            $table->string('teama')->nullable();
+            $table->string('teamb')->nullable();
             $table->timestamps();
         });
     }
