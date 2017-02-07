@@ -114,11 +114,11 @@ class EventsController extends Controller{
       if(!$imap_response) {
         return response()->json("wrong rollno or password", 400);
       }
-      if($marathonId['marathon_id'] = Marathon::CheckExists($request['rollno'])) {
+      if($marathonId = Marathon::CheckExists($request['rollno'])) {
         return response()->json($marathonId, 200);
       }
       $department = Marathon::GetDepartmentByRollNo($request['rollno']);
-      if(!$marathonId['marathon_id'] = Marathon::Register($request['rollno'], $department)) {
+      if(!$marathonId = Marathon::Register($request['rollno'], $department)) {
         return response()->json("Internal Server Error", 500);
       }
       return response()->json($marathonId, 200);
