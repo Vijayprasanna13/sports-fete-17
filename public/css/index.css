@@ -32,6 +32,12 @@ body {
 
 }
 
+h2 {
+   font-family: Pacifico;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -166,6 +172,7 @@ hr.small {
     -o-background-size: cover;
     animation-name: slide;
     animation-duration: 1s;
+
     animation-fill-mode: forwards;
     opacity:0;
 }
@@ -381,6 +388,29 @@ footer {
     color:white;
 
 }
+@media(max-device-width:991px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+      #upc
+      {
+        margin-left:1%;
+        margin-top:10%;
+      }
+      #lb
+      {
+        margin-left:1%;
+      }
+
+}
+@media(max-device-width:991px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+      
+      #lb
+      {
+        margin-left:1%;
+        margin-top:10%;
+      }
+
+}
 #clockdiv{
     font-family: sans-serif;
     color: #fff;
@@ -390,7 +420,7 @@ footer {
     font-size: 30px;
     //margin-left:auto;
     //margin-right:auto;
-    //margin-top:-40%;
+    margin-top:-40%;
     //margin-left:150px;
     //margin-left:;
     //position:absolute;
@@ -494,11 +524,9 @@ footer {
 }*/
 #clockdiv2{
     font-family: sans-serif;
-
     display: inline-block;
-
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
     margin-left:30%;
 
 }
@@ -538,14 +566,33 @@ footer {
       {
         margin-left:2%;
       }
-      .table-striped
+}
+@media(max-device-width:991px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #mar
+       {
+        margin-left:32%;
+       }
+}
+@media(max-device-width:554px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       #clockdiv2
+       {
+        margin-left:2%;
+       }
+       #mar
+       {
+        margin-left:2%;
+       }
+}
+/* .table-striped
 {
     font-family:Vollkorn,serif;
     font-size:16px;
     color:white;
     margin-left:4%;
 
-}
+}*/
 
 /*.small
 >>>>>>> e417cc88f0e0400cea43877cf40d910a4cabc3dc
