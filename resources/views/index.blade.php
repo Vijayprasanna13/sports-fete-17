@@ -356,7 +356,7 @@
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3">
-                            <img class="img-responsive" src="images/upcoming_events.jpg">
+                            <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
                         </div>
                         <div class="col-md-9">
 
@@ -399,7 +399,7 @@
                     <a href="#" class="btn btn-lg btn-light">Click Me!</a>
                     <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
 
-                    <img src="images/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
+                    <img src="images/secret/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
                     <br><p id="spider">Designed by <b>Spider</b></p>
 
 
