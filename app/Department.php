@@ -8,6 +8,9 @@ class Department extends Model{
 
   protected $table = "departments";
 
+  public function events() {
+    return $this->hasMany('App\Event');
+  }
   public static function Scores(){
     return Department::select('id','department_name','score')->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')->get();
   }
@@ -20,5 +23,9 @@ class Department extends Model{
 
   public static function FindDepartment($department_id){
     return Department::where('id',$department_id)->first();
+  }
+
+  public static function FindDepartmentByName($department){
+    return (Department::select('id')->where('department_name',$department)->first())['id'];
   }
 }

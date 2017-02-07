@@ -94,11 +94,9 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Page Content -->
-    <div class="container" id="pagecontent">
 
-
-
+        <!-- Page Content -->
+        <div class="container" id="pagecontent">
             <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
@@ -358,7 +356,7 @@
                         </ul>
                     </p>
                     <p>CONTACT :
-                           <p>Sethil Kumar: 8754174358 </p>
+                           <p>Senthil Kumar: 8754174358 </p>
 
                     </p>
 
@@ -581,7 +579,7 @@
 
             </p>
             <p>CONTACT :
-                   <p>Ashiq Mohammed:9840164953</p>
+                   <p>Ashiq Mohammed:9941132953</p>
 
             </p>
 
@@ -1438,7 +1436,7 @@
                     </ul>
                 </p>
                 <p>CONTACT :
-                    <p>Siddharth Palanichamy : 9698855688</p>
+                    <p>Siddharth Palanichamy : 8754112843</p>
                 </p>
 
                 </div>
@@ -1713,6 +1711,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/eventsList.js">
+
+    </script>
     <script>
     $('#myModal').on('shown.bs.modal', function () {
  $('html, body').animate({

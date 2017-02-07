@@ -115,8 +115,15 @@ class EventsController extends Controller{
       return response()->json("wrong rollno or password", 400);
   }
 
+
+  /**
+  *
+  *This function return the list of events 
+  *@param
+  *@return
+  */
   public function GetEventList(){
-    $eventlist = Event::GetEventList(); 
+    $eventlist = Event::GetEventList();
     if(!$eventlist){
       return response()->json("events not found", 400);
     }

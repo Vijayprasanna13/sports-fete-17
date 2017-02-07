@@ -188,8 +188,8 @@ h1 {
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #4169E1;
-  //#7FFF00
-  color:black;
+  //#7FFF00;
+  color:#ffffff;
 }
 
 .table-striped > tbody > tr:nth-of-type(even) {
@@ -206,7 +206,7 @@ h1 {
 }
 .table
 {
-    width:70%;
+    width:100%;
 }
 
 .table-striped > thead

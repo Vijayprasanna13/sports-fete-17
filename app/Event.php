@@ -8,7 +8,9 @@ class Event extends Model{
 
   protected $table = "events";
 
-
+  public function department() {
+    return $this->belongsTo('App\Department', 'winner', 'id');
+  }
   public static function GetEvents() {
     return Event::where('status', 'c')->orderBy('updated_at', 'desc')->get();
   }
@@ -18,9 +20,9 @@ class Event extends Model{
   }
   public static function GetEventsByDay($day) {
     if($day >= 0)
-      return Event::select('id','day','name','venue','start_time','round','status')->where('day', $day)->orderBy('start_time')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner')->where('day', $day)->orderBy('start_time')->with('department')->get();
     else
-      return Event::select('id','day','name','venue','start_time','round','status')->orderBy('start_time')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner')->orderBy('start_time')->with('department')->get();
   }
 
   /**
@@ -56,7 +58,6 @@ class Event extends Model{
     $new_events = [];
     $events = Event::GetEventsByDay($day);
     $events = Event::AddParticipants($events);
-    //return $events;
     $events = json_decode($events, true);
     foreach ($events as $event) {
       if(in_array($department, $event['participants']))
@@ -81,6 +82,6 @@ class Event extends Model{
   }
 
   public static function GetEventList(){
-    return Event::select('name')->distinct();
+    return Event::select('name')->distinct()->get();
   }
 }

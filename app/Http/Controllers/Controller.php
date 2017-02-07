@@ -37,7 +37,7 @@ class Controller extends BaseController
       if(is_dir($dir)) {
         if($dh = opendir($dir)) {
           while(($file = readdir($dh)) != false) {
-            $excluded_files = ['.', '..', 'secret', 'fixtures', 'contacts'];
+            $excluded_files = ['.', '..', 'secret', 'fixtures', 'contacts', 'homepage', 'carousel'];
             if(!in_array($file, $excluded_files)) {
               if(is_dir($dir.'/'.$file)) {
                 $sub_dir = $dir.'/'.$file;
