@@ -188,11 +188,6 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    <div id="top" class="headerslides" style="background-image:url('images/carousel/22.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
-        </div>
-    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/23.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
