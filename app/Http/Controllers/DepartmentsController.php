@@ -27,61 +27,23 @@ class DepartmentsController extends Controller
     /**
     *
     *This method is used to update the score for a department.
-    *@param day, department_id, event_id, score
+    *@param department, event, score
     *@return
     */
-    public function AddScore(Request $request)
-    {
-      if(!isset($request['department_id']) &&
-         !isset($request['day']) &&
-         !isset($request['event_id']) &&
-         !isset($request['score']))
-         {
-           return response()->json(['error' => 'missing parameter'],400);
-         }
-      if(!Department::find($request['department_id'])){
-          return response()->json("department not found",404);
+    public function AddScore(Request $request){
+      if(!isset($request['department']) || !isset($request['score']) || !isset($request['event'])){
+        return response()->json('missing parameters',400);
       }
-      if($request['score'] < 0){
-          return response()->json("invalid score, not allowed",409);
+      if(!($department_id = Department::FindDepartmentByName($request['department']))){
+        return response()->json('department not found',400);
       }
-      if(!$this->findEvent($request['event_id'],$request['day'])){
-          return response()->json("event not found",404);
+      $request['department_id'] = $department_id;
+      if(Score::FindScore($request['event'], $department_id)){
+        return response()->json('event score already added for department', 400);
       }
-      if(Score::findDepartmentScore($request['event_id'],$request['department_id'])){
-        return response()->json("event already added",409);
+      if(!(Score::store($request))){
+        return response()->json('internal error',500);
       }
-      if(!(Department::updateScore($request) && Score::store($request))){
-        return response("unable to update",500);
-      }
-      return response("success",200);
-    }
-
-    /**
-    *
-    *This method is used to edit scores for a previously
-    *added event. Allows non zero scores to allow penalization
-    *of departments.
-    *@param day, department_id, event_id, score
-    *@return
-    */
-    public function EditScore(Request $request){
-      if(!isset($request['department_id']) &&
-         !isset($request['day']) &&
-         !isset($request['event_id']) &&
-         !isset($request['score']))
-         {
-           return response()->json(['error' => 'missing parameter'],400);
-         }
-      if(!Department::findDepartment($request['department_id'])){
-          return response()->json("department not found",400);
-      }
-      if(!$this->findEvent($request['event_id'],$request['day'])){
-          return response()->json("event not found",400);
-      }
-      if(!(Department::updateScore($request) && Score::store($request))){
-        return response("unable to update",500);
-      }
-      return response("success",200);
-    }
+      return response()->json('success', 200);
+  }
 }

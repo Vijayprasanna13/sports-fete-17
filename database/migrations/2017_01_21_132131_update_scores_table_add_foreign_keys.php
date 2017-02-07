@@ -14,7 +14,6 @@ class UpdateScoresTableAddForeignKeys extends Migration
     public function up()
     {
         Schema::table('scores', function (Blueprint $table) {
-          $table->foreign('event_id')->references('id')->on('events');
           $table->foreign('department_id')->references('id')->on('departments');
         });
     }
@@ -28,7 +27,6 @@ class UpdateScoresTableAddForeignKeys extends Migration
     {
         Schema::table('scores', function (Blueprint $table) {
           $table->dropForeign('department_id');
-          $table->dropForeign('event_id');
         });
     }
 }

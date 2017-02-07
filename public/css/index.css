@@ -32,6 +32,12 @@ body {
 
 }
 
+h2 {
+   font-family: Pacifico;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -167,7 +173,6 @@ hr.small {
     animation-name: slide;
     animation-duration: 1s;
     //margin-top:-140px;
-
     animation-fill-mode: forwards;
     opacity:0;
 }
@@ -392,7 +397,7 @@ footer {
     font-size: 30px;
     //margin-left:auto;
     //margin-right:auto;
-    //margin-top:-40%;
+    margin-top:-40%;
     //margin-left:150px;
     //margin-left:;
     //position:absolute;
@@ -449,26 +454,7 @@ footer {
       }
 
 }
-<<<<<<< HEAD
-@media(max-device-width:365px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
-       #clockdiv > div
-       {
-          padding:6px;
-          border-radius: 3px;
-          display: inline-block;
 
-      }
-      #clockdiv div > span
-      {
-        padding:5px;
-      }
-      #countdown
-      {
-        margin-left:7%;
-      }
-=======
->>>>>>> e417cc88f0e0400cea43877cf40d910a4cabc3dc
 
 @media(max-device-width:365px){
        /* styles for mobile browsers smaller than 480px; (iPhone) */
@@ -489,7 +475,7 @@ footer {
       }
 
 }
-<<<<<<< HEAD
+
 /*@media(min-device-width:2000px){
 
 =======
@@ -515,12 +501,10 @@ footer {
 }*/
 #clockdiv2{
     font-family: sans-serif;
-
     display: inline-block;
-
     text-align: center;
-    font-size: 30px;
-    margin-left:30%;
+    font-size: 10px;
+    margin-left:0%;
 
 }
 
