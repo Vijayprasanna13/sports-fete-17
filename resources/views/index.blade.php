@@ -90,6 +90,7 @@
             <h1>Sportsfete'17</h1>
         </div>
 
+    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/5.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
@@ -112,6 +113,7 @@
             <h1>Sportsfete'17</h1>
         </div>
 
+    </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/9.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -133,6 +135,7 @@
             <h1>Sportsfete'17</h1>
         </div>
 
+    </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/13.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -153,6 +156,7 @@
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
+    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/17.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
@@ -174,6 +178,7 @@
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
+    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/21.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
@@ -195,6 +200,7 @@
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
+    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/25.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
@@ -216,6 +222,7 @@
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
+    </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/29.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
