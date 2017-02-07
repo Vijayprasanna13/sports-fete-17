@@ -74,11 +74,13 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/2.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/3.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -89,7 +91,6 @@
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
-
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/5.jpg');">
@@ -97,11 +98,13 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+    
     <div id="top" class="headerslides" style="background-image:url('images/carousel/6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+    
     <div id="top" class="headerslides" style="background-image:url('images/carousel/7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -190,6 +193,7 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/23.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -207,11 +211,13 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/26.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/27.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -245,6 +251,8 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
+
+
 
     <div class="container" id="countdown">
         <div class="row text-center">
@@ -380,11 +388,6 @@
                 </div>
                 <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-4">
-                        <h3 style="font-family: Vollkorn,serif;">Marathon coming up in</h3>
-                    </div>
-                </div>
                 <!-- /.row (nested) -->
 
 
