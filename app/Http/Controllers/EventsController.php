@@ -124,6 +124,13 @@ class EventsController extends Controller{
       return response()->json($marathonId, 200);
   }
 
+
+  /**
+  *
+  *This function return the list of events 
+  *@param
+  *@return
+  */
   public function GetEventList(){
     $eventlist = Event::GetEventList();
     if(!$eventlist){

@@ -113,7 +113,6 @@
             <br>
             <p><b>Akhil</b><br/>Treasurer</p>
             <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598579364
-
             <!--end of thumbnails-->
         </ul>
 

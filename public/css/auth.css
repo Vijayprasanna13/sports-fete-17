@@ -1,4 +1,7 @@
 <style>
+body{
+  max-width: 100%;
+}
   #logo {
     border-radius: 50%;
     padding: 4%;
@@ -30,11 +33,24 @@
     opacity: 0.8;
     background-color: #F5B7B1;
   }
-  #day-input-wrapper {
+  #event-input-wrapper {
     margin-left: 40%;
   }
   #event-selector-wrapper {
     margin-left: 40%;
     display: none;
   }
+.well{
+  margin-right: 2%;
+  background-color: #D6EAF8;
+  width: 30%;
+}
+.dept {
+  margin-left: 40%;
+  width: 30%;
+}
+#departments {
+  text-align: center;
+  margin-left: 7%;
+}
 </style>

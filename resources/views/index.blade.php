@@ -34,6 +34,7 @@
 
 <body id="start" onload="continuous()">
 
+
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -67,47 +68,69 @@
 
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image4.jpg');">
-       <div class="text-vertical-center" style="z-index:4;color:white;">
+       <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image5.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image6.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/image7.jpg');">
-        <div class="text-vertical-center" style="z-index:4;color:white;">
+        <div class="text-vertical-center" style="z-index:4;color:white;padding-top:20px;">
             <h1>Sportsfete'17</h1>
         </div>
 
     </div>
     <div class="container" id="countdown">
-        <div id="clockdiv" class="row">
-            <div class="col-sm-3">
-              <span class="days"></span>
-              <div class="smalltext"><b>Days</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="hours"></span>
-                <div class="smalltext"><b>Hours</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="minutes"></span>
-                <div class="smalltext"><b>Minutes</b></div>
-            </div>
-            <div class="col-sm-3">
-                <span class="seconds"></span>
-                <div class="smalltext"><b>Seconds</b></div>
-            </div>
+        <div class="row text-center">
+            <div class="col-lg-12 col-lg-offset-1 text-center">
+                <div id="clockdiv" class="row">
+                    <div class="col-sm-3">
+                        <span class="days"></span>
+                        <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
+                <div class="row" id="clockdiv2">
+                <h2>Marathon coming up in</h2>
+                    <div class="col-sm-3">
+                      <span class="days"></span>
+                      <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
+                </div>
 
-
+                </div>
+            </div>
         </div>
     </div>
 
@@ -130,7 +153,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <span id="leadheading"><h2 id="lbh"><b>Leaderboard</b></h2></span>
+                    <span id="leadheading"><h2><b>Leaderboard</b></h2></span>
                     <span><b><hr class="small"></b></span>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -169,7 +192,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 id="uph">Upcoming events</h2>
+                    <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3">
@@ -206,24 +229,7 @@
                     </div>
                 </div>
                 <!-- /.row (nested) -->
-                <div class="row" id="clockdiv2">
-                    <div class="col-sm-3">
-                      <span class="days"></span>
-                      <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-                </div>
+
 
         </div>
         <!-- /.container -->
@@ -254,6 +260,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/timer.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
