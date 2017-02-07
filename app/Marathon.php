@@ -19,7 +19,9 @@ class Marathon extends Model{
     $rollno = $rollno/1000000;
     $rollno = (int)$rollno;
     switch ($rollno) {
-      case 101: return "";
+      case 215: return "DOMS";
+              break;
+      case 415: return "DOMS";
               break;
       case 102: return "CHEM";
               break;
