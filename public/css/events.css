@@ -201,7 +201,7 @@ h1 {
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
-    height: 100%;
+    height: auto;
 }
 
 header.carousel .fill {
@@ -348,7 +348,7 @@ img {
 }
 
 .fixt{
-    height:1500px;
+    height:auto;
     width:580px;
     //text-align: center;
     margin-top:8%;

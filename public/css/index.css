@@ -324,7 +324,7 @@ footer {
 }
 #leaderboard
 {   //z-index:5;
-    margin-top:40px;
+    margin-top:0px;
     color:black;
     background-color: #ADD8E6;
 
@@ -377,7 +377,7 @@ footer {
 }
 .table
 {
-    width:70%;
+    width:50%;
 }
 
 .table-striped > thead
@@ -410,6 +410,15 @@ footer {
         margin-top:10%;
       }
 
+}
+@media(max-device-width:1355px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+      
+      .table{
+        margin-left:0%;
+        width:20%;
+      }
+      
 }
 #clockdiv{
     font-family: sans-serif;
@@ -613,3 +622,19 @@ footer {
 =======
 
 }*/
+.prev
+{
+  margin-top:-25%;
+  position:absolute;
+  font-size:32px;
+  color:white;
+  margin-left: 0%;
+}
+.next
+{
+  margin-top:-26%;
+  position:absolute;
+  font-size:32px;
+  color:white;
+  margin-left:98%;
+}
