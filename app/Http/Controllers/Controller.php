@@ -10,7 +10,7 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 
 trait Validity{
     public function IsDayValid($day){
-      return ($day <= 3 && $day > 0) || $day == -1;
+      return ($day <= 4 && $day > 0) || $day == -1;
     }
     public function FindEvent($event_id){
       $event = Event::where('id',$event_id)->first();

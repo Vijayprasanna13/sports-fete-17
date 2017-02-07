@@ -31,7 +31,6 @@ $app->get('/api/events/day/{day}/department/{department}','EventsController@GetE
 $app->get('/api/events/id/{id}','EventsController@GetEventById');
 $app->post('/api/events/{event_id}/start', 'EventsController@StartEvent');
 $app->post('/api/events/{event_id}/complete', 'EventsController@CompleteEvent');
-$app->post('/api/auth/user','EventsController@Authenticate');
 $app->get('/api/events', 'EventsController@GetEvents');
 $app->get('/api/events/list','EventsController@GetEventList');
 $app->get('/api/events/department/{department_id}', 'EventsController@GetEventsByDepartmentDays');
@@ -45,6 +44,8 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 
 $app->get('/api/day', 'Controller@GetDay');
 $app->get('/api/images', 'Controller@GetImages');
+
+$app->post('/api/user/marathon/register', 'EventsController@MarathonRegister');
 
 /**
 *
