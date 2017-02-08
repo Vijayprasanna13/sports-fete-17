@@ -35,7 +35,7 @@ class Event extends Model{
     foreach ($events as $event) {
       $validparticipants = [];
       $participants = Event::select(['CSE','ECE','EEE','MECH','CHEM','ICE','CIVIL',
-                                        'PROD','META','PHD + MSC','MCA','DOMS','MTECH','ARCH'])
+                                        'PROD','META','PHD+MSC','MCA','DOMS','MTECH','ARCH'])
                               ->where('id',$event->id)
                               ->first();
       $participants = json_decode($participants,true);
