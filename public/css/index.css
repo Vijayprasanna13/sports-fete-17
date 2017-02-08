@@ -628,7 +628,8 @@ footer {
   position:absolute;
   font-size:32px;
   color:white;
-  margin-left: 0%;
+  margin-left: 2%;
+  cursor:pointer;
 }
 .next
 {
@@ -636,5 +637,146 @@ footer {
   position:absolute;
   font-size:32px;
   color:white;
-  margin-left:98%;
+  
+  margin-left:95%;
+  cursor:pointer;
+}
+@media(max-device-width:1330px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-30%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-31%;
+       }
+}
+@media(max-device-width:1050px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-34%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-35%;
+       }
+}
+@media(max-device-width:890px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-38%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-39%;
+       }
+}
+@media(max-device-width:790px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-44%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-45%;
+       }
+}
+@media(max-device-width:685px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-49%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-50%;
+       }
+}
+@media(max-device-width:585px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-54%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-55%;
+      }
+       
+}
+@media(max-device-width:585px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-60%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-61%;
+      }
+       
+}
+@media(max-device-width:585px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-70%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-71%;
+      }
+       
+}
+@media(max-device-width:436px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-95%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-96%;
+      }
+       
+}
+@media(max-device-width:436px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+       .prev
+       {
+        position:absolute;
+        margin-top:-98%;
+       }
+       .next
+       {
+        position:absolute;
+        margin-top:-99%;
+        margin-left:92%;
+      }
+       #countdown
+       {
+        margin-top:-180px;
+       }
 }
