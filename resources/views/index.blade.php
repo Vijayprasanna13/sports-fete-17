@@ -273,13 +273,17 @@
                         <span class="seconds"></span>
                         <div class="smalltext"><b>Seconds</b></div>
                     </div>
-            
 
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="prev">
+    <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
+    </div>
+    <div class="next">
+    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)""></span>
+    </div>
 
     <section id="leaderboard" class="services">
         <div class="container">
@@ -324,15 +328,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Upcoming events</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
-                        </div>
-                        <div class="col-md-8">
-
                     
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-5">
+                            <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
+                        </div>
+                    </div>
+                    <div class="row table-responsive">
+                        <div class="col-md-9" style="margin-top:40px;">                    
 
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
@@ -347,18 +351,20 @@
 
                               </tbody>
                           </table>
+                        
+                        </div>
 
                         </div>
                     </div>
                     <!-- /.col-lg-10 -->
                   </div>
-                </div>
+                
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
@@ -381,7 +387,7 @@
                     </div>
                 </div>
 
-
+                
 
         </div>
         <!-- /.container -->

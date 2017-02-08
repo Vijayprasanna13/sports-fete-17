@@ -397,8 +397,11 @@ footer {
        /* styles for mobile browsers smaller than 480px; (iPhone) */
       #upc
       {
-        margin-left:1%;
+        width: 40%;
         margin-top:10%;
+      }
+      #upc > td {
+        font-size: 10%;
       }
       #lb
       {
@@ -512,30 +515,26 @@ footer {
       }
 
 }
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1220px) {
 
-/*@media(min-device-width:2000px){
-
-=======
-/*@media(min-device-width:1430px){
-       
->>>>>>> e417cc88f0e0400cea43877cf40d910a4cabc3dc
-       #clockdiv > div
-       {
-          padding:10px;
-          border-radius: 3px;
-          display: inline-block;
-
-      }
-      #clockdiv div > span
-      {
-        padding:15px;
-      }
+      /* For portrait layouts only */
       #countdown
       {
-        margin-left:3%;
-      }
+        margin-left:-15.1%;
 
-}*/
+      }
+    }
+@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+
+      /* For portrait layouts only */
+      #countdown
+      {
+        margin-left:6%;
+
+      }
+}
+
+
 #clockdiv2{
     font-family: sans-serif;
     display: inline-block;
@@ -901,4 +900,9 @@ td.text-center {
 
 td.text-right {
   text-align: right;
+}
+
+#upimage
+{
+  //width:;
 }
