@@ -327,10 +327,10 @@
                     <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
 
                     
 
