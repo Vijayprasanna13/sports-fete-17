@@ -21,6 +21,7 @@
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -285,9 +286,6 @@
     <span class="glyphicon glyphicon-chevron-right" onclick="plusSlides(1)""></span>
     </div>
 
-    
-
-
     <section id="leaderboard" class="services">
         <div class="container">
             <div class="row text-center">
@@ -341,6 +339,7 @@
 
                     
                         <div class="table-responsive">
+
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
@@ -366,7 +365,7 @@
                 <!-- /.row (nested) -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
@@ -389,7 +388,7 @@
                     </div>
                 </div>
 
-
+                
 
         </div>
         <!-- /.container -->
