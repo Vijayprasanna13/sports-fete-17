@@ -273,7 +273,6 @@
                         <span class="seconds"></span>
                         <div class="smalltext"><b>Seconds</b></div>
                     </div>
-            
 
                 </div>
             </div>
