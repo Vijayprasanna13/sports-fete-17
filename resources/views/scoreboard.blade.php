@@ -113,7 +113,7 @@
 
     </div>
     <!-- /.container -->
-    <div class="container" id="days" style="padding: 15vh">
+    <div class="container" id="days" style="padding: 0vh">
         <ul class="nav nav-pills nav-justified">
           <li class="active"><a data-toggle="pill" href="#day1">Day 1</a></li>
           <li><a data-toggle="pill" href="#day2">Day 2</a></li>
