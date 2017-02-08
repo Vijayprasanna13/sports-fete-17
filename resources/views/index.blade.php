@@ -338,11 +338,11 @@
                             <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row table-responsive">
                         <div class="col-md-12" style="margin-top:40px;">
 
                     
-                        <div class="table-responsive">
+                        
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
@@ -356,7 +356,7 @@
 
                               </tbody>
                           </table>
-                        </div>
+                        
                         </div>
 
                         </div>
