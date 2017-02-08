@@ -281,9 +281,6 @@
     </div>
 
 
-    
-
-
     <section id="leaderboard" class="services">
         <div class="container">
             <div class="row text-center">
