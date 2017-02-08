@@ -21,8 +21,10 @@
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -69,183 +71,185 @@
 
 
 
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/1.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/2.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/3.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/4.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/5.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     
     <div id="top" class="headerslides" style="background-image:url('images/carousel/6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     
     <div id="top" class="headerslides" style="background-image:url('images/carousel/7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/8.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
 
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/9.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/10.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/11.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/12.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
 
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/13.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/14.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/15.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/16.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/17.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/18.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/19.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/20.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/21.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/23.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/24.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/25.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/26.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/27.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/28.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/29.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/30.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/31.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/32.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1>Sportsfete'17</h1>
+            <h1 style="padding-top:30px;">Sportsfete'17</h1>
         </div>
     </div>
+
 
 
 
@@ -269,45 +273,17 @@
                         <span class="seconds"></span>
                         <div class="smalltext"><b>Seconds</b></div>
                     </div>
-                <div class="row" id="clockdiv2">
-                <h2>Marathon coming up in</h2>
-                    <div class="col-sm-3">
-                      <span class="days"></span>
-                      <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-                </div>
 
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-    <br>
-    <div class="dots" style="text-align:center;">
-        <span class="dot" onclick="particular(1)"></span>
-        <span class="dot" onclick="particular(2)"></span>
-        <span class="dot" onclick="particular(3)"></span>
-        <span class="dot" onclick="particular(4)"></span>
-
+    <div class="prev">
+    <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
     </div>
-
-
+    <div class="next">
+    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)""></span>
+    </div>
 
     <section id="leaderboard" class="services">
         <div class="container">
@@ -320,10 +296,10 @@
                             <img src="images/homepage/leaderboard.png" class="img-responsive">
                         </div>
                         <div class="col-md-9 col-sm-6">
-                            <table class="table table-hover table-striped">
+                            <table class="table table-hover table-striped" id="lb">
                                 <thead>
                                     <tr>
-                                        <th>Serial No.</th>
+                                        <th>Rank</th>
                                         <th>Department</th>
                                         <th>Score</th>
 
@@ -352,17 +328,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Upcoming events</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
-                        </div>
-                        <div class="col-md-9">
-
                     
+                    
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-5">
+                            <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
+                        </div>
+                    </div>
+                    <div class="row table-responsive">
+                        <div class="col-md-9" style="margin-top:40px;">                    
 
-                          <table class="table table-hover table-striped">
+                          <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
                                       <th>Date</th>
@@ -375,16 +351,43 @@
 
                               </tbody>
                           </table>
+                        
+                        </div>
 
                         </div>
                     </div>
                     <!-- /.col-lg-10 -->
                   </div>
-                </div>
+                
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+                <div class="row" id="clockdiv2">
+                    <div class="col-sm-3">
+                      <span class="days"></span>
+                      <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
+                </div>
 
+                
 
         </div>
         <!-- /.container -->
@@ -476,7 +479,10 @@
 
     function plusSlides(n)
     {
+        clearInterval(timer);
+
         showSlides(slideIndex += n);
+        continuous();
     }
 
     function currentSlide(n)
@@ -488,37 +494,21 @@
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
-        var dots = document.getElementsByClassName("dot");
+        //var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length} ;
         for (i = 0; i < slides.length; i++)
         {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++)
+        /*for (i = 0; i < dots.length; i++)
         {
             dots[i].classList.remove("active");
-        }
+        }*/
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].classList.add("active");
+        //dots[slideIndex-1].classList.add("active");
     }
-    /*function showSlides(n)
-    {
-        var i;
-        var bgs=["url(images/image4.jpg)","url(images/image5.jpg)","url(images/image6.jpg)","url(images/image7.jpg)"];
-
-        var dots = document.getElementsByClassName("dot");
-        if (n > bgs.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = bgs.length} ;
-        document.getElementById('top').style.backgroundImage=bgs[slideIndex-1];
-
-        for (i = 0; i < dots.length; i++)
-        {
-            dots[i].classList.remove("active");
-        }
-        //slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].classList.add("active");
-    }*/
+    
     function change()
     {
         slideIndex+=1;
@@ -611,6 +601,18 @@
 
     </script>
 <script src="/js/index.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84082034-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 
 </html>

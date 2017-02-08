@@ -102,7 +102,11 @@ $(document).ready(function() {
         if(data[event].status == "l") {
           data[event].start_time = "Live";
         }
-        if(data[event].participants.length == 2) {
+        if(data[event].participants.length == 0) {
+          data[event].participants[0] = data[event].teama;
+          data[event].participants[1] = data[event].teamb;
+        }
+        if(data[event].participants.length <= 2) {
           $('#events_body_day1').append(
             "<tr>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
@@ -148,7 +152,11 @@ $(document).ready(function() {
         if(data[event].status == "l") {
           data[event].start_time = "Live";
         }
-        if(data[event].participants.length == 2) {
+        if(data[event].participants.length == 0) {
+          data[event].participants[0] = data[event].teama;
+          data[event].participants[1] = data[event].teamb;
+        }
+        if(data[event].participants.length <= 2) {
           $('#events_body_day2').append(
             "<tr>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
@@ -194,7 +202,11 @@ $(document).ready(function() {
         if(data[event].status == "l") {
           data[event].start_time = "Live";
         }
-        if(data[event].participants.length == 2) {
+        if(data[event].participants.length == 0) {
+          data[event].participants[0] = data[event].teama;
+          data[event].participants[1] = data[event].teamb;
+        }
+        if(data[event].participants.length <= 2) {
           $('#events_body_day3').append(
             "<tr>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
@@ -241,7 +253,11 @@ $(document).ready(function() {
         if(data[event].status == "l") {
           data[event].start_time = "Live";
         }
-        if(data[event].participants.length == 2) {
+        if(data[event].participants.length == 0) {
+          data[event].participants[0] = data[event].teama;
+          data[event].participants[1] = data[event].teamb;
+        }
+        if(data[event].participants.length <= 2) {
           $('#events_body_day4').append(
             "<tr>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
