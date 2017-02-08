@@ -1,4 +1,4 @@
-
+fixt
 html,
 body {
     height: 100%;
@@ -347,9 +347,15 @@ img {
     font-family: Pacifico;
 }
 
+.fixtures {
+  height: 100%;
+}
+
 .fixt{
-    height:auto;
-    width:580px;
+
+    height: 100%;
+    width: 400px;
+    margin-left: 10%; 
     //text-align: center;
     margin-top:8%;
 }

@@ -279,12 +279,7 @@
             </div>
         </div>
     </div>
-    <div class="prev">
-    <span class="glyphicon glyphicon-chevron-left" onclick="plusSlides(-1)"></span>
-    </div>
-    <div class="next">
-    <span class="glyphicon glyphicon-chevron-right" onclick="plusSlides(1)""></span>
-    </div>
+
 
     
 
