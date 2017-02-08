@@ -16,40 +16,43 @@ class Marathon extends Model{
   }
 
   public static function GetDepartmentByRollNo($rollno) {
-    $rollno = $rollno/1000000;
+    $rollno = $rollno/100000;
     $rollno = (int)$rollno;
+    $firstdigit = $rollno / 100000000;
+    $firstdigit = (int)$firstdigit;
+    if($firstdigit == 4) {
+      return "PHD + MSC";
+    }
     switch ($rollno) {
-      case 215: return "DOMS";
+      case 1021: return "CHEM";
               break;
-      case 415: return "DOMS";
+      case 1031: return "CIVIL";
               break;
-      case 102: return "CHEM";
+      case 1061: return "CSE";
               break;
-      case 103: return "CIVIL";
+      case 1071: return "EEE";
               break;
-      case 104: return "";
+      case 1081: return "ECE";
               break;
-      case 105: return "";
+      case 1101: return "ICE";
               break;
-      case 106: return "CSE";
+      case 1111: return "MECH";
               break;
-      case 107: return "EEE";
+      case 1121: return "META";
               break;
-      case 108: return "ECE";
+      case 1141: return "PROD";
               break;
-      case 109: return "";
+      case 2041: return "PHD + MSC";
               break;
-      case 110: return "ICE";
+      case 2051: return "MCA";
               break;
-      case 111: return "MECH";
+      case 2132: return "PHD + MSC";
               break;
-      case 112: return "META";
+      case 2151: return "DOMS";
               break;
-      case 113: return "";
+      case 2162: return "MCA";
               break;
-      case 114: return "PROD";
-              break;
-      default: return 'Invalid Roll Number';
+      default: return "MTECH";
     }
   }
 

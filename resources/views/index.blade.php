@@ -21,8 +21,10 @@
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,6 +67,7 @@
     </nav>
 
     <!-- Header -->
+
 
 
 
@@ -249,6 +252,7 @@
 
 
 
+
     <div class="container" id="countdown">
         <div class="row text-center">
             <div class="col-lg-12 col-lg-offset-1 text-center">
@@ -269,44 +273,12 @@
                         <span class="seconds"></span>
                         <div class="smalltext"><b>Seconds</b></div>
                     </div>
-                <div class="row" id="clockdiv2">
-                <h2>Marathon coming up in</h2>
-                    <div class="col-sm-3">
-                      <span class="days"></span>
-                      <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-                </div>
+            
 
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-    <br>
-    <div class="dots" style="text-align:center;">
-        <span class="dot" onclick="particular(1)"></span>
-        <span class="dot" onclick="particular(2)"></span>
-        <span class="dot" onclick="particular(3)"></span>
-        <span class="dot" onclick="particular(4)"></span>
-
-    </div>
-
 
 
     <section id="leaderboard" class="services">
@@ -320,7 +292,7 @@
                             <img src="images/homepage/leaderboard.png" class="img-responsive">
                         </div>
                         <div class="col-md-9 col-sm-6">
-                            <table class="table table-hover table-striped">
+                            <table class="table table-hover table-striped" id="lb">
                                 <thead>
                                     <tr>
                                         <th>Serial No.</th>
@@ -362,7 +334,7 @@
 
                     
 
-                          <table class="table table-hover table-striped">
+                          <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
                                       <th>Date</th>
@@ -384,6 +356,31 @@
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+                <div class="row" id="clockdiv2">
+                    <div class="col-sm-3">
+                      <span class="days"></span>
+                      <div class="smalltext"><b>Days</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="hours"></span>
+                        <div class="smalltext"><b>Hours</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="minutes"></span>
+                        <div class="smalltext"><b>Minutes</b></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="seconds"></span>
+                        <div class="smalltext"><b>Seconds</b></div>
+                    </div>
+                </div>
+
 
 
         </div>
@@ -476,7 +473,10 @@
 
     function plusSlides(n)
     {
+        clearInterval(timer);
+
         showSlides(slideIndex += n);
+        continuous();
     }
 
     function currentSlide(n)
@@ -488,37 +488,21 @@
     {
         var i;
         var slides = document.getElementsByClassName("headerslides");
-        var dots = document.getElementsByClassName("dot");
+        //var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length} ;
         for (i = 0; i < slides.length; i++)
         {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++)
+        /*for (i = 0; i < dots.length; i++)
         {
             dots[i].classList.remove("active");
-        }
+        }*/
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].classList.add("active");
+        //dots[slideIndex-1].classList.add("active");
     }
-    /*function showSlides(n)
-    {
-        var i;
-        var bgs=["url(images/image4.jpg)","url(images/image5.jpg)","url(images/image6.jpg)","url(images/image7.jpg)"];
-
-        var dots = document.getElementsByClassName("dot");
-        if (n > bgs.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = bgs.length} ;
-        document.getElementById('top').style.backgroundImage=bgs[slideIndex-1];
-
-        for (i = 0; i < dots.length; i++)
-        {
-            dots[i].classList.remove("active");
-        }
-        //slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].classList.add("active");
-    }*/
+    
     function change()
     {
         slideIndex+=1;

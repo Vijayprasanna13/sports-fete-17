@@ -1,4 +1,4 @@
-
+fixt
 html,
 body {
     height: 100%;
@@ -201,7 +201,7 @@ h1 {
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
-    height: 100%;
+    height: auto;
 }
 
 header.carousel .fill {
@@ -347,9 +347,15 @@ img {
     font-family: Pacifico;
 }
 
+.fixtures {
+  height: 100%;
+}
+
 .fixt{
-    height:1500px;
-    width:580px;
+
+    height: 100%;
+    width: 400px;
+    margin-left: 10%; 
     //text-align: center;
     margin-top:8%;
 }
