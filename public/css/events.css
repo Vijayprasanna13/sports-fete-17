@@ -347,9 +347,9 @@ img {
 }
 
 .fixt{
-    height: 600px;
-    width: 400px;
-    margin-left: 10%; 
+    height: auto;
+    width: 100%;
     //text-align: center;
     margin-top:8%;
+    max-height: 500px;
 }

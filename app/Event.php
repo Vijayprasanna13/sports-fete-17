@@ -20,9 +20,9 @@ class Event extends Model{
   }
   public static function GetEventsByDay($day) {
     if($day >= 0)
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->where('day', $day)->orderBy('start_time')->with('department')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('day', $day)->orderBy('start_time')->with('department')->get();
     else
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->orderBy('start_time')->with('department')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->orderBy('start_time')->with('department')->get();
   }
 
   /**
@@ -68,7 +68,7 @@ class Event extends Model{
   }
 
   public static function EventById($event_id){
-    $event = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->where('id',$event_id)->with('department')->get();
+    $event = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('id',$event_id)->with('department')->get();
     $event = Event::AddParticipants($event);
     return $event;
   }

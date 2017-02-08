@@ -92,8 +92,9 @@ $(document).ready(function() {
       $('#events_body_day1').html(" ");
       for(var event in data) {
         var date = new Date(data[event].start_time);
-        console.log(date);
-        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
+        console.log(data);
+        var dt = data[event].start_time.split(/[- :]/);
+        data[event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -110,6 +111,7 @@ $(document).ready(function() {
         if(data[event].participants.length <= 2) {
           $('#events_body_day1').append(
             "<tr>"+
+              "<td>"+data[event].fixture+"</td>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
               "<td>"+data[event].start_time+"</td>"+
               "<td>"+data[event].department.department_name+"</td>"+
@@ -143,8 +145,9 @@ $(document).ready(function() {
       $('#events_body_day2').html(" ");
       for(var event in data) {
         var date = new Date(data[event].start_time);
-        console.log(date);
-        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
+        console.log(data);
+        var dt = data[event].start_time.split(/[- :]/);
+        data[event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -161,6 +164,7 @@ $(document).ready(function() {
         if(data[event].participants.length <= 2) {
           $('#events_body_day2').append(
             "<tr>"+
+              "<td>"+data[event].fixture+"</td>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
               "<td>"+data[event].start_time+"</td>"+
               "<td>"+data[event].department.department_name+"</td>"+
@@ -194,8 +198,9 @@ $(document).ready(function() {
       $('#events_body_day3').html(" ");
       for(var event in data) {
         var date = new Date(data[event].start_time);
-        console.log(date);
-        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
+        console.log(data);
+        var dt = data[event].start_time.split(/[- :]/);
+        data[event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -212,6 +217,7 @@ $(document).ready(function() {
         if(data[event].participants.length <= 2) {
           $('#events_body_day3').append(
             "<tr>"+
+              "<td>"+data[event].fixture+"</td>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
               "<td>"+data[event].start_time+"</td>"+
               "<td>"+data[event].department.department_name+"</td>"+
@@ -246,8 +252,9 @@ $(document).ready(function() {
       $('#events_body_day4').html(" ");
       for(var event in data) {
         var date = new Date(data[event].start_time);
-        console.log(date);
-        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
+        console.log(data);
+        var dt = data[event].start_time.split(/[- :]/);
+        data[event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -264,6 +271,7 @@ $(document).ready(function() {
         if(data[event].participants.length <= 2) {
           $('#events_body_day4').append(
             "<tr>"+
+              "<td>"+data[event].fixture+"</td>"+
               "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
               "<td>"+data[event].start_time+"</td>"+
               "<td>"+data[event].department.department_name+"</td>"+

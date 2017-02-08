@@ -126,6 +126,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -145,6 +146,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -164,6 +166,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -183,6 +186,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
