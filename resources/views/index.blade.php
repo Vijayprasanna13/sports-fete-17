@@ -331,13 +331,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Upcoming events</h2>
-                    <hr class="small">
+                    
+                    
                     <div class="row">
-                        <div class="col-md-3">
-                            <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
+                        <div class="col-md-3 col-md-offset-5">
+                            <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
                         </div>
-                        <div class="col-md-9">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="margin-top:40px;">
 
                     
                         <div class="table-responsive">
@@ -355,12 +357,13 @@
                               </tbody>
                           </table>
                         </div>
+                        </div>
 
                         </div>
                     </div>
                     <!-- /.col-lg-10 -->
                   </div>
-                </div>
+                
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
