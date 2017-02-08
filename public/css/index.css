@@ -507,30 +507,26 @@ footer {
       }
 
 }
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1220px) {
 
-/*@media(min-device-width:2000px){
-
-=======
-/*@media(min-device-width:1430px){
-       
->>>>>>> e417cc88f0e0400cea43877cf40d910a4cabc3dc
-       #clockdiv > div
-       {
-          padding:10px;
-          border-radius: 3px;
-          display: inline-block;
-
-      }
-      #clockdiv div > span
-      {
-        padding:15px;
-      }
+      /* For portrait layouts only */
       #countdown
       {
-        margin-left:3%;
-      }
+        margin-left:-15.1%;
 
-}*/
+      }
+    }
+@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+
+      /* For portrait layouts only */
+      #countdown
+      {
+        margin-left:6%;
+
+      }
+}
+
+
 #clockdiv2{
     font-family: sans-serif;
     display: inline-block;

@@ -340,7 +340,7 @@
                         <div class="col-md-9">
 
                     
-
+                        <div class="table-responsive">
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
@@ -354,6 +354,7 @@
 
                               </tbody>
                           </table>
+                        </div>
 
                         </div>
                     </div>
