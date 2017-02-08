@@ -91,6 +91,8 @@ $(document).ready(function() {
     success: function(data) {
       $('#events_body_day1').html(" ");
       for(var event in data) {
+        var date = new Date(data[event].start_time);
+        console.log(date);
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -139,6 +141,8 @@ $(document).ready(function() {
     success: function(data) {
       $('#events_body_day2').html(" ");
       for(var event in data) {
+        var date = new Date(data[event].start_time);
+        console.log(date);
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -187,6 +191,8 @@ $(document).ready(function() {
     success: function(data) {
       $('#events_body_day3').html(" ");
       for(var event in data) {
+        var date = new Date(data[event].start_time);
+        console.log(date);
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -236,6 +242,8 @@ $(document).ready(function() {
     success: function(data) {
       $('#events_body_day4').html(" ");
       for(var event in data) {
+        var date = new Date(data[event].start_time);
+        console.log(date);
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
