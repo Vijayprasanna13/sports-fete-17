@@ -93,6 +93,7 @@ $(document).ready(function() {
       for(var event in data) {
         var date = new Date(data[event].start_time);
         console.log(date);
+        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -139,6 +140,7 @@ $(document).ready(function() {
       for(var event in data) {
         var date = new Date(data[event].start_time);
         console.log(date);
+        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -185,6 +187,7 @@ $(document).ready(function() {
       for(var event in data) {
         var date = new Date(data[event].start_time);
         console.log(date);
+        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
@@ -232,6 +235,7 @@ $(document).ready(function() {
       for(var event in data) {
         var date = new Date(data[event].start_time);
         console.log(date);
+        data[event].start_time = date.getDate()+'/'+(date.getMonth() + 1)+'/'+date.getFullYear()+"&nbsp;&nbsp "+date.getHours()+":"+date.getMinutes();
         if(data[event].department == null) {
           data[event].department = {department_name: "---"}
         }
