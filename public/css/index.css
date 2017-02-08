@@ -397,8 +397,11 @@ footer {
        /* styles for mobile browsers smaller than 480px; (iPhone) */
       #upc
       {
-        margin-left:1%;
+        width: 40%;
         margin-top:10%;
+      }
+      #upc > td {
+        font-size: 10%;
       }
       #lb
       {

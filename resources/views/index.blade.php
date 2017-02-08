@@ -279,7 +279,12 @@
             </div>
         </div>
     </div>
-
+    <div class="prev">
+    <span class="glyphicon glyphicon-chevron-left" onclick="plusSlides(-1)"></span>
+    </div>
+    <div class="next">
+    <span class="glyphicon glyphicon-chevron-right" onclick="plusSlides(1)""></span>
+    </div>
 
     <section id="leaderboard" class="services">
         <div class="container">
@@ -327,13 +332,10 @@
                     <h2>Upcoming events</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <img class="img-responsive" src="images/secret/upcoming_events.	jpg">
                         </div>
                         <div class="col-md-8">
-
-                    
-
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
@@ -358,7 +360,7 @@
                 <!-- /.row (nested) -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
@@ -381,7 +383,7 @@
                     </div>
                 </div>
 
-
+                
 
         </div>
         <!-- /.container -->
