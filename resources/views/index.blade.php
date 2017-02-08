@@ -299,7 +299,7 @@
                             <table class="table table-hover table-striped" id="lb">
                                 <thead>
                                     <tr>
-                                        <th>Serial No.</th>
+                                        <th>Rank</th>
                                         <th>Department</th>
                                         <th>Score</th>
 
