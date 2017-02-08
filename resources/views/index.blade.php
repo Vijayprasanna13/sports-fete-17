@@ -21,6 +21,7 @@
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -272,21 +273,17 @@
                         <span class="seconds"></span>
                         <div class="smalltext"><b>Seconds</b></div>
                     </div>
-            
 
                 </div>
             </div>
         </div>
     </div>
     <div class="prev">
-    <span class="glyphicon glyphicon-chevron-left" onclick="plusSlides(-1)"></span>
+    <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
     </div>
     <div class="next">
-    <span class="glyphicon glyphicon-chevron-right" onclick="plusSlides(1)""></span>
+    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)""></span>
     </div>
-
-    
-
 
     <section id="leaderboard" class="services">
         <div class="container">
@@ -339,10 +336,12 @@
                         </div>
                     </div>
                     <div class="row table-responsive">
+
                         <div class="col-md-12" style="margin-top:40px;">
 
                     
                         
+
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
@@ -369,7 +368,7 @@
                 <!-- /.row (nested) -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon is coming up in</h3>
+                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
                     </div>
                 </div>
                 <!-- /.row (nested) -->
@@ -392,7 +391,7 @@
                     </div>
                 </div>
 
-
+                
 
         </div>
         <!-- /.container -->
@@ -606,6 +605,18 @@
 
     </script>
 <script src="/js/index.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84082034-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 
 </html>

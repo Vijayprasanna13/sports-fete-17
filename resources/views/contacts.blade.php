@@ -82,38 +82,37 @@
         <ul class="list-inline" style="margin-top:40px;">
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/SRIVANTH.jpg">
             <br>
-            <p><b><h4>Srivanth</h4></b>Sports Secretary</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598096831
-            
+            <p><b>Srivanth</b><br/>Sports Secretary</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598096831
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/RAMAKRISHNAN.jpg">
             <br>
-            <p><b><h4>Ramakrishnan</h4></b>Associate Sports Secretary</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9952045494
+            <p><b>Ramakrishnan</b><br/>Associate Sports Secretary</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9952045494
 
             <li class="cont"><img class="img-responsive img-thumbnail contacts" style="-o-object-fit: contain;" src="images/contacts/NIKHIL CHAUDHARY.jpg">
             <br>
-            <p><b><h4>Nikhil Chaudary</h4></b>Chairman</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>8438207811
+            <p><b>Nikhil Chaudary</b><br/>Chairman</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>8438207811
             </li>
-            
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Vinay.jpg">
-            <br/>   
+            <br/>
             <p>
-            <b><h4>Vinay Kumar Chowdary P </h4></b>Overall Coordinator</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9629404269
-            
+            <b>Vinay Kumar Chowdary</b><br/>Overall Coordinater</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9629404269
+
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Bharath Ram.jpg">
             <br>
-            <p><b><h4>Bharath Ram</h4></b>Organising Head</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9444398070
+            <p><b>Bharath Ram</b><br/>Organising Head</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9444398070
             </li>
-            
+
             </li>
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/akhil.JPG">
             <br>
-            <p><b><h4>Akhil</b></h4>Treasurer</p>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="(0341)2252788"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598579364
-
+            <p><b>Akhil</b><br/>Treasurer</p>
+            <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>7598579364
             <!--end of thumbnails-->
         </ul>
 
