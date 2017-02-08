@@ -7,8 +7,9 @@ var Login = React.createClass({
         success: function(data){
           if(data == 'success')
             location.href = '/auth/dashboard';
+
         },
-        error: function(data){console.log('error');}
+        error: function(data){alert('wrong credentials');}
       });
   },
   render: function(){
