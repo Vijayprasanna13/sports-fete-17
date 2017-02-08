@@ -86,17 +86,11 @@ class EventsController extends Controller{
   *@param event id
   *@return
   */
-  public function CompleteEvent(Request $request, $event_id) {
-    if(!isset($request['winner'])) {
-      return response()->json('missing parameters', 400);
-    }
-    if(!Department::find($request['winner'])) {
-      return response()->json('department not found', 404);
-    }
-    if(!$event = Event::find($event_id)) {
+  public function CompleteEvent($event_id) {
+    if(!Event::find($event_id)) {
       return response()->json('event not found', 404);
     }
-    if(!$event->CompleteEvent($request['winner'])) {
+    if(!Event::CompleteEvent($event_id)) {
       return response()->json('cannot update event status', 500);
     }
     return response()->json('event status changed', 200);
