@@ -621,7 +621,7 @@
                 <li>Compulsory whites (white tee and white track) to be worn by all players including substitutes.</li>
                 <li>Shoes are compulsory.</li>
                 <li>All standard international rules apply (example decisions regarding lbw and no-ball are there).</li>
-                <li>1st 3 overs-mandatory power play. NO SUBSEQUENT POWERPLAYS. Only two fielders allowed outside the ring during power play. For the 3rd place and finals the first six overs will be power play.</li>
+                <li>1st 3 overs-mandatory power play. NO SUBSEQUENT POWERPLAYS. Only two fielders allowed outside the ring during power play. For the 3rd place and finals the first five overs will be power play.</li>
                 <li>No-ball to be awarded if any player of the fielding team speaks or cheers during ball being bowled.</li>
                 <li>Umpire’s decision is final.</li>
                 <li>Time limit for the respective no. of overs :-<br>

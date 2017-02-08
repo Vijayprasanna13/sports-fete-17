@@ -14,7 +14,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    text-align: center;    
    
 
 }
@@ -107,6 +107,8 @@ h1 {
   width:200px;
   height:200px;
   border-radius:100px;
+  border-color: #167F92;
+  border: 5px;
 }
 .fa:hover
 {

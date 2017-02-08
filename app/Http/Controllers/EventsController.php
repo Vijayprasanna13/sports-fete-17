@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Event;
 use App\Department;
+use App\Marathon;
 
 class EventsController extends Controller{
     use Validity;
@@ -108,17 +109,25 @@ class EventsController extends Controller{
   *@param rollno, password
   *@return
   */
-  public function Authenticate(Request $request){
+  public function MarathonRegister(Request $request){
       $imap_response = User::AuthenticateStudent($request['rollno'],$request['password']);
-      if($imap_response)
-        return response()->json("success", 200);
-      return response()->json("wrong rollno or password", 400);
+      if(!$imap_response) {
+        return response()->json("wrong rollno or password", 400);
+      }
+      if($marathonId = Marathon::CheckExists($request['rollno'])) {
+        return response()->json($marathonId, 200);
+      }
+      $department = Marathon::GetDepartmentByRollNo($request['rollno']);
+      if(!$marathonId = Marathon::Register($request['rollno'], $department)) {
+        return response()->json("Internal Server Error", 500);
+      }
+      return response()->json($marathonId, 200);
   }
 
 
   /**
   *
-  *This function return the list of events 
+  *This function return the list of events
   *@param
   *@return
   */

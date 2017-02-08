@@ -7,6 +7,8 @@ use Laravel\Lumen\Auth\Authorizable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract
 {
@@ -33,17 +35,15 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $table = "users";
 
     public static function AuthenticateStudent($rollno, $password){
-        $imap_token =
-            @\imap_open(
-                "{vayu.nitt.edu:993/imap/ssl/novalidate-cert}",
-                $rollno,
-                $password,
-                0, 1
-            );
-        if ($imap_token != false) {
-            return 1;
-        }
-        return 0;
+        $client = new Client(); //GuzzleHttp\Client
+        $result = $client->post('http://spider.nitt.edu/~vishnu/auth.php', [
+            'body' => [
+            'rollno' => $rollno,
+            'password' => $password
+          ],
+          'connect_timeout' => 20
+        ]);
+        return $result->getBody()->getContents();
     }
 
     public static function getUser($username) {

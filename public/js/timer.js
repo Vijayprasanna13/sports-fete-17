@@ -3,6 +3,7 @@ setInterval(function(){
 	var count = document.getElementById("countdown");
 	var ml;
 	
+	
 	if(width<770&&width>400)
 	{
 		ml = (width-350)/2;
