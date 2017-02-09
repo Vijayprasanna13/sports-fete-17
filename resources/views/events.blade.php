@@ -164,7 +164,7 @@
             </a>
             <br><div class="eventname">Hockey</div></li>
 
-            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="12"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/FOPVkvt.jpg"><br>
+            <li class="eventpics" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="12"><img class="img-responsive img-thumbnail img-hover events" src="http://i.imgur.com/ApfN8fF.jpg"><br>
             </a>
             <br><div class="eventname">Kabaddi</div></li>
 
