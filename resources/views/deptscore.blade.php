@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>{{$department_name}} Events</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+        <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 

@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sportsfete</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+    <title>Sportsfete'17</title>
+    <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="/css/countdown.css" rel="stylesheet">-->

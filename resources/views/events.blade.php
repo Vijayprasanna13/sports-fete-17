@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Events</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+        <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -1402,7 +1402,7 @@
             <div class="tab-content">
                 <div id="fixture20" class="tab-pane fade in active">
 
-                  <img class="fixt img-responsive" src="images/fixtures/tabletennis_men.jpg" alt="tabletennis_men"/>
+                  <img class="fixt img-responsive" src="images/fixtures/tennis_men.png" alt="tennis_men"/>
 
                 </div>
                 <div id="rules20" class="tab-pane fade">
@@ -1449,7 +1449,7 @@
             <div class="tab-content">
                 <div id="fixture21" class="tab-pane fade in active">
 
-                  <img class="fixt img-responsive" src="images/fixtures/tabletennis_women.jpg" alt="tabletennis_women"/>
+                  <img class="fixt img-responsive" src="images/fixtures/tennis_women.png" alt="tennis_women"/>
 
                 </div>
                 <div id="rules21" class="tab-pane fade">

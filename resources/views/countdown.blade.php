@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/secret/icon.png" />
 
     <!-- Custom CSS -->
     <link href="css/countdown.css" rel="stylesheet">
