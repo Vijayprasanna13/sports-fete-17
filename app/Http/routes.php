@@ -17,7 +17,7 @@ date_default_timezone_set('Asia/Calcutta');
 *Routes for landing pages
 */
 
-$app->get('/', 'PagesController@GetHomepage');
+$app->get('/', 'PagesController@RedirectToHomepage');
 $app->get('/sportsfete', 'PagesController@GetHomepage');
 $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
