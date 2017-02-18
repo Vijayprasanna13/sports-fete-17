@@ -72,7 +72,7 @@ $(document).ready(function() {
         }
         var date = new Date(events['day'+i][event].start_time);
         var dt = events['day'+i][event].start_time.split(/[- :]/);
-        var start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
+        events['day'+i][event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(events['day'+i][event].department == null) {
           events['day'+i][event].department = {department_name: "---"}
         }
