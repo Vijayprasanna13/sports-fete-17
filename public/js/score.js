@@ -25,9 +25,10 @@ function SetScoreForDepartment(department, score, event){
 function SetScores(){
   console.log('success');
   var event = $('#event').val();
-  var departments = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','MSC','DOMS'];
+  var departments = ['CSE','ECE','EEE','MECH','ICE','CIVIL','CHEM','PROD','META','ARCH','MTECH','MCA','PHD\\+MSC','DOMS'];
   $.map(departments,function(department,i){
     var score = $('#'+department).val();
+		department = department.replace('\\', '');
     if(score != 0)
       SetScoreForDepartment(department,score,event);
   });
@@ -36,7 +37,7 @@ function SetScores(){
 function GetConfirmation(){
   var confirmation = prompt("Please Confirm! These will be regarded as the final scores for the events. Enter Y to confirm","Type here");
   if(confirmation == 'Y')
-    SetScores();
+		SetScores();
   location.reload();
 }
 
@@ -51,7 +52,7 @@ function GetEventsList(){
    error: function(data){
    	console.log(data);
    }
-  }); 
+  });
 }
 
 $(document).ready(function(){

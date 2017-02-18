@@ -16,15 +16,23 @@ class Marathon extends Model{
   }
 
   public static function GetDepartmentByRollNo($rollno) {
+    
+    $backup = $rollno;
+
     $rollno = $rollno/100000;
     $rollno = (int)$rollno;
-    $firstdigit = $rollno / 100000000;
+    
+    $firstdigit = $backup / 100000000;
     $firstdigit = (int)$firstdigit;
+    
     if($firstdigit == 4) {
       return "PHD + MSC";
     }
+    
     switch ($rollno) {
       case 1021: return "CHEM";
+              break;
+      case 1011: return "ARCH";
               break;
       case 1031: return "CIVIL";
               break;

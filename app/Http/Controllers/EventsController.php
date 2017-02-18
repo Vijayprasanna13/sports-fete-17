@@ -23,6 +23,12 @@ class EventsController extends Controller{
       return response()->json($data, 200);
     }
 
+    /**
+    *
+    *This function returns the events by day
+    *@param day
+    *@return
+    */
     public function GetEventsByDay($day){
       if(!$this->IsDayValid($day)) {
         return response()->json('day not found', 404);

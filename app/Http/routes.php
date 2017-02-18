@@ -16,15 +16,15 @@ date_default_timezone_set('Asia/Calcutta');
 *
 *Routes for landing pages
 */
-$app->get('/', 'PagesController@GetHomepage');
+
+$app->get('/', 'PagesController@RedirectToHomepage');
+$app->get('/sportsfete', 'PagesController@GetHomepage');
 $app->get('/contacts', 'PagesController@GetContactsView');
 $app->get('/scoreboard', 'PagesController@GetScoreboardView');
 $app->get('/photos', 'PagesController@GetPhotosView');
 $app->get('/events', 'PagesController@GetEventsView');
 $app->get('/auth/login','PagesController@GetLoginView');
 $app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
-
-
 
 
 /**
@@ -46,7 +46,6 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 $app->get('/api/day', 'Controller@GetDay');
 $app->get('/api/images', 'Controller@GetImages');
 $app->post('/api/user/marathon/register', 'EventsController@MarathonRegister');
-
 
 
 /**
