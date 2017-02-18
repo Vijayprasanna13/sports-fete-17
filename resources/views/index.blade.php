@@ -409,7 +409,7 @@
                     <p id="spider">Designed by <a class="hyperlink-null" href="http://spider.nitt.edu/" target="_blank"><b>Spider</b></p></a>
                 </div>
                 <div class="col-sm-4" style="margin-left: -5%;">
-                    <p id="spider">Get the App on <b>Google Playstore</b><a href="https://play.google.com/store/apps/details?id=spider.app.sportsfete&hl=en"><img src="/images/secret/android.png" width="130" height="47"></a></p>
+                    <p id="spider">Get the App on <b>Google Playstore</b><a href="https://play.google.com/store/apps/details?id=spider.app.sportsfete&hl=en" target="_blank"><img src="/images/secret/android.png" width="130" height="47"></a></p>
                 </div>
                 </div>
             </div>
