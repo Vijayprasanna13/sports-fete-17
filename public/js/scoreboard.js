@@ -73,15 +73,15 @@ $(document).ready(function() {
         }
         var date = new Date(events['day'+i][event].start_time);
         var dt = events['day'+i][event].start_time.split(/[- :]/);
-        events['day'+i][event].start_time = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
+        events['day'+i][event].start_tim = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
         if(events['day'+i][event].department == null) {
           events['day'+i][event].department = {department_name: "---"}
         }
         if(events['day'+i][event].status == "c") {
-          events['day'+i][event].start_time = "Completed";
+          events['day'+i][event].start_tim = "Completed";
         }
         if(events['day'+i][event].status == "l") {
-          events['day'+i][event].start_time = "Live";
+          events['day'+i][event].start_tim = "Live";
         }
         if(events['day'+i][event].participants.length == 0) {
           if(events['day'+i][event].teama != null) {
@@ -99,7 +99,7 @@ $(document).ready(function() {
             "<tr>"+
               "<td>"+events['day'+i][event].fixture+"</td>"+
               "<td>"+events['day'+i][event].name+" "+events['day'+i][event].participants[0]+" vs "+events['day'+i][event].participants[1]+"</td>"+
-              "<td>"+events['day'+i][event].start_time+"</td>"+
+              "<td>"+events['day'+i][event].start_tim+"</td>"+
               "<td>"+events['day'+i][event].department.department_name+"</td>"+
               "<td>"+events['day'+i][event].venue+"</td>"+
               "<td>"+events['day'+i][event].round+"</td>"+
@@ -111,7 +111,7 @@ $(document).ready(function() {
             "<tr>"+
               "<td>"+events['day'+i][event].fixture+"</td>"+
               "<td>"+events['day'+i][event].name+"</td>"+
-              "<td>"+events['day'+i][event].start_time+"</td>"+
+              "<td>"+events['day'+i][event].start_tim+"</td>"+
               "<td>"+events['day'+i][event].department.department_name+"</td>"+
               "<td>"+events['day'+i][event].venue+"</td>"+
               "<td>"+events['day'+i][event].round+"</td>"+
