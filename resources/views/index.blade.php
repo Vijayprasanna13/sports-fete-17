@@ -63,6 +63,7 @@
             <li>
                 <a class="menulinks" href="#upcomingevents" onclick=$("#menu-close").click();>Upcoming events</a>
             </li>
+            <br/>
         </ul>
     </nav>
 
@@ -402,10 +403,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-
+                <div class="col-sm-4 col-sm-offset-3">
                     <img src="images/secret/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
-                    <br><p id="spider">Designed by <a class="hyperlink-null" href="http://spider.nitt.edu/" target="_blank"><b>Spider</b></p></a>
-
+                    <br>
+                    <p id="spider">Designed by <a class="hyperlink-null" href="http://spider.nitt.edu/" target="_blank"><b>Spider</b></p></a>
+                </div>
+                <div class="col-sm-4" style="margin-left: -5%;">
+                    <p id="spider">Get the App on <b>Google Playstore</b><a href="https://play.google.com/store/apps/details?id=spider.app.sportsfete&hl=en"><img src="/images/secret/android.png" width="130" height="47"></a></p>
+                </div>
                 </div>
             </div>
         </div>
