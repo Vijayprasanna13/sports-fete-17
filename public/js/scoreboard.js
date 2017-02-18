@@ -57,26 +57,7 @@ $(document).ready(function() {
     });
   }
 
-  var department = document.getElementById('filter_department').value;
-  var day = document.getElementById('filter_day').value;
-
-  function fillEventsSelect() {
-    var mySet = new Set();
-    for(var i=1; i<=4; i++) {
-      for(var temp in events['day'+i]) {
-        mySet.add(events['day'+i][temp].name);
-      }
-      $('#filter_event').html('<option>ALL</option>');
-      for(let set of mySet) {
-        $('#filter_event').append(
-          "<option>"+set+"</options>"
-        );
-      }
-    }
-  }
-  fillEventsSelect();
-
-  $("#filter_button").click(function() {
+  function RenderTable() {
     var department = document.getElementById('filter_department').value;
     var day = document.getElementById('filter_day').value;
     var event_name = document.getElementById('filter_event').value;
@@ -109,7 +90,6 @@ $(document).ready(function() {
             events['day'+i][event].participants[1] = events['day'+i][event].teamb;
           }
         }
-        console.log(events['day'+i][event].participants.length);
         if(events['day'+i][event].participants.length == 2) {
           if((events['day'+i][event].participants[0] != department && events['day'+i][event].participants[1] != department)&&department != 'ALL') {
             continue;
@@ -139,7 +119,31 @@ $(document).ready(function() {
         }
       }
     }
+  }
+
+  var department = document.getElementById('filter_department').value;
+  var day = document.getElementById('filter_day').value;
+
+  function fillEventsSelect() {
+    var mySet = new Set();
+    for(var i=1; i<=4; i++) {
+      for(var temp in events['day'+i]) {
+        mySet.add(events['day'+i][temp].name);
+      }
+      $('#filter_event').html('<option>ALL</option>');
+      for(let set of mySet) {
+        $('#filter_event').append(
+          "<option>"+set+"</options>"
+        );
+      }
+    }
+  }
+  fillEventsSelect();
+  $(".filter").on('change', function() {
+    RenderTable();
   });
+
+  RenderTable();
 
   document.getElementById('filter_button').click();
 

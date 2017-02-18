@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-sm-3">
             <label for="filter_department">Select Department</label>
-            <select class="form-control" id="filter_department">
+            <select class="form-control filter" id="filter_department">
               <option>ALL</option>
               <option>ARCH</option>
               <option>CIVIL</option>
@@ -138,7 +138,7 @@
           </div>
           <div class="col-sm-3">
             <label for="filter_day">Select Day</label>
-            <select class="form-control" id="filter_day">
+            <select class="form-control filter" id="filter_day">
               <option>ALL</option>
               <option>1</option>
               <option>2</option>
@@ -151,7 +151,7 @@
             <select class="form-control" id="filter_event">
             </select>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3" hidden="true">
             <button type="button" class="btn btn-primary" id="filter_button">Filter</button>
           </div>
         </div>
