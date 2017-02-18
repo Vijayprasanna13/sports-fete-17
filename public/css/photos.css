@@ -8,19 +8,36 @@
 
 html,
 body {
-    height: 100%;
-    background-color: #ABEBC6;
+      height: 100%;
+    background-color: #D4E6F1;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    text-align: center;    
+   
+
 }
+
 
 body {
     padding-top: 50px;
-   font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    color:#566573 ;
+    font-family: 'Open Sans', sans-serif;
 }
 
+
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+
+
+/* Footer Styles */
 
 footer {
     margin: 50px 0;
@@ -62,42 +79,60 @@ If you like this solution, you might also want to check out the 1.0 version:
   https://gist.github.com/jordyvanraaij/9069194
 
 */
-}
-.menulinks:hover
-{
-  background-color:#40E0D0;
+
+// Default options for table style
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
 }
 
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+  span {color: #167F92;}
+}
+
+.menulinks:hover
+{
+  background-color: #40E0D0;
+  color:white;
+
+}
+.contacts
+{
+  width:200px;
+  height:200px;
+  border-radius:100px;
+  border-color: #167F92;
+  border: 5px;
+}
+.fa:hover
+{
+  color:blue;
+}
+.cont
+{ 
+  margin-left: 2.5%;
+  text-align: center;
+  margin-right: 5%;
+  padding: 3%;
+}
+.cont > p{
+  margin-top: 1%;
+}
+.fa-phone{
+  width: 20px;
+  height: 20px;
+}
 .page-header
 {
-  color: #34495E;
-  font-weight: 400;
-  font-size: 3em;
-  margin-left: 10%;
-  font-family: 'Open Sans', sans-serif;
+  color:white;
+  margin-left: 2%;
 }
 .navbar-brand {
     font-family: Pacifico;
 }
-
-table {
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 110%;
-  overflow: auto;
-  width: auto;
-}  
-  
-th {
-    background-color: rgb(112, 196, 105);
-    color: white;
-    font-weight: normal;
-    padding: 20px 30px;
-    text-align: center;
-}
-
-td {
-    background-color: rgb(238, 238, 238);
-    color: rgb(111, 111, 111);
-    padding: 20px 30px;
-  }

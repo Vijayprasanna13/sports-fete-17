@@ -15,7 +15,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/css/contacts.css" rel="stylesheet">
+    <link href="/css/photos.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +27,7 @@
 
     <style media="screen">
       body {
-        background-color: #A9CCE3;
+        background-color: #D4E6F1;
         color: #212121;
       }
       #container {
