@@ -17,6 +17,31 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.hyperlink-null {
+  color: white;
+}
+
+.hyperlink-null:link {
+  color: white; 
+  background-color: none;
+}
+
+.hyperlink-null:visited {
+  color: white;
+  background-color: none;
+}
+
+.hyperlink-null:hover {
+  color: white;
+  background-color: none;
+}
+
+.hyperlink-null:active {
+  color: white;
+  background-color: none;
+}
+
 .text-vertical-center1{
     display:table-cell;
     text-align: center;

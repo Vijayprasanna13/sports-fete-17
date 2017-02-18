@@ -27,8 +27,6 @@ $app->get('/auth/login','PagesController@GetLoginView');
 $app->get('/deptscore/{department_id}', 'PagesController@GetDepartmentScoreView');
 
 
-
-
 /**
 *
 *API endpoints
@@ -48,7 +46,6 @@ $app->get('/api/eventswisescores', 'ScoresController@getEventsWiseScores');
 $app->get('/api/day', 'Controller@GetDay');
 $app->get('/api/images', 'Controller@GetImages');
 $app->post('/api/user/marathon/register', 'EventsController@MarathonRegister');
-
 
 
 /**

@@ -402,13 +402,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <!--<h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
 
                     <img src="images/secret/spider.png" style="width: 50px;height: 40px;border-radius: 50%;"  />
-                    <br><p id="spider">Designed by <b>Spider</b></p>
-
+                    <br><p id="spider">Designed by <a class="hyperlink-null" href="http://spider.nitt.edu/" target="_blank"><b>Spider</b></p></a>
 
                 </div>
             </div>
