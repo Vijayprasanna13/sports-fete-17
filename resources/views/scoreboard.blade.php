@@ -120,6 +120,14 @@
           <li><a data-toggle="pill" href="#day3">Day 3</a></li>
           <li><a data-toggle="pill" href="#day4">Day 4</a></li>
         </ul>
+        <br/>
+        <div class="form-group">
+        <div class="col-sm-4 col-sm-offset-4">
+          <select class="form-control" id="eventslist">
+            <option>ALL</option>
+          </select>
+        </div>
+        </div>
         <div class="tab-content">
           <div class="tab-pane fade in active" id="day1">
             <div class="col-sm-12 table-responsive" style="padding-top: 2vh">

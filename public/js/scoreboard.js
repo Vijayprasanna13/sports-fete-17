@@ -1,16 +1,39 @@
 $(document).ready(function() {
+var globalData;
+function AppendList(data){
+  $.map(data,function(event,i){
+    $('#eventslist').append('<option>'+event['name']+'</option>');
+  });
+}
+
+  function GetEventsList(){
+  $.ajax({
+   url: '/api/events/list',
+   data: {},
+   method: 'GET',
+   success: function(data){
+    AppendList(data);
+   },
+   error: function(data){
+    console.log(data);
+    }
+    }); 
+  }
+
+  GetEventsList();
+  $('#eventslist').on('change',function(){
+
+  });
 
   $.ajax({
     url: "api/scores",
     type: 'GET',
-
     success: function(data) {
       $('#leaderboardBody').html(" ");
       data = JSON.parse(JSON.stringify(data));
       data = data['data'];
       console.log(data);
       var pos=1, prevScore;
-
       for(var x in data) {
         //condition to calculate the position if multiple teams score same points
         if(parseInt(x) !== 0 && data[x].score === prevScore) {
@@ -23,6 +46,7 @@ $(document).ready(function() {
               "<td>"+data[x].score+"</td>"+
             "</tr>"
           );
+
         pos++;
         prevScore = data[x].score;
       }
