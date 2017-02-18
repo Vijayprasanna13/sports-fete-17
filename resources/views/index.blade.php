@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sportsfete</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+    <title>Sportsfete'17</title>
+    <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="/css/countdown.css" rel="stylesheet">-->
@@ -101,13 +101,13 @@
             <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
-    
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
-    
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1 class="page-heading">Sportsfete'17</h1>
@@ -282,7 +282,7 @@
     <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
     </div>
     <div class="next">
-    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)""></span>
+    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)"></span>
     </div>
 
     <section id="leaderboard" class="services">
@@ -299,7 +299,7 @@
                             <table class="table table-hover table-striped" id="lb">
                                 <thead>
                                     <tr>
-                                        <th>Serial No.</th>
+                                        <th>Rank</th>
                                         <th>Department</th>
                                         <th>Score</th>
 
@@ -328,8 +328,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    
-                    
+
+
                     <div class="row">
                         <div class="col-md-3 col-md-offset-5">
                             <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
@@ -337,10 +337,10 @@
                     </div>
                     <div class="row table-responsive">
 
-                        <div class="col-md-12" style="margin-top:40px;">
-
                     
                         
+
+                        <div class="col-md-9" style="margin-top:40px;">
 
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
@@ -355,14 +355,14 @@
 
                               </tbody>
                           </table>
-                        
+
                         </div>
 
                         </div>
                     </div>
                     <!-- /.col-lg-10 -->
                   </div>
-                
+
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
@@ -391,7 +391,7 @@
                     </div>
                 </div>
 
-                
+
 
         </div>
         <!-- /.container -->
@@ -512,7 +512,7 @@
         slides[slideIndex-1].style.display = "block";
         //dots[slideIndex-1].classList.add("active");
     }
-    
+
     function change()
     {
         slideIndex+=1;

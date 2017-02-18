@@ -2,6 +2,9 @@
 namespace App\Http\Controllers;
 use App\Department;
 class PagesController extends Controller{
+  public function RedirectToHomepage() {
+    return redirect('/sportsfete');
+  }
   public function GetLoginView(){
     return view('auth.login');
   }

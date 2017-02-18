@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Scoreboard</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+    <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -126,6 +126,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -145,6 +146,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -164,6 +166,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -183,6 +186,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>

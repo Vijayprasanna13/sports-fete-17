@@ -14,7 +14,6 @@ body {
     padding-top: 50px;
     font-family: 'Open Sans', sans-serif;
 }
-
 /*
 
 RESPONSTABLE 2.0 by jordyvanraaij
@@ -347,15 +346,10 @@ img {
     font-family: Pacifico;
 }
 
-.fixtures {
-  height: 100%;
-}
-
 .fixt{
-
-    height: 100%;
-    width: 400px;
-    margin-left: 10%; 
+    height: auto;
+    width: 100%;
     //text-align: center;
     margin-top:8%;
+    max-height: 500px;
 }

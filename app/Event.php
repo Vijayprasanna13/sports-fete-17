@@ -20,9 +20,9 @@ class Event extends Model{
   }
   public static function GetEventsByDay($day) {
     if($day >= 0)
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->where('day', $day)->orderBy('start_time')->with('department')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('day', $day)->orderBy('start_time')->with('department')->get();
     else
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->orderBy('start_time')->with('department')->get();
+      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->orderBy('start_time')->with('department')->get();
   }
 
   /**
@@ -35,7 +35,7 @@ class Event extends Model{
     foreach ($events as $event) {
       $validparticipants = [];
       $participants = Event::select(['CSE','ECE','EEE','MECH','CHEM','ICE','CIVIL',
-                                        'PROD','META','PHD + MSC','MCA','DOMS','MTECH','ARCH'])
+                                        'PROD','META','PHD+MSC','MCA','DOMS','MTECH','ARCH'])
                               ->where('id',$event->id)
                               ->first();
       $participants = json_decode($participants,true);
@@ -68,7 +68,7 @@ class Event extends Model{
   }
 
   public static function EventById($event_id){
-    $event = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb')->where('id',$event_id)->with('department')->get();
+    $event = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('id',$event_id)->with('department')->get();
     $event = Event::AddParticipants($event);
     return $event;
   }
@@ -77,8 +77,8 @@ class Event extends Model{
     return Event::where('id', $event_id)->update(['status' => 'l']);
   }
 
-  public static function CompleteEvent($winner) {
-    return Event::where('id', $this->id)->update(['status' => 'c', 'winner' => $winner]);
+  public static function CompleteEvent($event_id) {
+    return Event::where('id', $event_id)->update(['status' => 'c']);
   }
 
   public static function GetEventList(){

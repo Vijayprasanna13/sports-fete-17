@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Contact</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+    <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -99,7 +99,7 @@
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Vinay.jpg">
             <br/>
             <p>
-            <b>Vinay Kumar Chowdary</b><br/>Overall Coordinater</p>
+            <b>Vinay Kumar Chowdary</b><br/>Overall Coordinator</p>
             <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone fa-fw fa-1x" style="color:black;"></i></a>9629404269
 
             <li class="cont"><img class="img-responsive img-thumbnail contacts" src="images/contacts/Bharath Ram.jpg">
