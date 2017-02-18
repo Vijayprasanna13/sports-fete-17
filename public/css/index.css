@@ -30,7 +30,19 @@ body {
     font-family: Pacifico;
     text-align: center;
     vertical-align: middle;
+    z-index: 4;
+    color: white;
+}
 
+
+.page-heading {
+
+  text-shadow: #000 0px 0px 3px;
+  -webkit-font-smoothing: antialiased;
+    /*-2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;*/
 }
 
 h2 {
@@ -41,7 +53,7 @@ h2 {
 
 .text-vertical-center h1 {
     margin: 0;
-    padding: 0;
+    padding-top: 30px;
     font-size: 4em;
     font-weight: 400;
 }
@@ -59,10 +71,6 @@ h2 {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
-
-
-
-
 
 
 /* Custom Horizontal Rule */

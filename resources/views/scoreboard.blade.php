@@ -76,12 +76,11 @@
                 <h1 class="page-header">
                 Scoreboard
                 </h1>
-
             </div>
         </div>
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <table class="table table-striped text-center table-hover" id="scoreboard">
+          <div class="col-sm-7 col-sm-offset-5">
+            <table class="table-striped flat-table" id="scoreboard" style="display: none">
                 <thead>
                     <tr>
                         <th style="text-align: center">Event</th>
@@ -123,7 +122,7 @@
         <div class="tab-content">
           <div class="tab-pane fade in active" id="day1">
             <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
-              <table class="table table-striped text-center">
+              <table class="responsive-table responsive-table-input-matrix">
                 <thead>
                   <tr>
                     <th class="text-center">Match Id</th>
