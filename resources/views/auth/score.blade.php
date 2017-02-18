@@ -29,21 +29,21 @@
           </div>
           <div class="col-sm-3 well">
             <label for="EEE">EEE : </label>
-            <input type="integer" name="EEE" id="EEE" class="form-control inline dept" value="0">  
+            <input type="integer" name="EEE" id="EEE" class="form-control inline dept" value="0">
           </div>
         </div>
         <div class="row">
           <div class="col-sm-3 well">
             <label for="MECH">MECH : </label>
             <input type="integer" name="MECH" id="MECH" class="form-control inline dept" value="0">
-          </div> 
+          </div>
           <div class="col-sm-3 well">
             <label for="ICE">ICE : </label>
             <input type="integer" name="ICE" id="ICE" class="form-control inline dept" value="0">
           </div>
           <div class="col-sm-3 well">
             <label for="CHEM">CHEM : </label>
-            <input type="integer" name="CHEM" id="CHEM" class="form-control inline dept" value="0">  
+            <input type="integer" name="CHEM" id="CHEM" class="form-control inline dept" value="0">
           </div>
         </div>
         <div class="row">
@@ -57,21 +57,21 @@
           </div>
           <div class="col-sm-3 well">
             <label for="META">META : </label>
-            <input type="integer" name="META" id="META" class="form-control inline dept" value="0">  
+            <input type="integer" name="META" id="META" class="form-control inline dept" value="0">
           </div>
         </div>
         <div class="row">
           <div class="col-sm-3 well">
-            <label for="ARCHI">ARCHI : </label>
-            <input type="integer" name="ARCHI" id="ARCHI" class="form-control inline dept" value="0">
+            <label for="ARCH">ARCH : </label>
+            <input type="integer" name="ARCH" id="ARCH" class="form-control inline dept" value="0">
           </div>
           <div class="col-sm-3 well">
-            <label for="MSC">MSC : </label>
-            <input type="integer" name="MSC" id="MSC" class="form-control inline dept" value="0">
+            <label for="PHD+MSC">PHD+MSC : </label>
+            <input type="integer" name="PHD+MSC" id="PHD+MSC" class="form-control inline dept" value="0">
           </div>
           <div class="col-sm-3 well">
             <label for="MCA">MCA : </label>
-            <input type="integer" name="MCA" id="MCA" class="form-control inline dept" value="0">  
+            <input type="integer" name="MCA" id="MCA" class="form-control inline dept" value="0">
           </div>
         </div>
         <div class="row">
