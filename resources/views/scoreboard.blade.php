@@ -148,7 +148,7 @@
           </div>
           <div class="col-sm-3">
             <label for="filter_event">Select Event</label>
-            <select class="form-control" id="filter_event">
+            <select class="form-control filter" id="filter_event">
             </select>
           </div>
           <div class="col-sm-3" hidden="true">
@@ -249,7 +249,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" id="filter_table">
         <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
           <table class="table table-striped text-center">
             <thead>

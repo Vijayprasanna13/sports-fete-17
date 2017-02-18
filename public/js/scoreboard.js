@@ -119,6 +119,12 @@ $(document).ready(function() {
         }
       }
     }
+    if(document.getElementById('filter_events_body').innerHTML == '') {
+       document.getElementById("filter_table").style.visibility = "hidden";
+    }
+    else {
+      document.getElementById("filter_table").style.visibility = "";
+    }
   }
 
   var department = document.getElementById('filter_department').value;
@@ -144,7 +150,6 @@ $(document).ready(function() {
   });
 
   RenderTable();
-
   document.getElementById('filter_button').click();
 
 })
