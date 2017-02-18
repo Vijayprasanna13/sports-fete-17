@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Scoreboard</title>
-    <link rel="shortcut icon" href="images/NIT_Trichy_logo.jpg" />
+    <link rel="shortcut icon" href="images/secret/icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -76,12 +76,11 @@
                 <h1 class="page-header">
                 Scoreboard
                 </h1>
-
             </div>
         </div>
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <table class="table table-striped text-center table-hover" id="scoreboard">
+          <div class="col-sm-7 col-sm-offset-5">
+            <table class="table-striped flat-table" id="scoreboard" style="display: none">
                 <thead>
                     <tr>
                         <th style="text-align: center">Event</th>
@@ -113,18 +112,66 @@
 
     </div>
     <!-- /.container -->
-    <div class="container" id="days" style="padding: 15vh">
+
+    <div class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-3 col-sm-offset-2">
+            <label for="filter_department">Select Department</label>
+            <select class="form-control filter" id="filter_department">
+              <option>ALL</option>
+              <option>ARCH</option>
+              <option>CIVIL</option>
+              <option>CSE</option>
+              <option>ECE</option>
+              <option>EEE</option>
+              <option>ICE</option>
+              <option>MECH</option>
+              <option>PROD</option>
+              <option>META</option>
+              <option>CHEM</option>
+              <option>DOMS</option>
+              <option>PHD+MSC</option>
+              <option>MTECH</option>
+              <option>MCA</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="filter_day">Select Day</label>
+            <select class="form-control filter" id="filter_day">
+              <option>ALL</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="filter_event">Select Event</label>
+            <select class="form-control filter" id="filter_event">
+            </select>
+          </div>
+          <div class="col-sm-3" hidden="true">
+            <button type="button" class="btn btn-primary" id="filter_button">Filter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="days" hidden="true">
         <ul class="nav nav-pills nav-justified">
           <li class="active"><a data-toggle="pill" href="#day1">Day 1</a></li>
           <li><a data-toggle="pill" href="#day2">Day 2</a></li>
           <li><a data-toggle="pill" href="#day3">Day 3</a></li>
+          <li><a data-toggle="pill" href="#day4">Day 4</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane fade in active" id="day1">
             <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
-              <table class="table table-striped text-center">
+              <table class="responsive-table responsive-table-input-matrix">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -144,6 +191,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -163,6 +211,7 @@
               <table class="table table-striped text-center">
                 <thead>
                   <tr>
+                    <th class="text-center">Match Id</th>
                     <th class="text-center">Event</th>
                     <th class="text-center">Start Time</th>
                     <th class="text-center">Winner</th>
@@ -177,6 +226,47 @@
               </table>
             </div>
           </div>
+          <div class="tab-pane fade" id="day4">
+            <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th class="text-center">Match Id</th>
+                    <th class="text-center">Event</th>
+                    <th class="text-center">Start Time</th>
+                    <th class="text-center">Winner</th>
+                    <th class="text-center">Venue</th>
+                    <th class="text-center">Round</th>
+                  </tr>
+                </thead>
+
+                <tbody id="events_body_day4">
+                  <!-- The events table will be updated dynamically from the database -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="filter_table">
+        <div class="col-sm-12 table-responsive" style="padding-top: 2vh">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr>
+                <th class="text-center">Match Id</th>
+                <th class="text-center">Event</th>
+                <th class="text-center">Start Time</th>
+                <th class="text-center">Winner</th>
+                <th class="text-center">Venue</th>
+                <th class="text-center">Round</th>
+              </tr>
+            </thead>
+
+            <tbody id="filter_events_body">
+              <!-- The events table will be updated dynamically from the database -->
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -184,5 +274,13 @@
     <script src="/js/bootstrap.min.js"></script>
 
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-84082034-2', 'auto');
+  ga('send', 'pageview');
+</script>
 </html>

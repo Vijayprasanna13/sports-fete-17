@@ -41,7 +41,7 @@ class DepartmentsController extends Controller
       if(Score::FindScore($request['event'], $department_id)){
         return response()->json('event score already added for department', 400);
       }
-      if(!(Score::store($request))){
+      if(!(Score::store($request) && Department::UpdateScore($request))){
         return response()->json('internal error',500);
       }
       return response()->json('success', 200);

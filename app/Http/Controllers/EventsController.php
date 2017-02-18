@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Event;
 use App\Department;
+use App\Marathon;
 
 class EventsController extends Controller{
     use Validity;
@@ -22,6 +23,12 @@ class EventsController extends Controller{
       return response()->json($data, 200);
     }
 
+    /**
+    *
+    *This function returns the events by day
+    *@param day
+    *@return
+    */
     public function GetEventsByDay($day){
       if(!$this->IsDayValid($day)) {
         return response()->json('day not found', 404);
@@ -85,17 +92,11 @@ class EventsController extends Controller{
   *@param event id
   *@return
   */
-  public function CompleteEvent(Request $request, $event_id) {
-    if(!isset($request['winner'])) {
-      return response()->json('missing parameters', 400);
-    }
-    if(!Department::find($request['winner'])) {
-      return response()->json('department not found', 404);
-    }
-    if(!$event = Event::find($event_id)) {
+  public function CompleteEvent($event_id) {
+    if(!Event::find($event_id)) {
       return response()->json('event not found', 404);
     }
-    if(!$event->CompleteEvent($request['winner'])) {
+    if(!Event::CompleteEvent($event_id)) {
       return response()->json('cannot update event status', 500);
     }
     return response()->json('event status changed', 200);
@@ -108,17 +109,25 @@ class EventsController extends Controller{
   *@param rollno, password
   *@return
   */
-  public function Authenticate(Request $request){
+  public function MarathonRegister(Request $request){
       $imap_response = User::AuthenticateStudent($request['rollno'],$request['password']);
-      if($imap_response)
-        return response()->json("success", 200);
-      return response()->json("wrong rollno or password", 400);
+      if(!$imap_response) {
+        return response()->json("wrong rollno or password", 400);
+      }
+      if($marathonId = Marathon::CheckExists($request['rollno'])) {
+        return response()->json($marathonId, 200);
+      }
+      $department = Marathon::GetDepartmentByRollNo($request['rollno']);
+      if(!$marathonId = Marathon::Register($request['rollno'], $department)) {
+        return response()->json("Internal Server Error", 500);
+      }
+      return response()->json($marathonId, 200);
   }
 
 
   /**
   *
-  *This function return the list of events 
+  *This function return the list of events
   *@param
   *@return
   */
