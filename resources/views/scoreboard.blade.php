@@ -116,7 +116,7 @@
     <div class="container">
       <div class="form-group">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-sm-offset-2">
             <label for="filter_department">Select Department</label>
             <select class="form-control filter" id="filter_department">
               <option>ALL</option>
