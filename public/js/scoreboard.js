@@ -87,6 +87,9 @@ $(document).ready(function() {
           if(events['day'+i][event].teama != null) {
             events['day'+i][event].participants[0] = events['day'+i][event].teama;
           }
+          else {
+            events['day'+i][event],participants[0] = '';
+          }
           if(events['day'+i][event].teamb != null) {
             events['day'+i][event].participants[1] = events['day'+i][event].teamb;
           }
@@ -110,7 +113,7 @@ $(document).ready(function() {
           $('#filter_events_body').append(
             "<tr>"+
               "<td>"+events['day'+i][event].fixture+"</td>"+
-              "<td>"+events['day'+i][event].name+"</td>"+
+              "<td>"+events['day'+i][event].name+" "+events['day'+i][event].participants[0]+"</td>"+
               "<td>"+events['day'+i][event].start_tim+"</td>"+
               "<td>"+events['day'+i][event].department.department_name+"</td>"+
               "<td>"+events['day'+i][event].venue+"</td>"+
