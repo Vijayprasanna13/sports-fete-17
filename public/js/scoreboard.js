@@ -94,6 +94,9 @@ $(document).ready(function() {
             events['day'+i][event].participants[1] = events['day'+i][event].teamb;
           }
         }
+        if(events['day'+i][event].fixture == null) {
+          events['day'+i][event].fixture = '---';
+        }
         if(events['day'+i][event].participants.length == 2) {
           if((events['day'+i][event].participants[0] != department && events['day'+i][event].participants[1] != department)&&department != 'ALL') {
             continue;
