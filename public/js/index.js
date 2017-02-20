@@ -64,7 +64,6 @@ $(document).ready(function() {
 
       success: function(data) {
         day = data;
-        console.log(day);
       },
       error: function(data) {
         console.log(data);
@@ -85,17 +84,49 @@ $(document).ready(function() {
         for(var event in data) {
           var dt = data[event].start_time.split(/[- :]/);
           var eventDate = new Date(dt[0], dt[1]-1, dt[2], dt[3], dt[4], dt[5]);
-          //var curDate = new Date();
-          //if(eventDate > curDate && numberOfEvents < 5) {
-          if(numberOfEvents < 5) {
-            $('#upcomingEventsBody').append(
-              "<tr>"+
-                "<td>"+dt[2]+"-"+dt[1]+"-"+dt[0]+"</td>"+
-                "<td>"+data[event]['name']+"</td>"+
-                "<td>"+dt[3]+":"+dt[4]+"</td>"+
-                "<td>"+data[event]['venue']+"</td>"+
-              "</tr>"
-            );
+          var curDate = new Date();
+          data[event].start_tim = dt[2]+"/"+dt[1]+"/"+dt[0]+"&nbsp;&nbsp "+dt[3]+":"+dt[4];
+          if(eventDate > curDate && numberOfEvents < 10) {
+            if(data[event].status == "c") {
+              data[event].start_tim = "Completed";
+            }
+            if(data[event].status == "l") {
+              data[event].start_tim = "Live";
+            }
+            if(data[event].participants.length == 0) {
+              if(data[event].teama != null) {
+                data[event].participants[0] = data[event].teama;
+              }
+              else {
+                data[event],participants[0] = '';
+              }
+              if(data[event].teamb != null) {
+                data[event].participants[1] = data[event].teamb;
+              }
+            }
+            if(data[event].fixture == null) {
+              data[event].fixture = '---';
+            }
+            if(data[event].participants.length == 2) {
+              $('#upcomingEventsBody').append(
+                "<tr>"+
+                  "<td>"+data[event].fixture+"</td>"+
+                  "<td>"+data[event].name+" "+data[event].participants[0]+" vs "+data[event].participants[1]+"</td>"+
+                  "<td>"+data[event].start_tim+"</td>"+
+                  "<td>"+data[event].venue+"</td>"+
+                "</tr>"
+              );
+            }
+            else {
+              $('#upcomingEventsBody').append(
+                "<tr>"+
+                  "<td>"+data[event].fixture+"</td>"+
+                  "<td>"+data[event].name+" "+data[event].participants[0]+"</td>"+
+                  "<td>"+data[event].start_tim+"</td>"+
+                  "<td>"+data[event].venue+"</td>"+
+                "</tr>"
+              );
+            }
             numberOfEvents++;
           }
         }
