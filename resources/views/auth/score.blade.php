@@ -2,10 +2,16 @@
 
 @section('content')
   <div class="row" id="type-selector-wrapper">
+    <div class="col-sm-3">
+      <img src="/images/secret/warning.png" width="100" height="100" />
+    </div>
+    <div class="col-sm-6">
     Add scores for an event for participating departments. For events that have already ended update the scores.
     <br/>
     <b> The score that is entered in the input box is the cumilative final scores, not the increment/decrement. </b>
+    </div>
   </div>
+
   <br/>
 <div class="row" id="form-wrapper">
 
@@ -16,7 +22,7 @@
       </select>
     </div>
 </div>
-<div class="row">
+<div class="scores-wrapper">
       <div id="departments">
         <div class="row">
           <div class="col-sm-3 well">

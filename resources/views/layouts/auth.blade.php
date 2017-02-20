@@ -15,10 +15,12 @@
       <div class="row" id="header-wrapper">
         <div class="col-sm-2">
           <div id="logo">
+            <img src="/images/secret/icon.png" width="50" height="50" />
           </div>
         </div>
         <div class="col-sm-8" id="header" style="font-family: Pacifico;font-weight: 400"><b>SportsFete'17<br/><br/></b></div>
         <div class="col-sm-2">
+          <a href="/auth/logout"><button class="btn btn-default" style="margin-top: 10%;">logout</button></a>
         </div>
       </div>
       @yield('content')
