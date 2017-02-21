@@ -102,8 +102,8 @@
         success: function(data) {
           console.log(data);
           for(var x in data) {
-            if(data[x].department == null) {
-              data[x].department = {department_name: "---"}
+            if(data[x].winner == null) {
+              data[x].winner = "---";
             }
             if(data[x].status == "c") {
               data[x].start_time = "Completed";
@@ -116,7 +116,7 @@
                   "<tr>"+
                     "<td>"+data[x].name+" "+data[x].participants[0]+" vs "+data[x].participants[1]+"</td>\
                     <td>"+data[x].start_time+"</td>\
-                    <td>"+data[x].department.department_name+"</td>\
+                    <td>"+data[x].winner+"</td>\
                     <td>"+data[x].venue+"</td>\
                   </tr>"
                 );
@@ -126,7 +126,7 @@
                   "<tr>"+
                     "<td>"+data[x].name+"</td>\
                     <td>"+data[x].start_time+"</td>\
-                    <td>"+data[x].department.department_name+"</td>\
+                    <td>"+data[x].winner+"</td>\
                     <td>"+data[x].venue+"</td>\
                   </tr>"
                 );

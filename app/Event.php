@@ -24,7 +24,7 @@ class Event extends Model{
       foreach ($eventstemp as $eventtemp) {
         $eventtemp['winner'] = $eventtemp['department']['department_name'];
         unset($eventtemp['department']);
-        $eventtemp['department'] = NULL;
+        $eventtemp['department'] = $eventtemp['winner'];
       }
       return $eventstemp;
     }
@@ -33,7 +33,7 @@ class Event extends Model{
       foreach ($eventstemp as $eventtemp) {
         $eventtemp['winner'] = $eventtemp['department']['department_name'];
         unset($eventtemp['department']);
-        $eventtemp['department'] = NULL;
+        $eventtemp['department'] = $eventtemp['winner'];
       }
       return $eventstemp;
   }
