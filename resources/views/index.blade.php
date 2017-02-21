@@ -310,6 +310,8 @@
 
                                 </tbody>
                             </table>
+                            <p style="font-size: 1.5em">Click on the department to know detailed score.</p>
+
                         </div>
 
                     </div>
@@ -318,6 +320,9 @@
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <!-- <div class="row text-center">
+              <p style="font-size: 1.5em">Click on the department to know detailed score.</p>
+            </div> -->
         </div>
         <!-- /.container -->
     </section>

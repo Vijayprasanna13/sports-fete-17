@@ -42,18 +42,18 @@ class Score extends Model{
   }
 
   public static function getDepartmentScores($department_id) {
-    return Score::select(DB::raw('SUM(score) as score, event_id'))
+    return Score::select(DB::raw('SUM(score) as score, event'))
                   ->where('department_id', $department_id)
-                  ->groupBy('event_id')
+                  ->groupBy('event')
                   ->havingRaw('SUM(score) > 0')
-                  ->with('event')
                   ->get();
   }
 
   public static function Scores() {
     $scores =  Score::select(DB::raw('SUM(score) as score, department_id'))
                       ->groupBy('department_id')
-                      ->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')
+                      ->orderByRaw('score DESC')
+                      // ->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')
                       ->with('department')
                       ->get();
     foreach ($scores as $score) {

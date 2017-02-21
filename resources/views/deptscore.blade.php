@@ -67,7 +67,29 @@
         <!-- /.container -->
     </nav>
 
-  <div class="container" id="departmentScoreboard" style="padding-top: 5vh;">
+    <div class="container" id="departmentScoreboard" style="padding-top: 5vh;">
+      <div class="row">
+        <div class="col-sm-12 table-responsive">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr>
+                <th colspan="4" style="text-align:center">{{$department_name}} Events</th>
+              </tr>
+              <tr>
+                <th style="text-align:center">Event</th>
+                <th style="text-align:center">Score</th>
+              </tr>
+            </thead>
+            <tbody id="scoreboardBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- <div class="container" id="departmentScoreboard" style="padding-top: 5vh;">
     <div class="row">
       <div class="col-sm-12 table-responsive">
         <table class="table table-striped text-center">
@@ -88,7 +110,7 @@
         </table>
       </div>
     </div>
-  </div>
+  </div> -->
   <p id="test"></p>
 
   <script type="text/javascript">
@@ -96,41 +118,38 @@
       var departmentName = {!!json_encode($department_name) !!};
       var departmentId = {!!$department_id!!}
       $.ajax({
-        url: '../api/events/day/-1/department/'+departmentName,
+        url: '../api/department/'+departmentId+'/scores',
         type: 'GET',
 
         success: function(data) {
-          console.log(data);
           for(var x in data) {
-            if(data[x].winner == null) {
-              data[x].winner = "---";
-            }
-            if(data[x].status == "c") {
-              data[x].start_time = "Completed";
-            }
-            if(data[x].status == "l") {
-              data[x].start_time = "Live";
-            }
-            if(data[x].participants.length == 2) {
+            // if(data[x].winner == null) {
+            //   data[x].winner = "---";
+            // }
+            // if(data[x].status == "c") {
+            //   data[x].start_time = "Completed";
+            // }
+            // if(data[x].status == "l") {
+            //   data[x].start_time = "Live";
+            // }
+            // if(data[x].participants.length == 2) {
+            //   $('#scoreboardBody').append(
+            //       "<tr>"+
+            //         "<td>"+data[x].name+" "+data[x].participants[0]+" vs "+data[x].participants[1]+"</td>\
+            //         <td>"+data[x].start_time+"</td>\
+            //         <td>"+data[x].winner+"</td>\
+            //         <td>"+data[x].venue+"</td>\
+            //       </tr>"
+            //     );
+            // }
+            // else {
               $('#scoreboardBody').append(
                   "<tr>"+
-                    "<td>"+data[x].name+" "+data[x].participants[0]+" vs "+data[x].participants[1]+"</td>\
-                    <td>"+data[x].start_time+"</td>\
-                    <td>"+data[x].winner+"</td>\
-                    <td>"+data[x].venue+"</td>\
+                    "<td>"+data[x].event+"</td>\
+                    <td>"+data[x].score+"</td>\
                   </tr>"
                 );
-            }
-            else {
-              $('#scoreboardBody').append(
-                  "<tr>"+
-                    "<td>"+data[x].name+"</td>\
-                    <td>"+data[x].start_time+"</td>\
-                    <td>"+data[x].winner+"</td>\
-                    <td>"+data[x].venue+"</td>\
-                  </tr>"
-                );
-            }
+            // }
           }
         },
         error: function(data) {
