@@ -367,7 +367,7 @@
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
-                
+
 
 
 
@@ -540,6 +540,7 @@
 
 
         if (t.total <= 0) {
+          document.getElementById("countdown").style.visibility = "hidden";
           clearInterval(timeinterval);
         }
       }
