@@ -19,10 +19,23 @@ class Event extends Model{
     return $this->hasMany('App\Score', 'event_id', 'event_id');
   }
   public static function GetEventsByDay($day) {
-    if($day >= 0)
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('day', $day)->orderBy('start_time')->with('department')->get();
+    if($day >= 0) {
+      $eventstemp = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->where('day', $day)->orderBy('start_time')->with('department')->get();
+      foreach ($eventstemp as $eventtemp) {
+        $eventtemp['winner'] = $eventtemp['department']['department_name'];
+        unset($eventtemp['department']);
+        $eventtemp['department'] = NULL;
+      }
+      return $eventstemp;
+    }
     else
-      return Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->orderBy('start_time')->with('department')->get();
+      $eventstemp = Event::select('id','day','name','venue','start_time','round','status','winner','teama','teamb','fixture')->orderBy('start_time')->with('department')->get();
+      foreach ($eventstemp as $eventtemp) {
+        $eventtemp['winner'] = $eventtemp['department']['department_name'];
+        unset($eventtemp['department']);
+        $eventtemp['department'] = NULL;
+      }
+      return $eventstemp;
   }
 
   /**
