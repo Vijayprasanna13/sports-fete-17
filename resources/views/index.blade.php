@@ -367,30 +367,7 @@
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
-                    </div>
-                </div>
-                <!-- /.row (nested) -->
-                <div class="row" id="clockdiv2">
-                    <div class="col-sm-3">
-                      <span class="days"></span>
-                      <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-                </div>
+                
 
 
 
