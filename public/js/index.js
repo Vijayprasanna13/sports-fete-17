@@ -32,12 +32,15 @@ $(document).ready(function() {
 
     success: function(data) {
       $('#leaderboardBody').html(" ");
-      var pos=1, prevScore;
+      var pos=1, prevScore, temppos=1;
 
       for(var x in data) {
         //condition to calculate the position if multiple teams score same points
         if(parseInt(x) !== 0 && data[x].score === prevScore) {
           pos--;
+        }
+        else{
+            pos = temppos;
         }
         $('#leaderboardBody').append(
             "<tr onclick=\"window.document.location=\'deptscore/"+data[x].id+"\';\">"+
@@ -47,6 +50,7 @@ $(document).ready(function() {
             "</tr>"
           );
         pos++;
+        temppos++;
         prevScore = data[x].score;
       }
     },
@@ -73,7 +77,6 @@ $(document).ready(function() {
 
   //Update the events table with the events happening on the current day.
   $.when(currentDay()).done(function(a) { //Wait for the currentDay function to process first
-    day = 1;
     $.ajax({
       url: 'api/events/day/'+day,
       type: 'GET',
