@@ -1154,7 +1154,7 @@
                 </p>
                 <p>CIRCUIT: -
                    <p> BOYS-</p>
-                    <p>PD OFFICE – LIBRARY – HOSPITAL – ZIRCON BACKSIDE  – AMBER – MEGA MESS 2 – GARNET – ORION –CHEMICAL DEPT – PD OFFICE.</p>
+                    <p>PD OFFICE – LIBRARY – HOSPITAL – MEGAMESS 1 FRONT  – AMBER – MEGA MESS 2 – GARNET – ORION –CHEMICAL DEPT – PD OFFICE.</p>
 
                     <p>GIRLS-</p>
                     <p>PD OFFICE - LIBRARY- SHOPPING COMPLEX - BERY HOSTEL - AGATE HOSTEL – ORION - CHEMICAL DEPT – PD OFFICE

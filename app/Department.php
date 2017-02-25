@@ -11,6 +11,9 @@ class Department extends Model{
   public function events() {
     return $this->hasMany('App\Event');
   }
+  public function score() {
+    return $this->hasMany('App\Score');
+  }
   public static function Scores(){
     return Department::select('id','department_name','score')->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')->get();
   }

@@ -15,7 +15,7 @@ class Score extends Model{
   }
 
   public function department() {
-    return $this->belongsTo('App\Department');
+    return $this->belongsTo('App\Department', 'department_id', 'id');
   }
 
   public static function store(Request $request){
@@ -42,11 +42,26 @@ class Score extends Model{
   }
 
   public static function getDepartmentScores($department_id) {
-    return Score::select(DB::raw('SUM(score) as score, event_id'))
+    return Score::select(DB::raw('SUM(score) as score, event'))
                   ->where('department_id', $department_id)
-                  ->groupBy('event_id')
+                  ->groupBy('event')
                   ->havingRaw('SUM(score) > 0')
-                  ->with('event')
                   ->get();
+  }
+
+  public static function Scores() {
+    $scores =  Score::select(DB::raw('SUM(score) as score, department_id'))
+                      ->groupBy('department_id')
+                      ->orderByRaw('score DESC')
+                      // ->orderByRaw('CAST(score AS DECIMAL(5,2)) DESC')
+                      ->with('department')
+                      ->get();
+    foreach ($scores as $score) {
+      $score['department_name'] = $score['department']['department_name'];
+      $score['id'] = $score['department_id'];
+      unset($score['department']);
+      unset($score['department_id']);
+    }
+    return $scores;
   }
 }

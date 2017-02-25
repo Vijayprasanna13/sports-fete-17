@@ -310,6 +310,8 @@
 
                                 </tbody>
                             </table>
+                            <p style="font-size: 1.5em">Click on the department to know detailed score.</p>
+
                         </div>
 
                     </div>
@@ -318,6 +320,9 @@
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <!-- <div class="row text-center">
+              <p style="font-size: 1.5em">Click on the department to know detailed score.</p>
+            </div> -->
         </div>
         <!-- /.container -->
     </section>
@@ -338,15 +343,15 @@
                     </div>
                     <div class="row table-responsive">
 
-                    
-                        
+
+
 
                         <div class="col-md-9" style="margin-top:40px;">
 
                           <table class="table table-hover table-striped" id="upc">
                               <thead>
                                   <tr>
-                                      <th>Date</th>
+                                      <th>Match Id</th>
                                       <th>Event</th>
                                       <th>Start Time</th>
                                       <th>Venue</th>
@@ -367,30 +372,7 @@
                 <!-- /.row -->
 
                 <!-- /.row (nested) -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-4">
-                        <h3  id="mar" style="font-family: Vollkorn,serif;">Marathon  coming up in</h3>
-                    </div>
-                </div>
-                <!-- /.row (nested) -->
-                <div class="row" id="clockdiv2">
-                    <div class="col-sm-3">
-                      <span class="days"></span>
-                      <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-                </div>
+
 
 
 
@@ -563,6 +545,7 @@
 
 
         if (t.total <= 0) {
+          document.getElementById("countdown").style.visibility = "hidden";
           clearInterval(timeinterval);
         }
       }
@@ -573,7 +556,7 @@
 
     //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
     var deadline = "Tue Feb 23 2017 06:00:00 GMT+0530 (IST)";
-    var deadline2= "Sat Feb 21 2017 05:00:00 GMT+0530 (IST)";
+    var deadline2= "Sat Feb 21 2017 17:00:00 GMT+0530 (IST)";
 
     initializeClock('clockdiv', deadline);
     initializeClock('clockdiv2', deadline2);

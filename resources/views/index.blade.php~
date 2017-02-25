@@ -98,13 +98,13 @@
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
         </div>
     </div>
-    
+
     <div id="top" class="headerslides" style="background-image:url('images/carousel/7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1>Sportsfete'17</h1>
@@ -360,7 +360,7 @@
                         </div>
                         <div class="col-md-9">
 
-                    
+
 
                           <table class="table table-hover table-striped">
                               <thead>
@@ -581,8 +581,6 @@
     var deadline2= "Sat Feb 21 2017 05:00:00 GMT+0530 (IST)";
 
     initializeClock('clockdiv', deadline);
-    initializeClock('clockdiv2', deadline2);
-
 
     $(document).ready(function(){
   // Add smooth scrolling to all links
