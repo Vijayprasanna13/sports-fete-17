@@ -247,35 +247,6 @@
             <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
-
-
-
-
-    <div class="container" id="countdown">
-        <div class="row text-center">
-            <div class="col-lg-12 col-lg-offset-1 text-center">
-                <div id="clockdiv" class="row">
-                    <div class="col-sm-3">
-                        <span class="days"></span>
-                        <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="prev">
     <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
     </div>
