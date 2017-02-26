@@ -67,10 +67,6 @@
 
     <!-- Header -->
 
-
-
-
-
     <div id="top" class="headerslides" style="background-image:url('images/carousel/1.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
             <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
