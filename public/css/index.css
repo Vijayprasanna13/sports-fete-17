@@ -5,7 +5,7 @@
  */
 
 /* Global Styles */
-
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 html,
 body {
     max-width: 100%;
@@ -17,7 +17,13 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.thanks{
+  font-family: 'Dosis', sans-serif;
+  font-size: 180%;
+  font-weight: 200;
+  color: gray;
+  mix-blend-mode: difference;
+}
 .hyperlink-null {
   color: white;
 }
