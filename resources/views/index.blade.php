@@ -255,6 +255,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
+                    <span class="thanks">Congratulations Production department for winning the Sports Cup 2017.</span>
                     <span id="leadheading"><h2><b>Leaderboard</b></h2></span>
                     <span><b><hr class="small"></b></span>
                     <div class="row">
