@@ -69,179 +69,179 @@
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/1.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/2.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/3.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/4.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/5.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/6.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/7.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/8.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
 
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/9.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/10.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/11.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/12.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
 
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/13.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/14.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/15.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/16.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/17.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/18.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/19.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/20.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/21.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/23.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/24.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/25.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/26.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/27.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/28.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/29.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/30.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div id="top" class="headerslides" style="background-image:url('images/carousel/31.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/32.jpg');">
         <div class="text-vertical-center" style="z-index:4;color:white;">
-            <h1 class="page-heading">Sportsfete'17</h1><br/><span class="thanks">Thank you for your participation.</span>
+            <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
     <div class="prev">
@@ -318,7 +318,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
 
-    <script src="/js/timer.js"></script>
+    <!-- <script src="/js/timer.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script>
