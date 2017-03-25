@@ -34,6 +34,7 @@
 
 </head>
 
+
 <body id="start" onload="continuous()">
 
 
@@ -60,18 +61,11 @@
             <li>
                 <a class="menulinks" href="#leaderboard" onclick=$("#menu-close").click();>Leaderboard</a>
             </li>
-            <li>
-                <a class="menulinks" href="#upcomingevents" onclick=$("#menu-close").click();>Upcoming events</a>
-            </li>
             <br/>
         </ul>
     </nav>
 
     <!-- Header -->
-
-
-
-
 
     <div id="top" class="headerslides" style="background-image:url('images/carousel/1.jpg');">
        <div class="text-vertical-center" style="z-index:4;color:white;">
@@ -250,46 +244,18 @@
             <h1 class="page-heading">Sportsfete'17</h1>
         </div>
     </div>
-
-
-
-
-    <div class="container" id="countdown">
-        <div class="row text-center">
-            <div class="col-lg-12 col-lg-offset-1 text-center">
-                <div id="clockdiv" class="row">
-                    <div class="col-sm-3">
-                        <span class="days"></span>
-                        <div class="smalltext"><b>Days</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="hours"></span>
-                        <div class="smalltext"><b>Hours</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="minutes"></span>
-                        <div class="smalltext"><b>Minutes</b></div>
-                    </div>
-                    <div class="col-sm-3">
-                        <span class="seconds"></span>
-                        <div class="smalltext"><b>Seconds</b></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="prev">
     <span class="glyphicon glyphicon-menu-left" onclick="plusSlides(-1)"></span>
     </div>
     <div class="next">
-    <span class="   glyphicon glyphicon-menu-right" onclick="plusSlides(1)"></span>
+    <span class="glyphicon glyphicon-menu-right" onclick="plusSlides(1)"></span>
     </div>
 
     <section id="leaderboard" class="services">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
+                    <span class="thanks">Congratulations Production department for winning the Sports Cup 2017.</span>
                     <span id="leadheading"><h2><b>Leaderboard</b></h2></span>
                     <span><b><hr class="small"></b></span>
                     <div class="row">
@@ -327,59 +293,6 @@
         <!-- /.container -->
     </section>
 
-
-
-
-    <section id="upcomingevents" class="upcomingevents">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-
-
-                    <div class="row">
-                        <div class="col-md-3 col-md-offset-5">
-                            <img id="upimage" class="img-responsive" src="images/secret/upcoming_events.jpg"/>
-                        </div>
-                    </div>
-                    <div class="row table-responsive">
-
-
-
-
-                        <div class="col-md-9" style="margin-top:40px;">
-
-                          <table class="table table-hover table-striped" id="upc">
-                              <thead>
-                                  <tr>
-                                      <th>Match Id</th>
-                                      <th>Event</th>
-                                      <th>Start Time</th>
-                                      <th>Venue</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="upcomingEventsBody">
-
-                              </tbody>
-                          </table>
-
-                        </div>
-
-                        </div>
-                    </div>
-                    <!-- /.col-lg-10 -->
-                  </div>
-
-                <!-- /.row -->
-
-                <!-- /.row (nested) -->
-
-
-
-
-        </div>
-        <!-- /.container -->
-    </section>
-
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
         <div class="container">
@@ -406,7 +319,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
 
-    <script src="/js/timer.js"></script>
+    <!-- <script src="/js/timer.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -527,40 +440,6 @@
         'seconds': seconds
       };
     }
-
-    function initializeClock(id, endtime) {
-      var clock = document.getElementById(id);
-      var daysSpan = clock.querySelector('.days');
-      var hoursSpan = clock.querySelector('.hours');
-      var minutesSpan = clock.querySelector('.minutes');
-      var secondsSpan = clock.querySelector('.seconds');
-
-      function updateClock() {
-        var t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-
-        if (t.total <= 0) {
-          document.getElementById("countdown").style.visibility = "hidden";
-          clearInterval(timeinterval);
-        }
-      }
-
-      updateClock();
-      var timeinterval = setInterval(updateClock, 1000);
-    }
-
-    //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-    var deadline = "Tue Feb 23 2017 06:00:00 GMT+0530 (IST)";
-    var deadline2= "Sat Feb 21 2017 17:00:00 GMT+0530 (IST)";
-
-    initializeClock('clockdiv', deadline);
-    initializeClock('clockdiv2', deadline2);
-
 
     $(document).ready(function(){
   // Add smooth scrolling to all links
